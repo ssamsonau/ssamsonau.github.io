@@ -12,3 +12,4 @@ output: html_document
 | Click-Through Rate Prediction for adds      | Deep learning (from h2o package) | [link](https://github.com/ssamsonau/ClickThrough/tree/h2o) |
 | Click-Through Rate Prediction for adds      | Neural Network (from caret package)      |   [link](https://github.com/ssamsonau/ClickThrough/tree/caret) |
 | American Epilepsy Society Seizure Prediction Challenge | FFT and SVM | [link](https://github.com/ssamsonau/K_Epil) |
+|Identifying Higgs boson in ATLAS data| Neural Network | [link](https://github.com/ssamsonau/K_Higgs)|
