@@ -13,3 +13,13 @@ __Deep learning (from h2o package) used for learning__
 * code on github: [link](https://github.com/ssamsonau/ClickThrough/tree/h2o)
 
 ***
+
+***
+
+__Click-Through Rate Prediction__
+
+__Neural Network algorithm (from caret package) used for learning__
+
+* code on github: [link](https://github.com/ssamsonau/ClickThrough/tree/caret)
+
+***
