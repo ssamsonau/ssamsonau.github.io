@@ -6,20 +6,9 @@ output: html_document
 ***
 ***
 
-__Click-Through Rate Prediction__
 
-__Deep learning (from h2o package) used for learning__
-
-* code on github: [link](https://github.com/ssamsonau/ClickThrough/tree/h2o)
-
-***
-
-***
-
-__Click-Through Rate Prediction__
-
-__Neural Network algorithm (from caret package) used for learning__
-
-* code on github: [link](https://github.com/ssamsonau/ClickThrough/tree/caret)
-
-***
+| Project        | Algorithm           | code on github  |
+| ------------- |:-------------:| -----:|
+| Click-Through Rate Prediction for adds      | Deep learning (from h2o package) | [link](https://github.com/ssamsonau/ClickThrough/tree/h2o) |
+| Click-Through Rate Prediction for adds      | Neural Network (from caret package)      |   [link](https://github.com/ssamsonau/ClickThrough/tree/caret) |
+|  |       |     |
