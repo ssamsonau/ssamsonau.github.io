@@ -1,0 +1,15 @@
+---
+title: "Code examples by S.Samsonau"
+output: html_document
+---
+
+***
+***
+
+__Click-Through Rate Prediction__
+
+__Deep learning (from h2o package) used for learning__
+
+* code on github: [link](https://github.com/ssamsonau/ClickThrough/tree/h2o)
+
+***
