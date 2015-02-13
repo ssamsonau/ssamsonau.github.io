@@ -6,15 +6,21 @@ output: html_document
 ***
 ***
 
-## [Kaggle Machine learning competitions](https://www.kaggle.com/)
+###Small analysis with plots
+
+| Project        | notes           | Link to code and results |
+| ------------- |:-------------:| -----:|
+| Small analysis of DC bike sharing data     | Plots, Knitr | [available on Rpubs](http://rpubs.com/ssamsonau/DCbikeSharing) |
+
+
+### Kaggle Machine learning competitions
 
 [My profile in Kaggle](https://www.kaggle.com/users/187995/siarhei) 
 
-Current ranking 3015th / 257,549
 
-| Project        | notes           | code on github  |
+| Project        | notes           | Link to code  |
 | ------------- |:-------------:| -----:|
-| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Deep learning (from h2o package), Subsetting features | [link](https://github.com/ssamsonau/ClickThrough/tree/h2o) |
-| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Neural Network (from caret package), Subsetting features |   [link](https://github.com/ssamsonau/ClickThrough/tree/caret) |
-| [American Epilepsy Society Seizure Prediction Challenge](https://www.kaggle.com/c/seizure-prediction) | FFT and SVM | [link](https://github.com/ssamsonau/K_Epil) |
-|[Identifying Higgs boson in ATLAS data](https://www.kaggle.com/c/higgs-boson)| Work with features, Learning curves, Neural Network  | [link](https://github.com/ssamsonau/K_Higgs)|
+| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Deep learning (from h2o package), Subsetting features | [code on GitHub](https://github.com/ssamsonau/ClickThrough/tree/h2o) |
+| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Neural Network (from caret package), Subsetting features |   [code on GitHub](https://github.com/ssamsonau/ClickThrough/tree/caret) |
+| [American Epilepsy Society Seizure Prediction Challenge](https://www.kaggle.com/c/seizure-prediction) | FFT and SVM | [code on GitHub](https://github.com/ssamsonau/K_Epil) |
+|[Identifying Higgs boson in ATLAS data](https://www.kaggle.com/c/higgs-boson)| Work with features, Learning curves, Neural Network  | [code on GitHub](https://github.com/ssamsonau/K_Higgs)|
