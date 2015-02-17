@@ -6,14 +6,7 @@ output: html_document
 ***
 ***
 
-###Small analysis with plots
-
-| Project        | notes           | Link to code and results |
-| ------------- |:-------------:| -----:|
-| Small analysis of DC bike sharing data     | Plots, Knitr | [available on Rpubs](http://rpubs.com/ssamsonau/DCbikeSharing) |
-
-
-### Kaggle Machine learning competitions
+###Kaggle Machine learning competitions
 
 [My profile in Kaggle](https://www.kaggle.com/users/187995/siarhei) 
 
