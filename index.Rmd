@@ -1,19 +1,21 @@
 ---
-title: "Code examples by S.Samsonau"
+title: "Code samples by Siarhei Samsonau"
 output: html_document
 ---
 
 ***
 ***
+[My LinkedIn](http://linkedin.com/in/ssamsonau) 
 
 ###Kaggle Machine learning competitions
 
 [My profile in Kaggle](https://www.kaggle.com/users/187995/siarhei) 
 
 
-| Project        | notes           | Link to code  |
-| ------------- |:-------------:| -----:|
-| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Deep learning (from h2o package), Subsetting features | [code on GitHub](https://github.com/ssamsonau/ClickThrough/tree/h2o) |
-| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Neural Network (from caret package), Subsetting features |   [code on GitHub](https://github.com/ssamsonau/ClickThrough/tree/caret) |
-| [American Epilepsy Society Seizure Prediction Challenge](https://www.kaggle.com/c/seizure-prediction) | FFT and SVM | [code on GitHub](https://github.com/ssamsonau/K_Epil) |
-|[Identifying Higgs boson in ATLAS data](https://www.kaggle.com/c/higgs-boson)| Work with features, Learning curves, Neural Network  | [code on GitHub](https://github.com/ssamsonau/K_Higgs)|
+| Project   | Learning algorithm        | notes           | Link to code  |
+|:----------|:-------------------------:|:---------------:|:-------------:|
+|[Plankton classification (NDSB)](https://www.kaggle.com/c/datasciencebowl)| Random Forest |Extraction of features from images | [code on GitHub](https://github.com/ssamsonau/NDSB)|
+| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)      | Deep learning (from h2o package) | Subsetting features | [code on GitHub](https://github.com/ssamsonau/ClickThrough/tree/h2o) |
+| [Click-Through Rate Prediction for adds](https://www.kaggle.com/c/avazu-ctr-prediction)     | Neural Network (caret package) | Subsetting features |   [code on GitHub](https://github.com/ssamsonau/ClickThrough/tree/caret) |
+| [American Epilepsy Society Seizure Prediction Challenge](https://www.kaggle.com/c/seizure-prediction) | SVM | FFT | [code on GitHub](https://github.com/ssamsonau/K_Epil) |
+|[Identifying Higgs boson in ATLAS data](https://www.kaggle.com/c/higgs-boson)| Neural Network  |Work with features, Learning curves | [code on GitHub](https://github.com/ssamsonau/K_Higgs)|
