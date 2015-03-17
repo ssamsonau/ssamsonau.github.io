@@ -1,5 +1,5 @@
 ---
-title: "Code samples by Siarhei Samsonau"
+title: "Code samples by Sergey (Siarhei) Samsonau"
 output: html_document
 ---
 
