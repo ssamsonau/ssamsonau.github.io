@@ -15,8 +15,8 @@ output: html_document
     + [code](THSinS_supplementary_information.pdf)
     
 
-### A project prepared for a demo during on of the days of Data Science training.
-I developend and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (took place twice at Columbia University)   
+### A project prepared for a demo during Data Science training
+I developend and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University)   
 
 * Pet adoption classification
     + [Knitr book format](https://ssamsonau.github.io/animal_shelter/index.html)
@@ -57,10 +57,10 @@ I developend and taught (in January and June of 2016) a 35-hours (5 days) “Ess
 * Identifying Higgs boson in ATLAS data 
     + [code on GitHub](https://github.com/ssamsonau/K_Higgs) (Neural Network, work with features, learning curves)
     
-### Data Science class I developed and teach at a High School 
+### Data Science class I developed and teach
 #### Data Science I
 
-Data Science I course is designed to teach students how to analyze data using R language, as well as how to present results of analysis. Data in the modern world are coming from different sources and in different formats. Data can be obtained from sensors, collected via a survey, stored in a database, or wait to be downloaded from Internet. Often such data will have a “messy” structure, there will be missing values, etc. Students will learn how to access data from various sources, reshape, organize and clean it. Basic statistical information and plots will be employed to make an initial exploratory analysis. We shall cover techniques for creation of highly customized professionally looking plots. Students will learn to create interactive plots and interactive web applications (using R Shiny), to present data visually to a wide auditory. Linear model will be used to perform a basic modeling. This class involves a lot of coding and practical exercises in R.    
+Data Science I course is designed to teach students analyze data using R language, as well as how to present results of analysis. Data in the modern world are coming from different sources and in different formats. Data can be obtained from sensors, collected via a survey, stored in a database, or wait to be downloaded from Internet. Often such data will have a “messy” structure, there will be missing values, etc. Students will learn how to access data from various sources, reshape, organize and clean it. Basic statistical information and plots will be employed to make an initial exploratory analysis. We shall cover techniques for creation of highly customized professionally looking plots. Students will learn to create interactive plots and interactive web applications (using R Shiny), to present data visually to a wide auditory. Linear model will be used to perform a basic modeling. This class involves a lot of coding and practical exercises in R.    
 Textbooks: R for Data Science: Import, Tidy, Transform, Visualize, and Model Data (Authors: Hadley Wickham, Garrett Grolemund)
 
 #### Data Science II 
