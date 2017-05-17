@@ -15,12 +15,16 @@ output: html_document
     + [code](THSinS_supplementary_information.pdf)
     
 
-### A project prepared for a demo during Data Science training
-I developend and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University)   
+### Data Science Training “Essentials of Data Science” (Ket Labs)
+I developed and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University). More details can be found here [Ket Labs](http://www.ket-labs.com/)   
+    
+* Some of projects created by participants of this training
+    + [ket-labs.com/examples/](http://www.ket-labs.com/examples/)
+    
+* A project prepared to demonstrate a whole DS sequence workflow. Emphasis on getting the first results fast (thus not cleaned up, and not optimized by design)
 
-* Pet adoption classification
-    + [Knitr book format](https://ssamsonau.github.io/animal_shelter/index.html)
-    + [code on github](https://github.com/ssamsonau/animal_shelter)
+    + Pet adoption classification: [Knitr book format](https://ssamsonau.github.io/animal_shelter/index.html)
+    + Pet adoption classification: [code on github](https://github.com/ssamsonau/animal_shelter)    
 
 
 ### Projects done by students (high school) under my mentorship
