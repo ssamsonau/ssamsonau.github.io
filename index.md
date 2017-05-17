@@ -1,9 +1,4 @@
----
-title: "Some projects by Sergey Samsonau"
-output: 
-  html_document: 
-    keep_md: yes
----
+# Some projects by Sergey Samsonau
 
 ***
 ***
