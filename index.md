@@ -7,7 +7,7 @@ output:
 
 ***
 ***
-[LinkedIn](http://linkedin.com/in/ssamsonau), [GitHub](https://github.com/ssamsonau)  
+[LinkedIn](http://linkedin.com/in/ssamsonau), [GitHub](https://github.com/ssamsonau), [Ket Labs](http://www.ket-labs.com/)  
 
 ## I do and teach Data Science and Physics
 
