@@ -20,12 +20,15 @@ output:
     + [paper](http://connection.ebscohost.com/c/articles/110196910/thyroid-hormone-status-stroke-transient-ischemic-attack-patients)
     + [code](supplementary_information.pdf)
     
+    
+### Some shiny apps created for experimental physics lab
+  * [Spectroscopy](https://github.com/ssamsonau/Spectroscopy)
+  * [Sample stage control](https://github.com/ssamsonau/SampleStage)
+  * [Solar cell testing](https://github.com/ssamsonau/solar_cell_testing)
 
 ### Projects done by students (high school) under my mentorship
 * Renewable Energy exploration. Big Data Challenge.
-    + [slides](https://docs.google.com/a/prismsus.org/viewer?a=v&pid=sites&srcid=cHJpc21zdXMub3JnfHNjaWVuY2V8Z3g6NThhYmYzNzA3NjU4MmMyNQ)
     + [shiny app](https://www.google.com/url?q=https%3A%2F%2Fgk-233.shinyapps.io%2FBigData_PRISMS%2F&sa=D&sntz=1&usg=AFQjCNEAbs3g1Mc6kaYlabY9_ByPYmjl2g)
-    + [paper](https://docs.google.com/a/prismsus.org/viewer?a=v&pid=sites&srcid=cHJpc21zdXMub3JnfHNjaWVuY2V8Z3g6MjEyZjgxMjJlM2M5OGIxZg)
 
 * Automating Reconstruction of Focused Ion Beam Current Density Distribution
     + poster presented at FIBSEM meeting on March, 2017 (X. Li, S. Samsonau, E. Chang, V. Ray)
@@ -52,12 +55,6 @@ I developed and taught (in January and June of 2016) a 35-hours (5 days) “Esse
 * A collaborative project in progress for publication submission
     + [Predictive Wavelength Switching](https://github.com/Zahra-Bakhtiari/Predictive-Wavelength-Switching/blob/master/Main-Algorithm.md)
     
-* A project prepared to demonstrate a typical DS workflow. Emphasis on getting the first results fast (thus not cleaned up, and not optimized by design)
-
-    + Pet adoption classification: [Knitr book format](https://ssamsonau.github.io/animal_shelter/index.html)
-    + Pet adoption classification: [code on github](https://github.com/ssamsonau/animal_shelter)    
-
-
 ### Kaggle Machine learning competitions (2014, Aug - 2015, March)
 
 * Plankton classification (NDSB) 
