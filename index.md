@@ -66,7 +66,7 @@ _Textbook_: An Introduction to Statistical Learning with Applications in R (Auth
 
 
 ## Training Program for PhDs
-I (and two of my colleagues) developed and taught in January and June of 2016 a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University). More details can be found here [Ket Labs](http://www.ket-labs.com/)   
+I (with two colleagues) developed and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University). More details can be found here [Ket Labs](http://www.ket-labs.com/)   
     
 * Some of projects created by participants of this training
     + [ket-labs.com/examples/](http://www.ket-labs.com/examples/)
