@@ -51,6 +51,17 @@ Projects done by students (high school) under my mentorship
     + [report](https://github.com/prismsus/election/blob/master/presentation.md)
     + [code](https://github.com/prismsus/election)
 
+### EDS participants
+
+I (with two colleagues) developed and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University). More details can be found here [Ket Labs](http://www.ket-labs.com/)   
+    
+* Some of projects created by participants of this training
+    + [ket-labs.com/examples/](http://www.ket-labs.com/examples/)
+    
+* A collaborative project
+    + [Predictive Wavelength Switching](https://github.com/Zahra-Bakhtiari/Predictive-Wavelength-Switching/blob/master/Main-Algorithm.md)
+
+
 ## Data Science class {.tabset}
 
 Data Science class I developed and teach
@@ -64,16 +75,6 @@ _Textbook_: R for Data Science: Import, Tidy, Transform, Visualize, and Model Da
 covers selected topics of machine learning. When data is cleaned and understood (covered in Data Science I) it is possible to create a “prediction” model: calculate a projected salary, classify emails to spam or ham, find “clusters” of friends on Facebook, detect a fraud transaction on a credit card, etc. Students will obtain skills in doing regression, classification, clustering and anomaly detection. The following algorithms will be covered: k-nearest neighborhoods, linear model, logistic regression, LDA, QDA, polynomial regression, splines, GAMs, tree-based methods, SVM. The coverage will include resampling methods, regularization, principal components, text mining.    
 _Textbook_: An Introduction to Statistical Learning with Applications in R (Authors: James, G., Witten, D., Hastie, T., Tibshirani, R). 
 
-
-## Training Program for PhDs
-I (with two colleagues) developed and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University). More details can be found here [Ket Labs](http://www.ket-labs.com/)   
-    
-* Some of projects created by participants of this training
-    + [ket-labs.com/examples/](http://www.ket-labs.com/examples/)
-    
-* A collaborative project
-    + [Predictive Wavelength Switching](https://github.com/Zahra-Bakhtiari/Predictive-Wavelength-Switching/blob/master/Main-Algorithm.md)
-    
 
 
 ## Older code/projects
