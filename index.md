@@ -15,9 +15,9 @@ I do and teach Physics and Data Science.
 
 *  E. Mohlhenrich, S.V. Samsonau, R.P. Spencer, “Integrating Science Through Authentic Research in Secondary Schools”, IEEE Integrated STEM Education Conference, March 2018
 
-* Thyroid Hormone Status in Stroke and Transient Ischemic Attack Patients.
-    + Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V. B. Neurologijos Seminarai; 2015, Vol. 19 Issue 3, p207
-    + [paper](http://connection.ebscohost.com/c/articles/110196910/thyroid-hormone-status-stroke-transient-ischemic-attack-patients), [code](supplementary_information.pdf)
+* Thyroid Hormone Status in Stroke and Transient Ischemic Attack Patients. Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V. B. Neurologijos Seminarai; 2015, Vol. 19 Issue 3, p207
+    + [paper](http://connection.ebscohost.com/c/articles/110196910/thyroid-hormone-status-stroke-transient-ischemic-attack-patients)
+    + [code](supplementary_information.pdf)
     
 ## R projects {.tabset}
     
@@ -36,6 +36,9 @@ Projects done by students (high school) under my mentorship
 * Renewable Energy exploration. Big Data Challenge.
     + [shiny app](https://www.google.com/url?q=https%3A%2F%2Fgk-233.shinyapps.io%2FBigData_PRISMS%2F&sa=D&sntz=1&usg=AFQjCNEAbs3g1Mc6kaYlabY9_ByPYmjl2g)
 
+* The Quality of National Top Universities in Each State
+    + [shiny app](https://gk-233.shinyapps.io/Produce_101_Data_Analysis/)
+
 * Automating Reconstruction of Focused Ion Beam Current Density Distribution
     + poster presented at FIBSEM meeting on March, 2017 (X. Li, S. Samsonau, E. Chang, V. Ray)
     + [see poster](http://www.fibsem.net/web_documents/2017Presentations/P08-Ray-PBS-poster.pdf)
@@ -51,12 +54,6 @@ Projects done by students (high school) under my mentorship
     + [report](https://github.com/prismsus/election/blob/master/presentation.md)
     + [code](https://github.com/prismsus/election)
     
-***
-__Smaller, semester projects:__
-
-* The Quality of National Top Universities in Each State
-    + [shiny app](https://gk-233.shinyapps.io/Produce_101_Data_Analysis/)
-
 ### EDS participants
 
 I (with two colleagues) developed and taught (in January and June of 2016) a 35-hours (5 days) “Essentials of Data Science” training program for PhD-students and Postdocs (twice at Columbia University). More details can be found here [Ket Labs](http://www.ket-labs.com/)   
