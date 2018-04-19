@@ -34,7 +34,7 @@ Some shiny apps created for experimental physics lab
 Projects done by students (high school) under my mentorship
 
 * Renewable Energy exploration. Big Data Challenge.
-    + [shiny app](https://www.google.com/url?q=https%3A%2F%2Fgk-233.shinyapps.io%2FBigData_PRISMS%2F&sa=D&sntz=1&usg=AFQjCNEAbs3g1Mc6kaYlabY9_ByPYmjl2g)
+    + [shiny app](https://gk-233.shinyapps.io/BigData_PRISMS/)
 
 * The Quality of National Top Universities in Each State
     + [shiny app](https://gk-233.shinyapps.io/Produce_101_Data_Analysis/)
