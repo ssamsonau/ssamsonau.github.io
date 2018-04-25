@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>I do and teach Data Science and Physics</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 25 Apr 2018 00:06:33 -0400</pubDate>
+    <lastBuildDate>Wed, 25 Apr 2018 00:06:33 -0400</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Data Science in Science</title>
+        <description>&lt;p&gt;Here I gathered some examples of use of Data Scince in a traditional science&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;microfluidics&quot;&gt;Microfluidics&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Chip in a lab: Microfluidics for next generation life science research.&lt;/em&gt; &lt;a href=&quot;http://scitation.aip.org/content/aip/journal/bmf/7/1/10.1063/1.4789751&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing.&lt;/em&gt; &lt;a href=&quot;http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0104539&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;chemistry&quot;&gt;Chemistry&lt;/h2&gt;
+
+&lt;h3 id=&quot;atrificial-nose&quot;&gt;Atrificial nose&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Creating an artificial nose using machine learning.&lt;/em&gt; &lt;a href=&quot;http://machinelearningcoach.com/artificial-nose-using-machine-learning&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Artificial intelligence accelerates discovery of metallic glass.&lt;/em&gt; &lt;a href=&quot;https://phys.org/news/2018-04-artificial-intelligence-discovery-metallic-glass.html?utm_source=nwletter&amp;amp;utm_medium=email&amp;amp;utm_campaign=daily-nwletter&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;machine-learning-in-spectrometry&quot;&gt;Machine learning in Spectrometry&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;A Machine Learning Application for Classification of Chemical Spectra.&lt;/em&gt; &lt;a href=&quot;https://www.analyzeiq.com/publications/ai2008-classification-of-spectra.pdf&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A machine learning approach to explore the spectra intensity pattern of peptides using tandem mass spectrometry data.&lt;/em&gt; &lt;a href=&quot;http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-325&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;biology&quot;&gt;Biology&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Prediction of Biological Properties of Molecules from Chemical Structure.&lt;/em&gt; &lt;a href=&quot;http://tunedit.org/challenge/QSAR&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;genetics-and-genomics&quot;&gt;Genetics and Genomics&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Machine learning applications in genetics and genomics.&lt;/em&gt; &lt;a href=&quot;http://www.nature.com/nrg/journal/v16/n6/full/nrg3920.html&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;physics&quot;&gt;Physics&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Gravity Waves.&lt;/em&gt; &lt;a href=&quot;https://phys.org/news/2018-04-machine-gravitational.html?utm_source=nwletter&amp;amp;utm_medium=email&amp;amp;utm_campaign=weekly-nwletter&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;nuclear-energy&quot;&gt;Nuclear Energy&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Machine Learning in Nuclear Energy Applications.&lt;/em&gt; &lt;a href=&quot;http://large.stanford.edu/courses/2015/ph241/alhusseini2/&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;higs-boson&quot;&gt;Higs boson&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Use the ATLAS experiment to identify the Higgs boson.&lt;/em&gt; &lt;a href=&quot;https://www.kaggle.com/c/higgs-boson&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;astrophysics&quot;&gt;Astrophysics&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Applications of machine learning in astronomy.&lt;/em&gt; &lt;a href=&quot;http://www.mpia.de/homes/calj/amla_ss2009/introduction.pdf&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;medicine&quot;&gt;Medicine&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Predicting non-small cell lung cancer prognosis by fully automated microscopic pathology image features.&lt;/em&gt; &lt;a href=&quot;http://www.nature.com/articles/ncomms12474&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;oceanography&quot;&gt;Oceanography&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;The Nature Conservancy Fisheries Monitoring.&lt;/em&gt; &lt;a href=&quot;https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring&quot;&gt;link&lt;/a&gt;
+&lt;em&gt;Annual Nominal Fish Catches.&lt;/em&gt; &lt;a href=&quot;https://www.kaggle.com/victorgenin/ices-fish-catch&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;advanced-plotting-of-data-in-any-field-of-science&quot;&gt;Advanced plotting of data in any field of science&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Visualizing Complex Data with Embedded Plots
+.&lt;/em&gt; &lt;a href=&quot;http://vita.had.co.nz/papers/embedded-plots.pdf&quot;&gt;link&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 20 Apr 2018 23:56:00 -0400</pubDate>
+        <link>/data%20science/data-science-in-science.html</link>
+        <guid isPermaLink="true">/data%20science/data-science-in-science.html</guid>
+        
+        
+        <category>data science</category>
+        
+      </item>
+    
+  </channel>
+</rss>
