@@ -59,7 +59,7 @@ defaults:
       comments: "true"
 
 # Serving
-url: "http://www.ssamsonau.com/"
+url: "http://www.ssamsonau.com"
 baseurl: ""
 
 # Includes
