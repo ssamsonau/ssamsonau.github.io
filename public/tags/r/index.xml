@@ -1,38 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>R on Sergey Samsonau</title>
-    <link>http://www.ssamsonau.com/tags/r/</link>
-    <description>Recent content in R on Sergey Samsonau</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://www.ssamsonau.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Essentials of Data Science</title>
-      <link>http://www.ssamsonau.com/essentials-of-data-science/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/essentials-of-data-science/</guid>
-      <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
-BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc.</description>
-    </item>
-    
-    <item>
-      <title>Animation Overview</title>
-      <link>http://www.ssamsonau.com/2017/11/22/animation-overview/</link>
-      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/2017/11/22/animation-overview/</guid>
-      <description>Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2Before it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’plot(mtcars)if(!</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,90 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sergey Samsonau</title>
-    <link>http://www.ssamsonau.com/</link>
-    <description>Recent content on Sergey Samsonau</description>
+    <title>A Hugo website</title>
+    <link>/</link>
+    <description>Recent content on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
     
-	<atom:link href="http://www.ssamsonau.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>new test</title>
-      <link>http://www.ssamsonau.com/2018/04/25/new-test/</link>
-      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/2018/04/25/new-test/</guid>
-      <description></description>
-    </item>
     
     <item>
-      <title>Data Science in Science</title>
-      <link>http://www.ssamsonau.com/2018/04/22/data-science-in-science/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <title>A Plain Markdown Post</title>
+      <link>/2016/12/30/a-plain-markdown-post/</link>
+      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
       
-      <guid>http://www.ssamsonau.com/2018/04/22/data-science-in-science/</guid>
-      <description>Here I gathered some examples of use of Data Scince in a traditional science
-MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
-A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
-ChemistryAtrificial noseCreating an artificial nose using machine learning. link
-Artificial intelligence accelerates discovery of metallic glass. link
-Machine learning in SpectrometryA Machine Learning Application for Classification of Chemical Spectra.</description>
-    </item>
-    
-    <item>
-      <title>Essentials of Data Science</title>
-      <link>http://www.ssamsonau.com/essentials-of-data-science/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/essentials-of-data-science/</guid>
-      <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
-BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>http://www.ssamsonau.com/projects/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/projects/</guid>
-      <description>Recent papersIntegrating Science Through Authentic Research in Secondary Schools E. Mohlhenrich, S.V. Samsonau, R.P. Spencer. IEEE Integrated STEM Education Conference, March 2018
-Thyroid Hormone Status in Stroke and Transient Ischemic Attack Patients Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V. B. Neurologijos Seminarai; 2015, Vol. 19 Issue 3, p207
-Links to paper and code
-R projectsShiny apps created for an experimental physics laboratorySpectroscopySample stage controlSolar cell testingBy students (high school) under my mentorshipProjects done by students (high school) under my mentorship</description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>http://www.ssamsonau.com/teaching/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/teaching/</guid>
-      <description>PhysicsAlgebra-based Physics (college and high school)Calculus-based Physics (college and high school)Quantum Mechanics (high school)I did setup and now supervise a nanotechnology research laboratory at a high schoolA course of labs designed to develop student’s research skill was developed and will be described soonA course of labs combining numerical simulations with experiments which I developed will be soon availabe on arxiv.orgData ScienceData Science class I did introduce and teach at a high schoolI did organize and now supervise Data Science research laboratory at a high schoolData Science IData Science I course is designed to teach students analyze data using R language, as well as how to present results of analysis.</description>
-    </item>
-    
-    <item>
-      <title>Animation Overview</title>
-      <link>http://www.ssamsonau.com/2017/11/22/animation-overview/</link>
-      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.ssamsonau.com/2017/11/22/animation-overview/</guid>
-      <description>Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2Before it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’plot(mtcars)if(!</description>
+      <guid>/2016/12/30/a-plain-markdown-post/</guid>
+      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>http://www.ssamsonau.com/about/</link>
+      <link>/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>http://www.ssamsonau.com/about/</guid>
+      <guid>/about/</guid>
       <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/2015/07/23/hello-r-markdown/</guid>
+      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>/2015/01/01/lorem-ipsum/</link>
+      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
+      
+      <guid>/2015/01/01/lorem-ipsum/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
   </channel>
