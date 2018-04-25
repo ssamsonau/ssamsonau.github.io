@@ -3,77 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/2018/04/25/new-test/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/2018/04/22/data-science-in-science/</loc>
+    <loc>http://www.ssamsonau.com/2018/04/22/data-science-in-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/essentials-of-data-science/</loc>
+    <loc>http://www.ssamsonau.com/essentials-of-data-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>http://www.ssamsonau.com/projects/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/teaching/</loc>
+    <loc>http://www.ssamsonau.com/teaching/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/2017/11/22/animation-overview/</loc>
+    <loc>http://www.ssamsonau.com/2017/11/22/animation-overview/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>http://www.ssamsonau.com/about/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://www.ssamsonau.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/data-science/</loc>
+    <loc>http://www.ssamsonau.com/categories/data-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
+    <loc>http://www.ssamsonau.com/post/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>http://www.ssamsonau.com/tags/r/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
-    <lastmod>2018-04-25T00:00:00+00:00</lastmod>
+    <loc>http://www.ssamsonau.com/categories/r/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://www.ssamsonau.com/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.ssamsonau.com/tags/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
