@@ -1,6 +1,10 @@
 ---
-title: "Essentials of Data Science"
-date: 2018-04-22
+title: Essentials of Data Science
+author: ~
+date: '2018-04-22'
+slug: essentials-of-data-science
+categories: [Data Science, R]
+tags: [R]
 ---
 
 There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
@@ -77,6 +81,7 @@ Static sites (no need of databases, use of wordpress, etc.). Host for free on Gi
     * press Download - it should open a github address (if it is not GitHub it is ok..)
     * use this to install blogdown::install_theme("user/repo"). It it is not on GitHub speicify hostname
     * fine tune the theme
+    * host on GitHub pages or better in [netfly](https://www.netlify.com/github-pages-vs-netlify/) 
 
 
 ### Additional Recommended Packages/triks

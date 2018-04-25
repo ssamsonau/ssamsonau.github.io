@@ -6,10 +6,19 @@
     <description>Recent content on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>new test</title>
+      <link>/2018/04/25/new-test/</link>
+      <pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/04/25/new-test/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Data Science in Science</title>
@@ -57,7 +66,7 @@ Links to paper and code
     </item>
     
     <item>
-      <title>Animation overview</title>
+      <title>Animation Overview</title>
       <link>/2017/11/22/animation-overview/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
