@@ -1,0 +1,100 @@
+---
+title: "Essentials of Data Science"
+date: 2018-04-22
+---
+
+There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
+
+### Books
+
+* [R for Data Science](http://r4ds.had.co.nz/)
+* [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/)
+* [Data Science for Business](http://shop.oreilly.com/product/0636920028918.do)
+
+### Tools, Installation and updating
+
+* installr package 
+    * for updating R to a newer version (from RGui do installr::updateR())
+    * installing Rtools, git, ImageMagick, etc. [Link](https://cran.r-project.org/web/packages/installr/installr.pdf)
+
+* devtools package for installation of packages from github repositories directly	
+	
+### Interactive dashboards
+
+* [R Shiny](https://shiny.rstudio.com/)
+* [R Shiny Gallery](https://shiny.rstudio.com/gallery/)
+
+### Cheatsheets
+
+* [dplyr and tidyr](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf), [ggplot](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf), 
+[shiny sheet 1](http://shiny.rstudio.com/images/shiny-cheatsheet.pdf), [shiny sheet 2](https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf)
+
+### Databases
+* [sqlzoo](SQLZOO), [sql](https://db.rstudio.com/dplyr/)
+
+### Parallel processing in R 
+* [Microsoft R Open & MKL](https://mran.microsoft.com/open) - seamless use of more than one cpu core
+
+### Working with medium data
+* If data can still fit in RAM of local machine, but slow to process with dplyr, a package  [data.table](https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf) can provide a faster alternative
+
+### Working with Big data (located in cluster)
+* sparklyr: [R interface for Apache Spark](http://spark.rstudio.com/index.html) 
+* rsparkling: [Sparkling Water (H2O) Machine Learning, including deep learning](http://spark.rstudio.com/h2o.html)
+* [R with Hadoop](http://blog.revolutionanalytics.com/2015/06/using-hadoop-with-r-it-depends.html)
+* [Visualize Large Data](http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize) 
+
+### Text mining in R
+
+* [tm](https://cran.r-project.org/web/packages/tm/vignettes/tm.pdf) package
+* [Text Mining with R (book)](https://www.tidytextmining.com/)
+
+### Plotting libraries
+
+* ggplot2 - see [R for Data Science](http://r4ds.had.co.nz/). 
+There are many [extentions](https://www.ggplot2-exts.org/) for ggplot2. Some of them are here:
+    - [gridExtra](https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html) to allign plots
+    - [ggbio](https://www.bioconductor.org/packages/release/bioc/html/ggbio.html) - can be usefull in order to allign several plots (instead of gridExtra) 
+    - [ggmap](https://github.com/dkahle/ggmap) to make plots with geographical maps
+    - [ggpubr](http://www.sthda.com/english/wiki/ggpubr-r-package-ggplot2-based-publication-ready-plots#at_pco=smlwn-1.0&at_si=58e452e3ade9d20c&at_ab=per-2&at_pos=0&at_tot=1) - modified ggplot2 for publication ready plots
+* [plotly](https://plot.ly/ggplot2/) - makes ggplot2 interactive
+* [ggvis](http://ggvis.rstudio.com/0.1/ggvis-basics.html) - interactive plots (behind the scenes, interactive plots are built with shiny)
+* [dygraph](https://rstudio.github.io/dygraphs/) - R interface to the dygraphs JavaScript charting library. It provides rich facilities for charting time-series data in R
+* [Visualize Large Data](http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize) 
+
+### Books with Rmarkdown
+
+* https://bookdown.org/yihui/bookdown/
+
+### Websites with Rmarkdown
+
+Static sites (no need of databases, use of wordpress, etc.). Host for free on GitHub pages
+
+* https://www.rstudio.com/resources/webinars/introducing-blogdown/
+* https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html
+* themes for hugo (a static site generator used by blogdown package) 
+    * find the one you like on this site https://themes.gohugo.io/
+    * press Download - it should open a github address (if it is not GitHub it is ok..)
+    * use this to install blogdown::install_theme("user/repo"). It it is not on GitHub speicify hostname
+    * fine tune the theme
+
+
+### Additional Recommended Packages/triks
+
+* [magick](https://cran.r-project.org/web/packages/magick/vignettes/intro.html) and [EBImage](https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html)  - all kinds of image transformation, combination, animation, etc.
+* [postr](https://github.com/pzhaonet/postr) - making posters in R
+* [profvis](https://rstudio.github.io/profvis/) - profile the code: see which part of code runs longer
+* Adv. shiny tricks [https://github.com/daattali/advanced-shiny](https://github.com/daattali/advanced-shiny)
+* [rMouse](https://cran.r-project.org/web/packages/rMouse/vignettes/rMouseVignette.html) - control mouse
+
+### Generally interesting resources
+
+* [https://www.reddit.com/r/dataisbeautiful/](https://www.reddit.com/r/dataisbeautiful/)
+* [https://awesome-r.com/](https://awesome-r.com/)
+* [http://www.htmlwidgets.org/showcase_leaflet.html](http://www.htmlwidgets.org/showcase_leaflet.html)
+* Overview of data sources [here](https://www.kdnuggets.com/datasets/index.html)
+* [DrivenData](https://www.drivendata.org/competitions/)
+* [CrowDanalytix](https://www.crowdanalytix.com/community)
+* [Kaggle](https://www.kaggle.com/competitions?sortBy=deadline&group=all&page=1&segment=allCategories)
+* [Tunedit](http://tunedit.org/challenges)
+

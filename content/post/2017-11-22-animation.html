@@ -1,0 +1,192 @@
+---
+title: "Animation overview"
+date: 2017-11-22
+category: 
+- data science
+---
+
+
+
+<p>Let see what is available for antimation in R</p>
+<!--more-->
+<div id="general-idea" class="section level3">
+<h3>General idea</h3>
+<ul>
+<li>use saveGIF</li>
+<li>or saveVideo (animation package)</li>
+<li>or use gganimate: <a href="https://github.com/dgrtwo/gganimate">link</a></li>
+</ul>
+</div>
+<div id="savegif" class="section level3">
+<h3>saveGIF</h3>
+<p><em>General overview with executable examples:</em> <a href="https://yihui.name/animation/">link</a></p>
+<p><em>Other Examples here:</em></p>
+<ul>
+<li><a href="https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout">link1</a></li>
+<li><a href="https://yihui.name/animation/example/savegif/">link2</a></li>
+</ul>
+<p>Before it will work you need to install one of this:</p>
+<ul>
+<li>ImageMagick (<a href="https://encodable.com/install_imagemagick_on_mac_osx/">how to install on MAC</a>)</li>
+<li>GraphicsMagick (<a href="http://www.graphicsmagick.org/INSTALL-windows.html">how ot install GraphicsMagick on Windows</a>). In saveGIF function, you have to use option convert = ‘gm convert’</li>
+</ul>
+<pre class="r"><code>plot(mtcars)</code></pre>
+<p><img src="/post/2017-11-22-animation_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>if(!dir.exists(&quot;files/2017-11-22-animation&quot;)) dir.create(&quot;files/2017-11-22-animation&quot;)</code></pre>
+<pre><code>## Warning in dir.create(&quot;files/2017-11-22-animation&quot;): cannot create dir
+## &#39;files\2017-11-22-animation&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre class="r"><code>if(!dir.exists(&quot;files/2017-11-22-animation/movies&quot;)) dir.create(&quot;files/2017-11-22-animation/movies&quot;)</code></pre>
+<pre><code>## Warning in dir.create(&quot;files/2017-11-22-animation/movies&quot;): cannot create
+## dir &#39;files\2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre class="r"><code>library(animation)
+library(ggplot2)
+  
+saveGIF({
+    for (i in 1:10) 
+      plot(runif(10), ylim = 0:1)
+        }, 
+        convert = &#39;gm convert&#39;, 
+        movie.name = &quot;files/2017-11-22-animation/test1.gif&quot;)</code></pre>
+<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
+## \2017-11-22-animation&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Executing: 
+## &quot;gm convert -loop 0 -delay 100 Rplot1.png Rplot2.png Rplot3.png
+##     Rplot4.png Rplot5.png Rplot6.png Rplot7.png Rplot8.png
+##     Rplot9.png Rplot10.png &quot;test1.gif&quot;&quot;</code></pre>
+<pre><code>## Output at: files/2017-11-22-animation/test1.gif</code></pre>
+<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
+## animation/test1.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>saveGIF({
+        brownian.motion(pch = 21, cex = 5, 
+        col = &quot;red&quot;, bg = &quot;yellow&quot;)
+        }, 
+        movie.name = &quot;files/2017-11-22-animation/movies/brownian_motion2.gif&quot;, 
+        interval = runif(30, 0.01, 1), 
+        nmax = 30, convert = &#39;gm convert&#39;)</code></pre>
+<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
+## \2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Executing: 
+## &quot;gm convert -loop 0 -delay 67.654606960481 Rplot1.png -delay
+##     24.1361964105163 Rplot2.png -delay 13.6126737489831
+##     Rplot3.png -delay 32.5431826473214 Rplot4.png -delay
+##     76.2414477400016 Rplot5.png -delay 72.1948375895154
+##     Rplot6.png -delay 2.02295708679594 Rplot7.png -delay
+##     64.8620273726992 Rplot8.png -delay 10.0680888837669
+##     Rplot9.png -delay 98.9713588638697 Rplot10.png -delay
+##     23.5750792925246 Rplot11.png -delay 32.8367611654103
+##     Rplot12.png -delay 48.5197546745185 Rplot13.png -delay
+##     50.123117176583 Rplot14.png -delay 32.6863832846284
+##     Rplot15.png -delay 39.5070010346826 Rplot16.png -delay
+##     44.346072296612 Rplot17.png -delay 75.9677364027593
+##     Rplot18.png -delay 40.272678950103 Rplot19.png -delay
+##     28.4920860684942 Rplot20.png -delay 58.6741153267212
+##     Rplot21.png -delay 52.5799086582847 Rplot22.png -delay
+##     62.4013899134006 Rplot23.png -delay 87.9142830148339
+##     Rplot24.png -delay 54.0771321409848 Rplot25.png -delay
+##     53.5926879143808 Rplot26.png -delay 37.4527867715806
+##     Rplot27.png -delay 21.6310973092914 Rplot28.png -delay
+##     99.2181760412641 Rplot29.png -delay 86.7686164183542
+##     Rplot30.png &quot;brownian_motion2.gif&quot;&quot;</code></pre>
+<pre><code>## Output at: files/2017-11-22-animation/movies/brownian_motion2.gif</code></pre>
+<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
+## animation/movies/brownian_motion2.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<p><em>Note:</em> N of steps, is controled by nmax in saveGIF does this. Alternativelly, change in globally with ani.options(“nmax” = 50)</p>
+<div id="example-with-brownian.motion" class="section level5">
+<h5>Example with brownian.motion</h5>
+<p>Look at function brownian.motion and create your own by analog See code iside function</p>
+<pre class="r"><code>brownian.motion</code></pre>
+<pre><code>## function (n = 10, xlim = c(-20, 20), ylim = c(-20, 20), ...) 
+## {
+##     x = rnorm(n)
+##     y = rnorm(n)
+##     for (i in seq_len(ani.options(&quot;nmax&quot;))) {
+##         dev.hold()
+##         plot(x, y, xlim = xlim, ylim = ylim, ...)
+##         text(x, y)
+##         x = x + rnorm(n)
+##         y = y + rnorm(n)
+##         ani.pause()
+##     }
+## }
+## &lt;bytecode: 0x000000000b1e2008&gt;
+## &lt;environment: namespace:animation&gt;</code></pre>
+<p>Make your own</p>
+<pre class="r"><code>my_plot &lt;- function(){for(i in 1:10) plot(runif(10), ylim = 0:1)}
+  
+saveGIF({
+  my_plot()
+}, movie.name = &quot;files/2017-11-22-animation/movies/example2.gif&quot;, 
+   convert = &#39;gm convert&#39;)</code></pre>
+<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
+## \2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Executing: 
+## &quot;gm convert -loop 0 -delay 100 Rplot1.png Rplot2.png Rplot3.png
+##     Rplot4.png Rplot5.png Rplot6.png Rplot7.png Rplot8.png
+##     Rplot9.png Rplot10.png &quot;example2.gif&quot;&quot;</code></pre>
+<pre><code>## Output at: files/2017-11-22-animation/movies/example2.gif</code></pre>
+<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
+## animation/movies/example2.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+<pre class="r"><code>library(tidyverse)</code></pre>
+<pre><code>## -- Attaching packages ------------------------------------------------------------------------------ tidyverse 1.2.1 --</code></pre>
+<pre><code>## v tibble  1.4.2     v purrr   0.2.4
+## v tidyr   0.8.0     v dplyr   0.7.4
+## v readr   1.1.1     v stringr 1.3.0
+## v tibble  1.4.2     v forcats 0.3.0</code></pre>
+<pre><code>## -- Conflicts --------------------------------------------------------------------------------- tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()</code></pre>
+<pre class="r"><code>mtcars &lt;- mtcars %&gt;% 
+  arrange(mpg)
+my_plot_2 &lt;- function(){
+  for(i in 1:nrow(mtcars)){
+      ggplot(mtcars[i, ], aes(x = mpg, y = hp))  +
+        geom_point() +
+        xlim(range(mtcars[, &quot;mpg&quot;])) +
+        ylim(range(mtcars[, &quot;hp&quot;]))
+  }
+}
+  
+saveGIF({
+  my_plot_2()
+}, movie.name = &quot;files/2017-11-22-animation/movies/example_mtcars.gif&quot;, 
+   convert = &#39;gm convert&#39;)</code></pre>
+<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
+## \2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## Executing: 
+## &quot;gm convert -loop 0 -delay 100 Rplot1.png &quot;example_mtcars.gif&quot;&quot;</code></pre>
+<pre><code>## Output at: files/2017-11-22-animation/movies/example_mtcars.gif</code></pre>
+<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
+## animation/movies/example_mtcars.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre><code>## [1] FALSE</code></pre>
+</div>
+</div>
+<div id="animation-package" class="section level3">
+<h3>Animation package</h3>
+<div id="save-html" class="section level4">
+<h4>Save html</h4>
+<p>example from <a href="https://yihui.name/animation/example/savehtml/">here</a></p>
+<pre class="r"><code>current_wd &lt;- getwd()
+if(!dir.exists(&quot;files/2017-11-22-animation/movies/html&quot;)) dir.create(&quot;files/2017-11-22-animation/movies/html&quot;)
+    
+setwd(&quot;files/2017-11-22-animation/movies/html&quot;)
+
+des = c(&quot;When you write a long long long long description, R will try to wrap the&quot;, 
+        &quot;words automatically.&quot;, &quot;Oh, really?!&quot;)
+saveHTML({
+  par(mar = c(4, 4, 0.5, 0.5))
+  ani.options(interval = 0.5)
+  for (i in 1:10) {
+    plot(rnorm(50), ylim = c(-3, 3))
+    ani.pause()
+  }
+}, img.name = &quot;norm_plot&quot;, single.opts = &quot;utf8: false&quot;, autoplay = FALSE, 
+interval = 0.5, imgdir = &quot;norm_dir&quot;, htmlfile = &quot;random.html&quot;, 
+ani.height = 400, ani.width = 600, title = &quot;Demo of 50 Normal random numbers&quot;, 
+description = des)
+  
+setwd(current_wd)</code></pre>
+</div>
+</div>
