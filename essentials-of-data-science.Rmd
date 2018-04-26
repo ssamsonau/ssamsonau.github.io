@@ -31,7 +31,8 @@ There is a lot of information on Data Science on Internet. On this page I summar
 ### Cheatsheets
 
 * [dplyr and tidyr](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf), [ggplot](https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf), 
-[shiny sheet 1](http://shiny.rstudio.com/images/shiny-cheatsheet.pdf), [shiny sheet 2](https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf)
+[shiny sheet 1](http://shiny.rstudio.com/images/shiny-cheatsheet.pdf), [shiny sheet 2](https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf),
+[regular expressions](https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf)
 
 ### Databases
 * [sqlzoo](SQLZOO), [sql](https://db.rstudio.com/dplyr/)

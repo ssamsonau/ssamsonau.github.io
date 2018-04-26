@@ -10,7 +10,7 @@ slug: projects
 * _Computer simulations combined with experiments for calculus-based Physics laboratory course_. Sergey V. Samsonau.  	arXiv:1804.09264 [physics.ed-ph], April 2018. [Link](https://arxiv.org/abs/1804.09264)
 
 * _Integrating Science Through Authentic Research in Secondary Schools_    
-E. Mohlhenrich, S. V. Samsonau, R. P. Spencer. IEEE Integrated STEM Education Conference, March 2018
+E. Mohlhenrich, S. V. Samsonau, R. P. Spencer. IEEE Integrated STEM Education Conference, March 2018. [Link](https://ieeexplore.ieee.org/document/8340465/)
 
 * _Thyroid Hormone Status in Stroke and Transient Ischemic Attack Patients_     
 Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V. B. Neurologijos Seminarai; 2015, Vol. 19 Issue 3, p207. Links to [paper](http://connection.ebscohost.com/c/articles/110196910/thyroid-hormone-status-stroke-transient-ischemic-attack-patients) and [code](/files/supplementary_information.pdf)
