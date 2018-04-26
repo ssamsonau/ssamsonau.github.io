@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sergey Samsonau</title>
-    <link>/post/</link>
+    <link>http://www.ssamsonau.com/post/</link>
     <description>Recent content in Posts on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.ssamsonau.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science in Science</title>
-      <link>/post/2018-04-22-data-science-in-science/</link>
+      <link>http://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-22-data-science-in-science/</guid>
+      <guid>http://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</guid>
       <description>Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others
 MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
 A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
@@ -27,10 +27,10 @@
     
     <item>
       <title>Animation Overview</title>
-      <link>/post/animation-overview/</link>
+      <link>http://www.ssamsonau.com/post/animation-overview/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/animation-overview/</guid>
+      <guid>http://www.ssamsonau.com/post/animation-overview/</guid>
       <description>A short review of some methods allowing to create animations in R is presented bellow.
 Available optionslibrary(animation)saveGIF (relies on ImageMagick or GraphicsMagick)saveVideosaveMoviesaveHTMLother functions heregganimateadditional use of package tweenr makes a result smotheranimated mapssaveGIFsaveGIF requires to for ImageMagick or GraphicsMagick to be installed.
 ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows).</description>
