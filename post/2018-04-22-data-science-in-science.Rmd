@@ -2,9 +2,11 @@
 date: 2018-04-22
 title:  "Data Science in Science"
 tags: [data science, science]
+summary: "A custom summary of my post."
+description: "Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others"
 ---
 
-Here I gather some examples of use of Data Scince in a traditional science
+Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others
 
 <!--more-->
 

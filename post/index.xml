@@ -18,7 +18,7 @@
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>http://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</guid>
-      <description>Here I gather some examples of use of Data Scince in a traditional science
+      <description>Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others
 MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
 A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
 ChemistryAtrificial noseCreating an artificial nose using machine learning. link
@@ -32,11 +32,9 @@ Artificial intelligence accelerates discovery of metallic glass. link
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.ssamsonau.com/post/animation-overview/</guid>
-      <description>Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’if(!</description>
+      <description>A short review of some methods allowing to create animations in R is presented bellow.
+Available optionslibrary(animation)saveGIF (relies on ImageMagick or GraphicsMagick)saveVideosaveMoviesaveHTMLother functions heregganimateadditional use of package tweenr makes a result smotheranimated mapssaveGIFsaveGIF requires to for ImageMagick or GraphicsMagick to be installed.
+ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows).</description>
     </item>
     
   </channel>

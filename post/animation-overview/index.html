@@ -16,12 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Sergey" />
-  <meta name="description" content="Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’if(!" />
+<meta name="author" content="Sergey" /><meta name="description" content="A short review of some methods allowing to create animations in R is presented bellow. " />
 
   <meta name="keywords" content="Physics, Data, Science" />
 
@@ -54,11 +49,7 @@ Other Examples here:
 
 
 <meta property="og:title" content="Animation Overview" />
-<meta property="og:description" content="Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’if(!" />
+<meta property="og:description" content="A short review of some methods allowing to create animations in R is presented bellow. " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://www.ssamsonau.com/post/animation-overview/" />
 
@@ -79,27 +70,19 @@ Other Examples here:
 
 
 <meta itemprop="name" content="Animation Overview">
-<meta itemprop="description" content="Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’if(!">
+<meta itemprop="description" content="A short review of some methods allowing to create animations in R is presented bellow. ">
 
 
 <meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="400">
+<meta itemprop="wordCount" content="283">
 
 
 
 <meta itemprop="keywords" content="data science,R," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Animation Overview"/>
-<meta name="twitter:description" content="Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’if(!"/>
+<meta name="twitter:description" content="A short review of some methods allowing to create animations in R is presented bellow. "/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -184,29 +167,33 @@ Other Examples here:
 
     
     <div class="post-content">
-      <p>Let see what is available for antimation in R</p>
+      <p>A short review of some methods allowing to create animations in R is presented bellow.</p>
 <!--more-->
-<div id="general-idea" class="section level3">
-<h3>General idea</h3>
+<div id="available-options" class="section level3">
+<h3>Available options</h3>
 <ul>
-<li>use saveGIF</li>
-<li>or saveVideo (animation package)</li>
-<li>or use gganimate: <a href="https://github.com/dgrtwo/gganimate">link</a></li>
+<li>library(animation)
+<ul>
+<li><a href="https://yihui.name/animation/example/savegif/">saveGIF</a> (relies on ImageMagick or GraphicsMagick)</li>
+<li><a href="https://yihui.name/animation/example/savevideo/">saveVideo</a></li>
+<li><a href="https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout">saveMovie</a></li>
+<li><a href="https://yihui.name/animation/example/savehtml/">saveHTML</a></li>
+<li><a href="https://cran.r-project.org/web/packages/animation/animation.pdf">other functions here</a></li>
+</ul></li>
+<li><a href="https://github.com/dgrtwo/gganimate">gganimate</a>
+<ul>
+<li>additional use of package <a href="http://blog.revolutionanalytics.com/2017/05/tweenr.html">tweenr</a> makes a result smother</li>
+</ul></li>
+<li><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></li>
 </ul>
 </div>
 <div id="savegif" class="section level3">
 <h3>saveGIF</h3>
-<p><em>General overview with executable examples:</em> <a href="https://yihui.name/animation/">link</a></p>
-<p><em>Other Examples here:</em></p>
-<ul>
-<li><a href="https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout">link1</a></li>
-<li><a href="https://yihui.name/animation/example/savegif/">link2</a></li>
-<li><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></li>
-</ul>
-<p>Before it will work you need to install one of this:</p>
+<p>saveGIF requires to for ImageMagick or GraphicsMagick to be installed.</p>
 <ul>
 <li>ImageMagick (<a href="https://encodable.com/install_imagemagick_on_mac_osx/">how to install on MAC</a>)</li>
 <li>GraphicsMagick (<a href="http://www.graphicsmagick.org/INSTALL-windows.html">how ot install GraphicsMagick on Windows</a>). In saveGIF function, you have to use option convert = ‘gm convert’</li>
+<li>alternativelly, one can use installr::install.ImageMagick()</li>
 </ul>
 <pre class="r"><code>if(!dir.exists(paste0(prefix, &quot;/movies&quot;))) 
   dir.create(paste0(prefix, &quot;/movies&quot;))</code></pre>
@@ -221,9 +208,11 @@ saveGIF({
         movie.name = paste0(prefix, &quot;/test1.gif&quot;))</code></pre>
 <pre><code>## [1] TRUE</code></pre>
 <div class="figure">
-<img src="test1.gif" alt="Brownian motion" />
-<p class="caption">Brownian motion</p>
+<img src="/rmarkdown-libs/test1.gif" />
+
 </div>
+<div id="brownian-motion-example-from-animationbrownian.motion" class="section level4">
+<h4>Brownian motion example from animation::brownian.motion</h4>
 <pre class="r"><code>saveGIF({
   brownian.motion(
     pch = 21,
@@ -237,13 +226,14 @@ interval = runif(30, 0.01, 1),
 nmax = 30, convert = &#39;gm convert&#39;)</code></pre>
 <pre><code>## [1] TRUE</code></pre>
 <div class="figure">
-<img src="/rmarkdown-libs/movies/brownian_motion2.gif" alt="Brownian motion" />
-<p class="caption">Brownian motion</p>
+<img src="/rmarkdown-libs/movies/brownian_motion2.gif" />
+
 </div>
-<p><em>Note:</em> N of steps, is controled by nmax in saveGIF does this. Alternativelly, change in globally with ani.options(“nmax” = 50)</p>
-<div id="example-with-brownian.motion" class="section level5">
-<h5>Example with brownian.motion</h5>
-<p>Look at function brownian.motion and create your own by analog See code iside function</p>
+<p><em>Note:</em> Number of steps is controled by nmax in saveGIF. Alternativelly, you change this globally with ani.options(“nmax” = 50)</p>
+</div>
+<div id="adaptation-for-your-task" class="section level4">
+<h4>Adaptation for your task</h4>
+<p>Look at function brownian.motion and create your own by analogy</p>
 <pre class="r"><code>brownian.motion</code></pre>
 <pre><code>## function (n = 10, xlim = c(-20, 20), ylim = c(-20, 20), ...) 
 ## {
@@ -271,55 +261,10 @@ saveGIF({
 }, movie.name = paste0(prefix, &quot;/movies/example2.gif&quot;),
 convert = &#39;gm convert&#39;)</code></pre>
 <pre><code>## [1] TRUE</code></pre>
-<pre class="r"><code>library(tidyverse)
-mtcars &lt;- mtcars %&gt;%
-  arrange(mpg)
-
-my_plot_2 &lt;- function() {
-  for (i in 1:nrow(mtcars)) {
-    ggplot(mtcars[i,], aes(x = mpg, y = hp))  +
-      geom_point() +
-      xlim(range(mtcars[, &quot;mpg&quot;])) +
-      ylim(range(mtcars[, &quot;hp&quot;]))
-  }
-}
-
-saveGIF({
-  my_plot_2()
-}, movie.name = paste0(prefix, &quot;/movies/example_mtcars.gif&quot;),
-convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
 <div class="figure">
-<img src="/rmarkdown-libs/movies/example2.gif" alt="Example2" />
-<p class="caption">Example2</p>
-</div>
-</div>
-</div>
-<div id="animation-package" class="section level3">
-<h3>Animation package</h3>
-<div id="save-html" class="section level4">
-<h4>Save html</h4>
-<p>example from <a href="https://yihui.name/animation/example/savehtml/">here</a></p>
-<pre class="r"><code>current_wd &lt;- getwd()
-if(!dir.exists(paste0(prefix, &quot;/movies/html&quot;))) 
-  dir.create(paste0(prefix, &quot;/movies/html&quot;))
-    
-setwd(paste0(prefix, &quot;/movies/html&quot;)))
+<img src="/rmarkdown-libs/movies/example2.gif" />
 
-des = c(&quot;description&quot;)
-saveHTML({
-  par(mar = c(4, 4, 0.5, 0.5))
-  ani.options(interval = 0.5)
-  for (i in 1:10) {
-    plot(rnorm(50), ylim = c(-3, 3))
-    ani.pause()
-  }
-}, img.name = &quot;norm_plot&quot;, single.opts = &quot;utf8: false&quot;, autoplay = FALSE, 
-interval = 0.5, imgdir = &quot;norm_dir&quot;, htmlfile = &quot;random.html&quot;, 
-ani.height = 400, ani.width = 600, title = &quot;Demo of 50 Normal random numbers&quot;, 
-description = des)
-  
-setwd(current_wd)</code></pre>
+</div>
 </div>
 </div>
 

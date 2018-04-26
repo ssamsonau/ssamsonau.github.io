@@ -3,6 +3,7 @@ title: Animation Overview
 date: '2017-11-22'
 slug: animation-overview
 tags: [data science, R]
+description: "A short review of some methods allowing to create animations in R is presented bellow. "
 ---
 
 
@@ -11,33 +12,31 @@ knitr::opts_chunk$set(echo = TRUE, cache = T, warning = F, message = F)
 ```
 
 
-Let see what is available for antimation in R
+A short review of some methods allowing to create animations in R is presented bellow. 
 
 <!--more-->
 
-### General idea
+### Available options
 
-* use saveGIF
-* or saveVideo (animation package)
-* or use gganimate: [link](https://github.com/dgrtwo/gganimate)
+* library(animation)
+    * [saveGIF](https://yihui.name/animation/example/savegif/) (relies on ImageMagick or GraphicsMagick)
+    * [saveVideo](https://yihui.name/animation/example/savevideo/)
+    * [saveMovie](https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout)
+    * [saveHTML](https://yihui.name/animation/example/savehtml/)
+    * [other functions here](https://cran.r-project.org/web/packages/animation/animation.pdf)
+
+* [gganimate](https://github.com/dgrtwo/gganimate)
+    * additional use of package [tweenr](http://blog.revolutionanalytics.com/2017/05/tweenr.html) makes a result smother
+
+* [animated maps](https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/)
 
 ### saveGIF
 
-_General overview with executable examples:_ [link](https://yihui.name/animation/)
-
-_Other Examples here:_
-
-* [link1](https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout)
-* [link2](https://yihui.name/animation/example/savegif/)
-* [animated maps](https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/)
-
-
-Before it will work you need to install one of this:
+saveGIF requires to for ImageMagick or GraphicsMagick to be installed. 
 
 * ImageMagick ([how to install on MAC](https://encodable.com/install_imagemagick_on_mac_osx/))
 * GraphicsMagick ([how ot install GraphicsMagick on Windows](http://www.graphicsmagick.org/INSTALL-windows.html)). In saveGIF function, you have to use option convert = 'gm convert'
-
-
+* alternativelly, one can use installr::install.ImageMagick()
 
 ```{r, echo=FALSE}
 prefix <- '2017-11-22-animation_files'
@@ -61,7 +60,9 @@ saveGIF({
         movie.name = paste0(prefix, "/test1.gif"))
 ```
 
-![Brownian motion](test1.gif)
+![](2017-11-22-animation_files/test1.gif)
+
+#### Brownian motion example from animation::brownian.motion
 
 ```{r}
 saveGIF({
@@ -77,22 +78,20 @@ interval = runif(30, 0.01, 1),
 nmax = 30, convert = 'gm convert')
 ```
 
-![Brownian motion](2017-11-22-animation_files/movies/brownian_motion2.gif)
+![](2017-11-22-animation_files/movies/brownian_motion2.gif)
 
-_Note:_ N of steps, is controled by nmax in saveGIF does this. Alternativelly, change in globally with
+_Note:_ Number of steps is controled by nmax in saveGIF. Alternativelly, you change this globally with
 ani.options("nmax" = 50)
 
-##### Example with brownian.motion 
+#### Adaptation for your task 
 
-Look at function brownian.motion and create your own by analog
-See code iside function
+Look at function brownian.motion and create your own by analogy
 
 ```{r}
 brownian.motion
 ```
 
 Make your own
-
 
 ```{r}
 my_plot <- function() {
@@ -105,54 +104,7 @@ saveGIF({
 }, movie.name = paste0(prefix, "/movies/example2.gif"),
 convert = 'gm convert')
 
-library(tidyverse)
-mtcars <- mtcars %>%
-  arrange(mpg)
-
-my_plot_2 <- function() {
-  for (i in 1:nrow(mtcars)) {
-    ggplot(mtcars[i,], aes(x = mpg, y = hp))  +
-      geom_point() +
-      xlim(range(mtcars[, "mpg"])) +
-      ylim(range(mtcars[, "hp"]))
-  }
-}
-
-saveGIF({
-  my_plot_2()
-}, movie.name = paste0(prefix, "/movies/example_mtcars.gif"),
-convert = 'gm convert')
 ```
 
-![Example2](2017-11-22-animation_files/movies/example2.gif)
-
-### Animation package
-
-#### Save html
-
-example from [here](https://yihui.name/animation/example/savehtml/)
-
-```{r, eval=F}
-current_wd <- getwd()
-if(!dir.exists(paste0(prefix, "/movies/html"))) 
-  dir.create(paste0(prefix, "/movies/html"))
-    
-setwd(paste0(prefix, "/movies/html")))
-
-des = c("description")
-saveHTML({
-  par(mar = c(4, 4, 0.5, 0.5))
-  ani.options(interval = 0.5)
-  for (i in 1:10) {
-    plot(rnorm(50), ylim = c(-3, 3))
-    ani.pause()
-  }
-}, img.name = "norm_plot", single.opts = "utf8: false", autoplay = FALSE, 
-interval = 0.5, imgdir = "norm_dir", htmlfile = "random.html", 
-ani.height = 400, ani.width = 600, title = "Demo of 50 Normal random numbers", 
-description = des)
-  
-setwd(current_wd)
-```
-
+![](2017-11-22-animation_files/movies/example2.gif)
 
