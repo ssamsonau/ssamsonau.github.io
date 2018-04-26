@@ -1,151 +1,111 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html lang='en'>
+
 <head>
-  <link href="http://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Let see what is available for antimation in R
+General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
+Other Examples here:
+link1link2animated mapsBefore it will work you need to install one of this:
+ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’plot(mtcars)prefix &lt;- &#39;2017-11-22-animation_files&#39;if(!'>
+<meta name='theme-color' content='#ffcd00'>
 
-  
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+<meta property='og:title' content='Animation Overview • Sergey Samsonau'>
+<meta property='og:description' content='Let see what is available for antimation in R
+General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
+Other Examples here:
+link1link2animated mapsBefore it will work you need to install one of this:
+ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’plot(mtcars)prefix &lt;- &#39;2017-11-22-animation_files&#39;if(!'>
+<meta property='og:url' content='/2017/11/22/animation-overview/'>
+<meta property='og:site_name' content='Sergey Samsonau'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='R'><meta property='article:published_time' content='2017-11-22T00:00:00Z'/><meta property='article:modified_time' content='2017-11-22T00:00:00Z'/><meta name='twitter:card' content='summary'>
 
-  
-  
-  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-  
+<meta name="generator" content="Hugo 0.40.1" />
 
-  
-  <title>Animation Overview</title>
-
-  
-  
-  <link rel="stylesheet" href="/css/hugo-octopress.css">
-
+  <title>Animation Overview • Sergey Samsonau</title>
+  <link rel='canonical' href='/2017/11/22/animation-overview/'>
   
   
-
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-  
-  <link href="http://www.ssamsonau.com/favicon.png" rel="icon">
-
-  
-  
-  
-
-  
-
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <meta name="author" content="">
-
-  
-  <meta name="generator" content="Hugo 0.40.1" />
-
-  
-  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.b0a0b202.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
 
 </head>
-<body>
 
 
-<header role="banner"><hgroup>
-  
-  <h1><a href="http://www.ssamsonau.com/">Sergey Samsonau</a></h1>
-    <h2></h2>
-</hgroup></header>
+<body class='page type-post'>
 
+  <div class='site'>
 
-<nav role="navigation">
-<fieldset class="mobile-nav">
-  
-  <select onchange="location = this.value;">
-    <option value="">Navigate…</option>
-      
-        <option value="http://www.ssamsonau.com/">» Home</option>
-      
-        <option value="http://www.ssamsonau.com/teaching/">» Teaching</option>
-      
-        <option value="http://www.ssamsonau.com/projects/">» Projects</option>
-      
-        <option value="http://www.ssamsonau.com/essentials-of-data-science/">» Essentials of Data Science</option>
-      
-        <option value="https://github.com/ssamsonau">» GitHub</option>
-      
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
 
-  </select>
-</fieldset>
+    <div class='main'>
 
-
-<ul class="main-navigation">
-  
-  
+      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
     
-      <li><a href="http://www.ssamsonau.com/" title="Home">Home</a></li>
-    
-  
-    
-      <li><a href="http://www.ssamsonau.com/teaching/" title="Teaching" >Teaching</a></li>
-    
-  
-    
-      <li><a href="http://www.ssamsonau.com/projects/" title="Projects" >Projects</a></li>
-    
-  
-    
-      <li><a href="http://www.ssamsonau.com/essentials-of-data-science/" title="Essentials of Data Science" >Essentials of Data Science</a></li>
-    
-  
-    
-      <li><a href="https://github.com/ssamsonau" title="GitHub" >GitHub</a></li>
-    
-  
-</ul>
-
-
-<ul class="subscription">
-  
-
-</ul>
-
-
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/teaching/'>Teaching</a>
+      </li><li class='item'>
+        <a href='/projects/'>Projects</a>
+      </li><li class='item'>
+        <a href='/essentials-of-data-science/'>Essentials of Data Science</a>
+      </li><li class='item'>
+        <a href='https://github.com/ssamsonau'>GitHub</a>
+      </li></ul>
+  </div>
 </nav>
 
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Sergey Samsonau</p><p class='desc site-desc'></p>
+          </div>
+        </div>
+      </header>
 
-<div id="main">
-  <div id="content">
-    <div>
-      <article class="hentry" role="article">
+      <main id='content'>
 
-        
-        
 
-<header>
-    <p class="meta">Nov 22, 2017
-         - 4 minute read 
-        
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Animation Overview</h1>
+      
 
-        
-        
-        
-            - <a class="label" href="http://www.ssamsonau.com/categories/data-science/">data science </a><a class="label" href="http://www.ssamsonau.com/categories/r/">R </a>
-        
-    </p>
-    <h1 class="entry-title">
-         Animation Overview 
-    </h1>
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2017-11-22T00:00:00Z'>2017, Nov 22</time>
+</span>
+
+  
+  
+
+</div>
+
+
+  </div>
 </header>
 
+  
+  
 
-        <div class="entry-content">
-          
-          
-          
-          
-          <p>Let see what is available for antimation in R</p>
+  <div class='container entry-content'>
+  <p>Let see what is available for antimation in R</p>
 <!--more-->
 <div id="general-idea" class="section level3">
 <h3>General idea</h3>
@@ -162,6 +122,7 @@
 <ul>
 <li><a href="https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout">link1</a></li>
 <li><a href="https://yihui.name/animation/example/savegif/">link2</a></li>
+<li><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></li>
 </ul>
 <p>Before it will work you need to install one of this:</p>
 <ul>
@@ -170,12 +131,10 @@
 </ul>
 <pre class="r"><code>plot(mtcars)</code></pre>
 <p><img src="/post/2017-11-22-animation_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="r"><code>if(!dir.exists(&quot;files/2017-11-22-animation&quot;)) dir.create(&quot;files/2017-11-22-animation&quot;)</code></pre>
-<pre><code>## Warning in dir.create(&quot;files/2017-11-22-animation&quot;): cannot create dir
-## &#39;files\2017-11-22-animation&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre class="r"><code>if(!dir.exists(&quot;files/2017-11-22-animation/movies&quot;)) dir.create(&quot;files/2017-11-22-animation/movies&quot;)</code></pre>
-<pre><code>## Warning in dir.create(&quot;files/2017-11-22-animation/movies&quot;): cannot create
-## dir &#39;files\2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
+<pre class="r"><code>prefix &lt;- &#39;2017-11-22-animation_files&#39;
+if(!dir.exists(prefix)) dir.create(prefix)
+if(!dir.exists(paste0(prefix, &quot;/movies&quot;))) 
+  dir.create(paste0(prefix, &quot;/movies&quot;))</code></pre>
 <pre class="r"><code>library(animation)
 library(ggplot2)
   
@@ -184,52 +143,28 @@ saveGIF({
       plot(runif(10), ylim = 0:1)
         }, 
         convert = &#39;gm convert&#39;, 
-        movie.name = &quot;files/2017-11-22-animation/test1.gif&quot;)</code></pre>
-<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
-## \2017-11-22-animation&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## Executing: 
-## &quot;gm convert -loop 0 -delay 100 Rplot1.png Rplot2.png Rplot3.png
-##     Rplot4.png Rplot5.png Rplot6.png Rplot7.png Rplot8.png
-##     Rplot9.png Rplot10.png &quot;test1.gif&quot;&quot;</code></pre>
-<pre><code>## Output at: files/2017-11-22-animation/test1.gif</code></pre>
-<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
-## animation/test1.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## [1] FALSE</code></pre>
+        movie.name = paste0(prefix, &quot;/test1.gif&quot;))</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<div class="figure">
+<img src="/rmarkdown-libs/test1.gif" alt="Brownian motion" />
+<p class="caption">Brownian motion</p>
+</div>
 <pre class="r"><code>saveGIF({
-        brownian.motion(pch = 21, cex = 5, 
-        col = &quot;red&quot;, bg = &quot;yellow&quot;)
-        }, 
-        movie.name = &quot;files/2017-11-22-animation/movies/brownian_motion2.gif&quot;, 
-        interval = runif(30, 0.01, 1), 
-        nmax = 30, convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
-## \2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## Executing: 
-## &quot;gm convert -loop 0 -delay 67.654606960481 Rplot1.png -delay
-##     24.1361964105163 Rplot2.png -delay 13.6126737489831
-##     Rplot3.png -delay 32.5431826473214 Rplot4.png -delay
-##     76.2414477400016 Rplot5.png -delay 72.1948375895154
-##     Rplot6.png -delay 2.02295708679594 Rplot7.png -delay
-##     64.8620273726992 Rplot8.png -delay 10.0680888837669
-##     Rplot9.png -delay 98.9713588638697 Rplot10.png -delay
-##     23.5750792925246 Rplot11.png -delay 32.8367611654103
-##     Rplot12.png -delay 48.5197546745185 Rplot13.png -delay
-##     50.123117176583 Rplot14.png -delay 32.6863832846284
-##     Rplot15.png -delay 39.5070010346826 Rplot16.png -delay
-##     44.346072296612 Rplot17.png -delay 75.9677364027593
-##     Rplot18.png -delay 40.272678950103 Rplot19.png -delay
-##     28.4920860684942 Rplot20.png -delay 58.6741153267212
-##     Rplot21.png -delay 52.5799086582847 Rplot22.png -delay
-##     62.4013899134006 Rplot23.png -delay 87.9142830148339
-##     Rplot24.png -delay 54.0771321409848 Rplot25.png -delay
-##     53.5926879143808 Rplot26.png -delay 37.4527867715806
-##     Rplot27.png -delay 21.6310973092914 Rplot28.png -delay
-##     99.2181760412641 Rplot29.png -delay 86.7686164183542
-##     Rplot30.png &quot;brownian_motion2.gif&quot;&quot;</code></pre>
-<pre><code>## Output at: files/2017-11-22-animation/movies/brownian_motion2.gif</code></pre>
-<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
-## animation/movies/brownian_motion2.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## [1] FALSE</code></pre>
+  brownian.motion(
+    pch = 21,
+    cex = 5,
+    col = &quot;red&quot;,
+    bg = &quot;yellow&quot;
+  )
+},
+movie.name = paste0(prefix, &quot;/movies/brownian_motion2.gif&quot;),
+interval = runif(30, 0.01, 1),
+nmax = 30, convert = &#39;gm convert&#39;)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<div class="figure">
+<img src="/rmarkdown-libs/movies/brownian_motion2.gif" alt="Brownian motion" />
+<p class="caption">Brownian motion</p>
+</div>
 <p><em>Note:</em> N of steps, is controled by nmax in saveGIF does this. Alternativelly, change in globally with ani.options(“nmax” = 50)</p>
 <div id="example-with-brownian.motion" class="section level5">
 <h5>Example with brownian.motion</h5>
@@ -248,57 +183,45 @@ saveGIF({
 ##         ani.pause()
 ##     }
 ## }
-## &lt;bytecode: 0x000000000b1e2008&gt;
+## &lt;bytecode: 0x000000000c5f6bb8&gt;
 ## &lt;environment: namespace:animation&gt;</code></pre>
 <p>Make your own</p>
-<pre class="r"><code>my_plot &lt;- function(){for(i in 1:10) plot(runif(10), ylim = 0:1)}
-  
+<pre class="r"><code>my_plot &lt;- function() {
+  for (i in 1:10)
+    plot(runif(10), ylim = 0:1)
+}
+
 saveGIF({
   my_plot()
-}, movie.name = &quot;files/2017-11-22-animation/movies/example2.gif&quot;, 
-   convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
-## \2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## Executing: 
-## &quot;gm convert -loop 0 -delay 100 Rplot1.png Rplot2.png Rplot3.png
-##     Rplot4.png Rplot5.png Rplot6.png Rplot7.png Rplot8.png
-##     Rplot9.png Rplot10.png &quot;example2.gif&quot;&quot;</code></pre>
-<pre><code>## Output at: files/2017-11-22-animation/movies/example2.gif</code></pre>
-<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
-## animation/movies/example2.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## [1] FALSE</code></pre>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## -- Attaching packages ------------------------------------------------------------------------------ tidyverse 1.2.1 --</code></pre>
-<pre><code>## v tibble  1.4.2     v purrr   0.2.4
-## v tidyr   0.8.0     v dplyr   0.7.4
-## v readr   1.1.1     v stringr 1.3.0
-## v tibble  1.4.2     v forcats 0.3.0</code></pre>
-<pre><code>## -- Conflicts --------------------------------------------------------------------------------- tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>mtcars &lt;- mtcars %&gt;% 
+}, movie.name = paste0(prefix, &quot;/movies/example2.gif&quot;),
+convert = &#39;gm convert&#39;)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>library(tidyverse)
+mtcars &lt;- mtcars %&gt;%
   arrange(mpg)
-my_plot_2 &lt;- function(){
-  for(i in 1:nrow(mtcars)){
-      ggplot(mtcars[i, ], aes(x = mpg, y = hp))  +
-        geom_point() +
-        xlim(range(mtcars[, &quot;mpg&quot;])) +
-        ylim(range(mtcars[, &quot;hp&quot;]))
+
+my_plot_2 &lt;- function() {
+  for (i in 1:nrow(mtcars)) {
+    ggplot(mtcars[i,], aes(x = mpg, y = hp))  +
+      geom_point() +
+      xlim(range(mtcars[, &quot;mpg&quot;])) +
+      ylim(range(mtcars[, &quot;hp&quot;]))
   }
 }
-  
+
 saveGIF({
   my_plot_2()
-}, movie.name = &quot;files/2017-11-22-animation/movies/example_mtcars.gif&quot;, 
-   convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## Warning in dir.create(dirname(movie.name)): cannot create dir &#39;files
-## \2017-11-22-animation\movies&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## Executing: 
-## &quot;gm convert -loop 0 -delay 100 Rplot1.png &quot;example_mtcars.gif&quot;&quot;</code></pre>
-<pre><code>## Output at: files/2017-11-22-animation/movies/example_mtcars.gif</code></pre>
-<pre><code>## Warning in file.create(to[okay]): cannot create file &#39;files/2017-11-22-
-## animation/movies/example_mtcars.gif&#39;, reason &#39;No such file or directory&#39;</code></pre>
-<pre><code>## [1] FALSE</code></pre>
+}, movie.name = paste0(prefix, &quot;/movies/example_mtcars.gif&quot;),
+convert = &#39;gm convert&#39;)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<div class="figure">
+<img src="/rmarkdown-libs/movies/example2.gif" alt="Example2" />
+<p class="caption">Example2</p>
+</div>
+<div class="figure">
+<img src="/rmarkdown-libs/movies/example_mtcars.gif" alt="Example mtcars" />
+<p class="caption">Example mtcars</p>
+</div>
 </div>
 </div>
 <div id="animation-package" class="section level3">
@@ -307,12 +230,12 @@ saveGIF({
 <h4>Save html</h4>
 <p>example from <a href="https://yihui.name/animation/example/savehtml/">here</a></p>
 <pre class="r"><code>current_wd &lt;- getwd()
-if(!dir.exists(&quot;files/2017-11-22-animation/movies/html&quot;)) dir.create(&quot;files/2017-11-22-animation/movies/html&quot;)
+if(!dir.exists(paste0(prefix, &quot;/movies/html&quot;))) 
+  dir.create(paste0(prefix, &quot;/movies/html&quot;))
     
-setwd(&quot;files/2017-11-22-animation/movies/html&quot;)
+setwd(paste0(prefix, &quot;/movies/html&quot;)))
 
-des = c(&quot;When you write a long long long long description, R will try to wrap the&quot;, 
-        &quot;words automatically.&quot;, &quot;Oh, really?!&quot;)
+des = c(&quot;description&quot;)
 saveHTML({
   par(mar = c(4, 4, 0.5, 0.5))
   ani.options(interval = 0.5)
@@ -329,99 +252,69 @@ setwd(current_wd)</code></pre>
 </div>
 </div>
 
-        </div>
-        
-
-<footer>
-  <p class="meta">
-    <span class="byline author vcard">Posted by <span class="fn"></span></span>
-    
-    <time>Nov 22, 2017</time>
-    
-      <span class="categories">
-        Tags:
-        
-          <a class="category" href="http://www.ssamsonau.com/tags/r">R</a>  
-    
-    </span>
-  </p>
-
-  
-  
-
-  
-
-  <p class="meta">
-    
-
-    
-      <a class="basic-alignment right" href="http://www.ssamsonau.com/2018/04/22/data-science-in-science/" title="Data Science in Science">Data Science in Science</a>
-    
-  </p>
-  
-</footer>
-
-      </article>
-    </div>
-    
-
-<aside class="sidebar thirds">
-  <section class="first odd">
-
-    
-
-    <p>
-      
-    </p>
-  </section>
-
-
-
-  
-  <ul class="sidebar-nav">
-    <li class="sidebar-nav-item">
-      
-      
-      
-      
-       
-      
-      
-      
-      
-      
-      
-      
-
-    
-    
-    </li>
-  </ul>
-
-  
-
-  
-
-  
-  
-  
-</aside>
-
-  </div>
 </div>
 
-<footer role="contentinfo">
-  <p>Copyright &copy; 2018  - <a href="http://www.ssamsonau.com/license/">License</a> -
-  <span class="credit">Powered by <a target="_blank" href="https://gohugo.io">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/">Hugo-Octopress</a> theme.
-</p>
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/data-science'>data science</a>, <a class='category' href='/categories/r'>R</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/r'>R</a></div>
 
+  </div>
 </footer>
 
 
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='next-entry sep-before'>
+      <a href='/2018/04/22/data-science-in-science/'>
+        <span class='screen-reader-text'>Next post: </span>Data Science in Science<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+  
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
 
 
 
 
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'>
+          
+          <div class='copyright'>
+  <p></p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.53e19345.js'></script>
 </body>
+
 </html>
 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Data Science in Science - Sergey Samsonau</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Sergey" />
+  <meta name="description" content="Here I gather some examples of use of Data Scince in a traditional science
+MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
+A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
+ChemistryAtrificial noseCreating an artificial nose using machine learning. link
+Artificial intelligence accelerates discovery of metallic glass. link
+Machine learning in SpectrometryA Machine Learning Application for Classification of Chemical Spectra." />
+
+  <meta name="keywords" content="Physics, Data, Science" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/2018-04-22-data-science-in-science/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="Data Science in Science" />
+<meta property="og:description" content="Here I gather some examples of use of Data Scince in a traditional science
+MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
+A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
+ChemistryAtrificial noseCreating an artificial nose using machine learning. link
+Artificial intelligence accelerates discovery of metallic glass. link
+Machine learning in SpectrometryA Machine Learning Application for Classification of Chemical Spectra." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/2018-04-22-data-science-in-science/" />
+
+
+
+<meta property="article:published_time" content="2018-04-22T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-04-22T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Data Science in Science">
+<meta itemprop="description" content="Here I gather some examples of use of Data Scince in a traditional science
+MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
+A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
+ChemistryAtrificial noseCreating an artificial nose using machine learning. link
+Artificial intelligence accelerates discovery of metallic glass. link
+Machine learning in SpectrometryA Machine Learning Application for Classification of Chemical Spectra.">
+
+
+<meta itemprop="datePublished" content="2018-04-22T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-04-22T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="189">
+
+
+
+<meta itemprop="keywords" content="data science,science," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data Science in Science"/>
+<meta name="twitter:description" content="Here I gather some examples of use of Data Scince in a traditional science
+MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
+A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
+ChemistryAtrificial noseCreating an artificial nose using machine learning. link
+Artificial intelligence accelerates discovery of metallic glass. link
+Machine learning in SpectrometryA Machine Learning Application for Classification of Chemical Spectra."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Sergey Samsonau</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/teaching/">
+        <li class="mobile-menu-item">Teaching</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">Projects</li>
+      </a><a href="/essentials-of-data-science/">
+        <li class="mobile-menu-item">DS-Essentials</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Sergey Samsonau</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/teaching/">Teaching</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">Projects</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/essentials-of-data-science/">DS-Essentials</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Data Science in Science</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-04-22 </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>Here I gather some examples of use of Data Scince in a traditional science</p>
+<!--more-->
+<div id="microfluidics" class="section level2">
+<h2>Microfluidics</h2>
+<p><em>Chip in a lab: Microfluidics for next generation life science research.</em> <a href="http://scitation.aip.org/content/aip/journal/bmf/7/1/10.1063/1.4789751">link</a></p>
+<p><em>A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing.</em> <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0104539">link</a></p>
+</div>
+<div id="chemistry" class="section level2">
+<h2>Chemistry</h2>
+<div id="atrificial-nose" class="section level3">
+<h3>Atrificial nose</h3>
+<p><em>Creating an artificial nose using machine learning.</em> <a href="http://machinelearningcoach.com/artificial-nose-using-machine-learning">link</a></p>
+<p><em>Artificial intelligence accelerates discovery of metallic glass.</em> <a href="https://phys.org/news/2018-04-artificial-intelligence-discovery-metallic-glass.html?utm_source=nwletter&amp;utm_medium=email&amp;utm_campaign=daily-nwletter">link</a></p>
+</div>
+<div id="machine-learning-in-spectrometry" class="section level3">
+<h3>Machine learning in Spectrometry</h3>
+<p><em>A Machine Learning Application for Classification of Chemical Spectra.</em> <a href="https://www.analyzeiq.com/publications/ai2008-classification-of-spectra.pdf">link</a></p>
+<p><em>A machine learning approach to explore the spectra intensity pattern of peptides using tandem mass spectrometry data.</em> <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-325">link</a></p>
+</div>
+</div>
+<div id="biology" class="section level2">
+<h2>Biology</h2>
+<p><em>Prediction of Biological Properties of Molecules from Chemical Structure.</em> <a href="http://tunedit.org/challenge/QSAR">link</a></p>
+</div>
+<div id="genetics-and-genomics" class="section level2">
+<h2>Genetics and Genomics</h2>
+<p><em>Machine learning applications in genetics and genomics.</em> <a href="http://www.nature.com/nrg/journal/v16/n6/full/nrg3920.html">link</a></p>
+</div>
+<div id="physics" class="section level2">
+<h2>Physics</h2>
+<p><em>Gravity Waves.</em> <a href="https://phys.org/news/2018-04-machine-gravitational.html?utm_source=nwletter&amp;utm_medium=email&amp;utm_campaign=weekly-nwletter">link</a></p>
+<div id="nuclear-energy" class="section level3">
+<h3>Nuclear Energy</h3>
+<p><em>Machine Learning in Nuclear Energy Applications.</em> <a href="http://large.stanford.edu/courses/2015/ph241/alhusseini2/">link</a></p>
+</div>
+<div id="higs-boson" class="section level3">
+<h3>Higs boson</h3>
+<p><em>Use the ATLAS experiment to identify the Higgs boson.</em> <a href="https://www.kaggle.com/c/higgs-boson">link</a></p>
+</div>
+<div id="astrophysics" class="section level3">
+<h3>Astrophysics</h3>
+<p><em>Applications of machine learning in astronomy.</em> <a href="http://www.mpia.de/homes/calj/amla_ss2009/introduction.pdf">link</a></p>
+</div>
+</div>
+<div id="medicine" class="section level2">
+<h2>Medicine</h2>
+<p><em>Predicting non-small cell lung cancer prognosis by fully automated microscopic pathology image features.</em> <a href="http://www.nature.com/articles/ncomms12474">link</a></p>
+</div>
+<div id="oceanography" class="section level2">
+<h2>Oceanography</h2>
+<p><em>The Nature Conservancy Fisheries Monitoring.</em> <a href="https://www.kaggle.com/c/the-nature-conservancy-fisheries-monitoring">link</a> <em>Annual Nominal Fish Catches.</em> <a href="https://www.kaggle.com/victorgenin/ices-fish-catch">link</a></p>
+</div>
+<div id="advanced-plotting-of-data-in-any-field-of-science" class="section level2">
+<h2>Advanced plotting of data in any field of science</h2>
+<p><em>Visualizing Complex Data with Embedded Plots .</em> <a href="http://vita.had.co.nz/papers/embedded-plots.pdf">link</a></p>
+</div>
+
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/data-science/">data science</a>
+          
+          <a href="/tags/science/">science</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/animation-overview/">
+            <span class="next-text nav-default">Animation Overview</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    
+    <span class="author">Sergey Samsonau</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: {equationNumbers: {autoNumber: "AMS"}},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

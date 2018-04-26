@@ -1,75 +1,108 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.ssamsonau.com/2018/04/22/data-science-in-science/</loc>
+    <loc>http://localhost:1313/post/2018-04-22-data-science-in-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/essentials-of-data-science/</loc>
+    <loc>http://localhost:1313/essentials-of-data-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/teaching/</loc>
+    <loc>http://localhost:1313/teaching/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/2017/11/22/animation-overview/</loc>
+    <loc>http://localhost:1313/post/animation-overview/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/categories/data-science/</loc>
+    <loc>http://localhost:1313/categories/data-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/post/</loc>
+    <loc>http://localhost:1313/tags/data-science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/tags/r/</loc>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/categories/r/</loc>
+    <loc>http://localhost:1313/tags/r/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/</loc>
+    <loc>http://localhost:1313/categories/r/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.ssamsonau.com/tags/</loc>
+    <loc>http://localhost:1313/tags/science/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   

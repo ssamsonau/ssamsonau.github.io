@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data science on Sergey Samsonau</title>
+    <link>http://localhost:1313/tags/data-science/</link>
+    <description>Recent content in Data science on Sergey Samsonau</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Sergey Samsonau</copyright>
+    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science in Science</title>
+      <link>http://localhost:1313/post/2018-04-22-data-science-in-science/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/2018-04-22-data-science-in-science/</guid>
+      <description>Here I gather some examples of use of Data Scince in a traditional science
+MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
+A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
+ChemistryAtrificial noseCreating an artificial nose using machine learning. link
+Artificial intelligence accelerates discovery of metallic glass. link
+Machine learning in SpectrometryA Machine Learning Application for Classification of Chemical Spectra.</description>
+    </item>
+    
+    <item>
+      <title>Animation Overview</title>
+      <link>http://localhost:1313/post/animation-overview/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/animation-overview/</guid>
+      <description>Let see what is available for antimation in R
+General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
+Other Examples here:
+link1link2animated mapsBefore it will work you need to install one of this:
+ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’if(!</description>
+    </item>
+    
+  </channel>
+</rss>
