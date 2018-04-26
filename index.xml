@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sergey Samsonau</title>
-    <link>/</link>
+    <link>http://www.ssamsonau.com/</link>
     <description>Recent content on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.ssamsonau.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science in Science</title>
-      <link>/post/2018-04-22-data-science-in-science/</link>
+      <link>http://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-22-data-science-in-science/</guid>
+      <guid>http://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</guid>
       <description>Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others
 MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
 A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
@@ -27,20 +27,20 @@
     
     <item>
       <title>Essentials of Data Science</title>
-      <link>/essentials-of-data-science/</link>
+      <link>http://www.ssamsonau.com/essentials-of-data-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/essentials-of-data-science/</guid>
+      <guid>http://www.ssamsonau.com/essentials-of-data-science/</guid>
       <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
 BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc.</description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>/projects/</link>
+      <link>http://www.ssamsonau.com/projects/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/projects/</guid>
+      <guid>http://www.ssamsonau.com/projects/</guid>
       <description>Recent papers and preprintsComputer simulations combined with experiments for calculus-based Physics laboratory course. Sergey V. Samsonau. arXiv:1804.09264 [physics.ed-ph], April 2018. Link
 Integrating Science Through Authentic Research in Secondary Schools
 E. Mohlhenrich, S. V. Samsonau, R. P. Spencer. IEEE Integrated STEM Education Conference, March 2018. Link
@@ -50,19 +50,19 @@ Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V. B.</description>
     
     <item>
       <title>Teaching</title>
-      <link>/teaching/</link>
+      <link>http://www.ssamsonau.com/teaching/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/teaching/</guid>
+      <guid>http://www.ssamsonau.com/teaching/</guid>
       <description>PhysicsAlgebra-based Physics (college and high school)Calculus-based Physics (college and high school)Quantum Mechanics (high school)I did setup and now supervise a nanotechnology research laboratory at a high schoolA course of labs designed to develop student’s research skill was developed and will be described soonA course of labs combining numerical simulations with experiments which I developed will be soon availabe on arxiv.orgData ScienceData Science class I did introduce and teach at a high schoolI did organize and now supervise Data Science research laboratory at a high schoolData Science IData Science I course is designed to teach students analyze data using R language, as well as how to present results of analysis.</description>
     </item>
     
     <item>
       <title>Animation Overview</title>
-      <link>/post/animation-overview/</link>
+      <link>http://www.ssamsonau.com/post/animation-overview/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/animation-overview/</guid>
+      <guid>http://www.ssamsonau.com/post/animation-overview/</guid>
       <description>A short review of some methods allowing to create animations in R is presented bellow.
 Available optionslibrary(animation)saveGIF (relies on ImageMagick or GraphicsMagick)saveVideosaveMoviesaveHTMLother functions heregganimateadditional use of package tweenr makes a result smotheranimated mapssaveGIFsaveGIF requires to for ImageMagick or GraphicsMagick to be installed.
 ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows).</description>
@@ -70,10 +70,10 @@ Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V. B.</description>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>http://www.ssamsonau.com/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>http://www.ssamsonau.com/about/</guid>
       <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     

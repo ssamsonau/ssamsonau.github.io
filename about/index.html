@@ -29,7 +29,7 @@
 <meta name="generator" content="Hugo 0.40.1" />
 
 
-<link rel="canonical" href="/about/" />
+<link rel="canonical" href="http://www.ssamsonau.com/about/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -52,7 +52,7 @@
 <meta property="og:title" content="About" />
 <meta property="og:description" content="This is a &ldquo;hello world&rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/about/" />
+<meta property="og:url" content="http://www.ssamsonau.com/about/" />
 
 
 
@@ -151,25 +151,27 @@
 </article>
         </div>
         
-  
-
-  <div id="gitalk-container"></div>
-  <link rel="stylesheet" href="/lib/gitalk/gitalk-1.2.2.min.css">
-    <script src="/lib/gitalk/gitalk-1.2.2.min.js"></script>
+  <div id="comments-gitment"></div>
+  <link rel="stylesheet" href="/lib/gitment/gitment-0.0.3.min.css">
+    <script src="/lib/gitment/gitment-0.0.3.min.js"></script>
   <script type="text/javascript">
-  var gitalk = new Gitalk({
+  const gitment = new Gitment({
     id: '2016-05-05 21:48:51 -0700 -0700',
     title: 'About',
-    clientID: 'b607a38d0f6608d97598',
-    clientSecret: '0e3f4c61162c7aa299dc12dd67536ec83942b1ba',
-    repo: 'https:\/\/github.com\/ssamsonau\/comments.git',
+    link: decodeURI(location.href),
+    desc: 'This is a \x26ldquo;hello world\x26rdquo; example website for the blogdown package. The theme was forked from @jrutheiser\/hugo-lithium-theme and modified by Yihui Xie.',
     owner: 'ssamsonau',
-    admin: ['ssamsonau'],
-    body: decodeURI(location.href)
-  });
-  gitalk.render('gitalk-container');
+    repo: 'https:\/\/github.com\/ssamsonau\/comments.git',
+    oauth: {
+      client_id: 'b607a38d0f6608d97598',
+      client_secret: '0e3f4c61162c7aa299dc12dd67536ec83942b1ba'
+    }
+  })
+  gitment.render('comments-gitment')
   </script>
-  <noscript>Please enable JavaScript to view the <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a></noscript>
+  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+
+  
 
       </div>
     </main>
@@ -178,7 +180,7 @@
       <div class="social-links">
       <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
       <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
-  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="http://www.ssamsonau.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
