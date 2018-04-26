@@ -36,7 +36,7 @@ saveGIF requires to for ImageMagick or GraphicsMagick to be installed.
 
 * ImageMagick ([how to install on MAC](https://encodable.com/install_imagemagick_on_mac_osx/))
 * GraphicsMagick ([how ot install GraphicsMagick on Windows](http://www.graphicsmagick.org/INSTALL-windows.html)). In saveGIF function, you have to use option convert = 'gm convert'
-* alternativelly, one can use installr::install.ImageMagick()
+* alternativelly, one can use installr::install.ImageMagick() 
 
 ```{r, echo=FALSE}
 prefix <- '2017-11-22-animation_files'
