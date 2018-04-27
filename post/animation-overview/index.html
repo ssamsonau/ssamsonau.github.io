@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="152">
+<meta itemprop="wordCount" content="182">
 
 
 
@@ -195,24 +195,28 @@
 In saveGIF function, you have to use option convert = ‘gm convert’</li>
 <li>alternativelly, one can use installr::install.ImageMagick()</li>
 </ul>
-<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.</p>
+<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need. Options for gif file can be specified using ani.options.</p>
 <pre class="r"><code>my_plot &lt;- function() {
   for (i in 1:10){
     plot(runif(10), ylim = 0:1)
   }
 }
 
+library(animation)
+# ?ani.options
+# animations options - set up globaly
+ani.options(interval = 0.5, nmax = 50, ani.width = 300, ani.height = 300)
+
 saveGIF({
     my_plot()
   }, 
   movie.name = file_path_for_gif,
   convert = &#39;gm convert&#39;,
-  nmax = 50 # max number of steps is controled by nmax in saveGIF.
-)</code></pre>
-<div class="figure">
-<img src="/rmarkdown-libs/movies/example2.gif" />
+  # animation options can be specified locally as well
+  nmax = 40 
+)
 
-</div>
+knitr::include_graphics(file_path_for_gif)</code></pre>
 <ul>
 <li><em>Note:</em> Number of steps can be changed globbaly with ani.options(“nmax” = 50)</li>
 </ul>

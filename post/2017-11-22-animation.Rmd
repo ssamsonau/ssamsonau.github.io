@@ -51,25 +51,31 @@ file_path_for_gif <- paste0(prefix, "/movies/example2.gif")
 ```
 
 Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.
+Options for gif file can be specified using ani.options. 
 
-```{r, results=F}
+```{r, results=F, cache=T}
 my_plot <- function() {
   for (i in 1:10){
     plot(runif(10), ylim = 0:1)
   }
 }
 
+library(animation)
+# ?ani.options
+# animations options - set up globaly
+ani.options(interval = 0.5, nmax = 50, ani.width = 300, ani.height = 300)
+
 saveGIF({
     my_plot()
   }, 
   movie.name = file_path_for_gif,
   convert = 'gm convert',
-  nmax = 50 # max number of steps is controled by nmax in saveGIF.
+  # animation options can be specified locally as well
+  nmax = 40 
 )
 
+knitr::include_graphics(file_path_for_gif)
 ```
 
-
-![](2017-11-22-animation_files/movies/example2.gif)
 
 * _Note:_ Number of steps can be changed globbaly with ani.options("nmax" = 50)

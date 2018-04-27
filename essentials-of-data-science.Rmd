@@ -37,9 +37,6 @@ There is a lot of information on Data Science on Internet. On this page I summar
 ### Databases
 * [sqlzoo](SQLZOO), [sql](https://db.rstudio.com/dplyr/)
 
-### Parallel processing in R 
-* [Microsoft R Open & MKL](https://mran.microsoft.com/open) - seamless use of more than one cpu core
-
 ### Working with medium data
 * If data can still fit in RAM of local machine, but slow to process with dplyr, a package  [data.table](https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf) can provide a faster alternative
 
