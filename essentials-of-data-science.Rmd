@@ -5,6 +5,7 @@ date: '2018-04-22'
 slug: essentials-of-data-science
 categories: [Data Science, R]
 tags: [R]
+comments: false
 ---
 
 There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).

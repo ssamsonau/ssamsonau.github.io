@@ -182,25 +182,20 @@
 </article>
         </div>
         
-  <div id="comments-gitment"></div>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>
-  <script type="text/javascript">
-  const gitment = new Gitment({
-    id: '2018-04-22 00:00:00 \x2b0000 UTC',
-    title: 'Teaching',
-    link: decodeURI(location.href),
-    desc: 'Physics\r\rAlgebra-based Physics (college and high school)\rCalculus-based Physics (college and high school)\rQuantum Mechanics (high school)\rI did setup and now supervise a nanotechnology research laboratory at a high school\rA course of labs designed to develop student’s research skill was developed and will be described soon\rA course of labs combining numerical simulations with experiments which I developed will be soon availabe on arxiv.org\r\r\rData Science\r\rData Science class I did introduce and teach at a high school\rI did organize and now supervise Data Science research laboratory at a high school\r\rData Science I\rData Science I course is designed to teach students analyze data using R language, as well as how to present results of analysis.',
-    owner: 'ssamsonau',
-    repo: 'comments',
-    oauth: {
-      client_id: 'b607a38d0f6608d97598',
-      client_secret: '0e3f4c61162c7aa299dc12dd67536ec83942b1ba'
-    }
-  })
-  gitment.render('comments-gitment')
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'www-ssamsonau-com';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
   
 
