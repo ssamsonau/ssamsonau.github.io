@@ -32,7 +32,7 @@
       
       <guid>https://www.ssamsonau.com/post/animation-overview/</guid>
       <description>A short review of some methods allowing to create animations in R is presented bellow.
-Available optionslibrary(animation)saveGIF (relies on ImageMagick or GraphicsMagick)saveVideosaveMoviesaveHTMLother functions heregganimateadditional use of package tweenr makes a result smotheranimated mapssaveGIFsaveGIF requires to for ImageMagick or GraphicsMagick to be installed.
+Available optionslibrary(animation)saveGIF (relies on ImageMagick or GraphicsMagick)saveVideosaveMoviesaveHTMLother functions heregganimateadditional use of package tweenr makes a result smotheranimated mapssaveGIFsaveGIF requires to for ImageMagick or GraphicsMagick to be installed.
 ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows).</description>
     </item>
     

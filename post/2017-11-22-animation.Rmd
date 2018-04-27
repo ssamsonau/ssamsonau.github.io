@@ -16,7 +16,7 @@ A short review of some methods allowing to create animations in R is presented b
 
 <!--more-->
 
-### Available options
+## Available options
 
 * library(animation)
     * [saveGIF](https://yihui.name/animation/example/savegif/) (relies on ImageMagick or GraphicsMagick)
@@ -35,76 +35,41 @@ A short review of some methods allowing to create animations in R is presented b
 saveGIF requires to for ImageMagick or GraphicsMagick to be installed. 
 
 * ImageMagick ([how to install on MAC](https://encodable.com/install_imagemagick_on_mac_osx/))
-* GraphicsMagick ([how ot install GraphicsMagick on Windows](http://www.graphicsmagick.org/INSTALL-windows.html)). In saveGIF function, you have to use option convert = 'gm convert'
+* GraphicsMagick ([how ot install GraphicsMagick on Windows](http://www.graphicsmagick.org/INSTALL-windows.html)).    
+In saveGIF function, you have to use option convert = 'gm convert'
 * alternativelly, one can use installr::install.ImageMagick() 
 
 ```{r, echo=FALSE}
 prefix <- '2017-11-22-animation_files'
 if(!dir.exists(prefix)) dir.create(prefix)
-```
 
-```{r}
 if(!dir.exists(paste0(prefix, "/movies"))) 
   dir.create(paste0(prefix, "/movies"))
+
+file_path_for_gif <- paste0(prefix, "/movies/example2.gif")
+
 ```
 
-```{r}
-library(animation)
-library(ggplot2)
-  
-saveGIF({
-    for (i in 1:10) 
-      plot(runif(10), ylim = 0:1)
-        }, 
-        convert = 'gm convert', 
-        movie.name = paste0(prefix, "/test1.gif"))
-```
+Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.
 
-![](2017-11-22-animation_files/test1.gif)
-
-#### Brownian motion example from animation::brownian.motion
-
-```{r}
-saveGIF({
-  brownian.motion(
-    pch = 21,
-    cex = 5,
-    col = "red",
-    bg = "yellow"
-  )
-},
-movie.name = paste0(prefix, "/movies/brownian_motion2.gif"),
-interval = runif(30, 0.01, 1),
-nmax = 30, convert = 'gm convert')
-```
-
-![](2017-11-22-animation_files/movies/brownian_motion2.gif)
-
-_Note:_ Number of steps is controled by nmax in saveGIF. Alternativelly, you change this globally with
-ani.options("nmax" = 50)
-
-#### Adaptation for your task 
-
-Look at function brownian.motion and create your own by analogy
-
-```{r}
-brownian.motion
-```
-
-Make your own
-
-```{r}
+```{r, results=F}
 my_plot <- function() {
-  for (i in 1:10)
+  for (i in 1:10){
     plot(runif(10), ylim = 0:1)
+  }
 }
 
 saveGIF({
-  my_plot()
-}, movie.name = paste0(prefix, "/movies/example2.gif"),
-convert = 'gm convert')
+    my_plot()
+  }, 
+  movie.name = file_path_for_gif,
+  convert = 'gm convert',
+  nmax = 50 # max number of steps is controled by nmax in saveGIF.
+)
 
 ```
 
+
 ![](2017-11-22-animation_files/movies/example2.gif)
 
+* _Note:_ Number of steps can be changed globbaly with ani.options("nmax" = 50)

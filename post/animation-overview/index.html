@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="283">
+<meta itemprop="wordCount" content="152">
 
 
 
@@ -169,8 +169,8 @@
     <div class="post-content">
       <p>A short review of some methods allowing to create animations in R is presented bellow.</p>
 <!--more-->
-<div id="available-options" class="section level3">
-<h3>Available options</h3>
+<div id="available-options" class="section level2">
+<h2>Available options</h2>
 <ul>
 <li>library(animation)
 <ul>
@@ -186,85 +186,36 @@
 </ul></li>
 <li><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></li>
 </ul>
-</div>
 <div id="savegif" class="section level3">
 <h3>saveGIF</h3>
 <p>saveGIF requires to for ImageMagick or GraphicsMagick to be installed.</p>
 <ul>
 <li>ImageMagick (<a href="https://encodable.com/install_imagemagick_on_mac_osx/">how to install on MAC</a>)</li>
-<li>GraphicsMagick (<a href="http://www.graphicsmagick.org/INSTALL-windows.html">how ot install GraphicsMagick on Windows</a>). In saveGIF function, you have to use option convert = ‘gm convert’</li>
+<li>GraphicsMagick (<a href="http://www.graphicsmagick.org/INSTALL-windows.html">how ot install GraphicsMagick on Windows</a>).<br />
+In saveGIF function, you have to use option convert = ‘gm convert’</li>
 <li>alternativelly, one can use installr::install.ImageMagick()</li>
 </ul>
-<pre class="r"><code>if(!dir.exists(paste0(prefix, &quot;/movies&quot;))) 
-  dir.create(paste0(prefix, &quot;/movies&quot;))</code></pre>
-<pre class="r"><code>library(animation)
-library(ggplot2)
-  
-saveGIF({
-    for (i in 1:10) 
-      plot(runif(10), ylim = 0:1)
-        }, 
-        convert = &#39;gm convert&#39;, 
-        movie.name = paste0(prefix, &quot;/test1.gif&quot;))</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<div class="figure">
-<img src="/rmarkdown-libs/test1.gif" />
-
-</div>
-<div id="brownian-motion-example-from-animationbrownian.motion" class="section level4">
-<h4>Brownian motion example from animation::brownian.motion</h4>
-<pre class="r"><code>saveGIF({
-  brownian.motion(
-    pch = 21,
-    cex = 5,
-    col = &quot;red&quot;,
-    bg = &quot;yellow&quot;
-  )
-},
-movie.name = paste0(prefix, &quot;/movies/brownian_motion2.gif&quot;),
-interval = runif(30, 0.01, 1),
-nmax = 30, convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<div class="figure">
-<img src="/rmarkdown-libs/movies/brownian_motion2.gif" />
-
-</div>
-<p><em>Note:</em> Number of steps is controled by nmax in saveGIF. Alternativelly, you change this globally with ani.options(“nmax” = 50)</p>
-</div>
-<div id="adaptation-for-your-task" class="section level4">
-<h4>Adaptation for your task</h4>
-<p>Look at function brownian.motion and create your own by analogy</p>
-<pre class="r"><code>brownian.motion</code></pre>
-<pre><code>## function (n = 10, xlim = c(-20, 20), ylim = c(-20, 20), ...) 
-## {
-##     x = rnorm(n)
-##     y = rnorm(n)
-##     for (i in seq_len(ani.options(&quot;nmax&quot;))) {
-##         dev.hold()
-##         plot(x, y, xlim = xlim, ylim = ylim, ...)
-##         text(x, y)
-##         x = x + rnorm(n)
-##         y = y + rnorm(n)
-##         ani.pause()
-##     }
-## }
-## &lt;bytecode: 0x000000000cdc3550&gt;
-## &lt;environment: namespace:animation&gt;</code></pre>
-<p>Make your own</p>
+<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.</p>
 <pre class="r"><code>my_plot &lt;- function() {
-  for (i in 1:10)
+  for (i in 1:10){
     plot(runif(10), ylim = 0:1)
+  }
 }
 
 saveGIF({
-  my_plot()
-}, movie.name = paste0(prefix, &quot;/movies/example2.gif&quot;),
-convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
+    my_plot()
+  }, 
+  movie.name = file_path_for_gif,
+  convert = &#39;gm convert&#39;,
+  nmax = 50 # max number of steps is controled by nmax in saveGIF.
+)</code></pre>
 <div class="figure">
 <img src="/rmarkdown-libs/movies/example2.gif" />
 
 </div>
+<ul>
+<li><em>Note:</em> Number of steps can be changed globbaly with ani.options(“nmax” = 50)</li>
+</ul>
 </div>
 </div>
 
