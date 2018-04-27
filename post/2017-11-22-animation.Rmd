@@ -53,7 +53,7 @@ file_path_for_gif <- paste0(prefix, "/movies/example2.gif")
 Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.
 Options for gif file can be specified using ani.options(). 
 
-```{r, results=T}
+```{r, results=T, cache=T}
 my_plot <- function() {
   for (i in 1:10){
     plot(runif(10), ylim = 0:1)
