@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="173">
+<meta itemprop="wordCount" content="179">
 
 
 
@@ -195,6 +195,12 @@
 In saveGIF function, you have to use option convert = ‘gm convert’</li>
 <li>alternativelly, one can use installr::install.ImageMagick()</li>
 </ul>
+<div id="example" class="section level4">
+<h4>Example</h4>
+<pre class="r"><code>if(!dir.exists(&quot;movies&quot;))
+  dir.create(&quot;movies&quot;)
+
+file_path_for_gif &lt;- &quot;movies/example.gif&quot;</code></pre>
 <p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need. Options for gif file can be specified using ani.options().</p>
 <pre class="r"><code>my_plot &lt;- function() {
   for (i in 1:10){
@@ -218,6 +224,7 @@ saveGIF({
 <pre><code>## [1] TRUE</code></pre>
 <pre class="r"><code>knitr::include_graphics(file_path_for_gif)</code></pre>
 <p><img src="/rmarkdown-libs/movies/example2.gif" /><!-- --></p>
+</div>
 </div>
 </div>
 

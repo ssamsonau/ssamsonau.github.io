@@ -39,15 +39,13 @@ saveGIF requires to for ImageMagick or GraphicsMagick to be installed.
 In saveGIF function, you have to use option convert = 'gm convert'
 * alternativelly, one can use installr::install.ImageMagick() 
 
-```{r, echo=FALSE}
-prefix <- '2017-11-22-animation_files'
-if(!dir.exists(prefix)) dir.create(prefix)
+#### Example
 
-if(!dir.exists(paste0(prefix, "/movies"))) 
-  dir.create(paste0(prefix, "/movies"))
+```{r, echo=T}
+if(!dir.exists("movies"))
+  dir.create("movies")
 
-file_path_for_gif <- paste0(prefix, "/movies/example2.gif")
-
+file_path_for_gif <- "movies/example.gif"
 ```
 
 Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.
