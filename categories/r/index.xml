@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R on Sergey Samsonau</title>
-    <link>http://www.ssamsonau.com/categories/r/</link>
+    <link>https://www.ssamsonau.com/categories/r/</link>
     <description>Recent content in R on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ssamsonau.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ssamsonau.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Essentials of Data Science</title>
-      <link>http://www.ssamsonau.com/essentials-of-data-science/</link>
+      <link>https://www.ssamsonau.com/essentials-of-data-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ssamsonau.com/essentials-of-data-science/</guid>
+      <guid>https://www.ssamsonau.com/essentials-of-data-science/</guid>
       <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
 BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc.</description>
     </item>

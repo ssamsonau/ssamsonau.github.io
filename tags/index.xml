@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Sergey Samsonau</title>
-    <link>http://www.ssamsonau.com/tags/</link>
+    <link>https://www.ssamsonau.com/tags/</link>
     <description>Recent content in Tags on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.ssamsonau.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.ssamsonau.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data science</title>
-      <link>http://www.ssamsonau.com/tags/data-science/</link>
+      <link>https://www.ssamsonau.com/tags/data-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ssamsonau.com/tags/data-science/</guid>
+      <guid>https://www.ssamsonau.com/tags/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>http://www.ssamsonau.com/tags/r/</link>
+      <link>https://www.ssamsonau.com/tags/r/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ssamsonau.com/tags/r/</guid>
+      <guid>https://www.ssamsonau.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Science</title>
-      <link>http://www.ssamsonau.com/tags/science/</link>
+      <link>https://www.ssamsonau.com/tags/science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.ssamsonau.com/tags/science/</guid>
+      <guid>https://www.ssamsonau.com/tags/science/</guid>
       <description></description>
     </item>
     
