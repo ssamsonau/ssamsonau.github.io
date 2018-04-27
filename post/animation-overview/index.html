@@ -28,7 +28,7 @@
 <meta name="generator" content="Hugo 0.40.1" />
 
 
-<link rel="canonical" href="https://www.ssamsonau.com/post/animation-overview/" />
+<link rel="canonical" href="/post/animation-overview/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,7 +51,7 @@
 <meta property="og:title" content="Animation Overview" />
 <meta property="og:description" content="A short review of some methods allowing to create animations in R is presented bellow. " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.ssamsonau.com/post/animation-overview/" />
+<meta property="og:url" content="/post/animation-overview/" />
 
 
 
@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="182">
+<meta itemprop="wordCount" content="173">
 
 
 
@@ -195,7 +195,7 @@
 In saveGIF function, you have to use option convert = ‘gm convert’</li>
 <li>alternativelly, one can use installr::install.ImageMagick()</li>
 </ul>
-<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need. Options for gif file can be specified using ani.options.</p>
+<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need. Options for gif file can be specified using ani.options().</p>
 <pre class="r"><code>my_plot &lt;- function() {
   for (i in 1:10){
     plot(runif(10), ylim = 0:1)
@@ -214,12 +214,10 @@ saveGIF({
   convert = &#39;gm convert&#39;,
   # animation options can be specified locally as well
   nmax = 40 
-)
-
-knitr::include_graphics(file_path_for_gif)</code></pre>
-<ul>
-<li><em>Note:</em> Number of steps can be changed globbaly with ani.options(“nmax” = 50)</li>
-</ul>
+)</code></pre>
+<pre><code>## [1] TRUE</code></pre>
+<pre class="r"><code>knitr::include_graphics(file_path_for_gif)</code></pre>
+<p><img src="/rmarkdown-libs/movies/example2.gif" /><!-- --></p>
 </div>
 </div>
 
@@ -278,7 +276,7 @@ knitr::include_graphics(file_path_for_gif)</code></pre>
       <div class="social-links">
       <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
       <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
-  <a href="https://www.ssamsonau.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">

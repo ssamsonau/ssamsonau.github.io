@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Sergey Samsonau</title>
-    <link>https://www.ssamsonau.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     
-	<atom:link href="https://www.ssamsonau.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science</title>
-      <link>https://www.ssamsonau.com/categories/data-science/</link>
+      <link>/categories/data-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/categories/data-science/</guid>
+      <guid>/categories/data-science/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://www.ssamsonau.com/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
