@@ -69,14 +69,5 @@ BooksR for Data ScienceAn Introduction to Statistical LearningData Science f
 write.gif from caTools from matrix of data or 3D array directly to gif file</description>
     </item>
     
-    <item>
-      <title>About</title>
-      <link>https://www.ssamsonau.com/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>https://www.ssamsonau.com/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
-    </item>
-    
   </channel>
 </rss>

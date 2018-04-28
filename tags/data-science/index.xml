@@ -1,40 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data science on Sergey Samsonau</title>
+    <title>Data Science on Sergey Samsonau</title>
     <link>https://www.ssamsonau.com/tags/data-science/</link>
-    <description>Recent content in Data science on Sergey Samsonau</description>
+    <description>Recent content in Data Science on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.ssamsonau.com/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Data Science in Science</title>
-      <link>https://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Essentials of Data Science</title>
+      <link>https://www.ssamsonau.com/post/essentials-of-data-science/</link>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</guid>
-      <description>Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others
-MicrofluidicsChip in a lab: Microfluidics for next generation life science research. link
-A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing. link
-ChemistryAtrificial noseCreating an artificial nose using machine learning. link
-Artificial intelligence accelerates discovery of metallic glass. link</description>
-    </item>
-    
-    <item>
-      <title>Animation Overview</title>
-      <link>https://www.ssamsonau.com/post/animation-overview/</link>
-      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.ssamsonau.com/post/animation-overview/</guid>
-      <description>A short review of some methods allowing to create animations in R is presented bellow.
-Available optionslibrary(animation)saveGIF (relies on ImageMagick or GraphicsMagick)saveVideosaveMoviesaveHTMLother functions heremagick package for ImageMagick use in R
-gganimateadditional use of package tweenr makes a result smotheranimated maps
-write.gif from caTools from matrix of data or 3D array directly to gif file</description>
+      <guid>https://www.ssamsonau.com/post/essentials-of-data-science/</guid>
+      <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
+BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc.</description>
     </item>
     
   </channel>
