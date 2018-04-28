@@ -25,7 +25,7 @@ sequenceDiagrams:
   options: ''
 ---
 
-While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that. 
+While teaching laboratories for calculus-based Physics I figured out there is no teaching curriculum available which would combine actual experiments with computer (or also called numerical) simulations. So, I developed a sequence of 7 lab modules to implement exactly that. 
 
 <!--more-->
 
@@ -41,7 +41,7 @@ So... why don't we teach them to Physics students?
 
 The developed curriculum is composed from modules - each module uses both simulations and experiments to address a phenomena under study, and lasts for 3 weeks (21 weeks total for the whole set). 
 
-Wolfram Mathematica was chosen as a language for computer because itprovides an easy to understand, follow (and modify) way to perform fairly good numerical simulations without a need of teaching students a full scale programming class.
+Wolfram Mathematica was chosen as a language for computer because it provides an easy to understand, follow (and modify) way to perform fairly good numerical simulations without a need of teaching students a full scale programming class.
 
 Topics are: 
 
@@ -53,7 +53,7 @@ Topics are:
 * Doppler shift and Fourier transformation
 * Equipotential lines.
 
-Students generally only have a task setup by a teacher and some "starter code". They have to develop an experiemnt and perform it by themselves. They also have to write the full simulaiton code and then compare experiment results with simulations. 
+Students generally only have a task setup by a teacher and some "starter code". They have to develop an experiment and perform it by themselves. They also have to write the full simulation code and then compare experiment results with simulations. 
 
 This set was taught for two years in a calculus-based Physics Class in the following settings: 40 minutes once a week of class time (plus time allocated by students for work outside of classroom), 3 weeks per module. Most students went through advanced open-ended algebra-based labs the year before and were ready to work with open ended tasks.
 
