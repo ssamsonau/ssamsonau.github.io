@@ -24,11 +24,15 @@ A short review of some methods allowing to create animations in R is presented b
     * [saveMovie](https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout)
     * [saveHTML](https://yihui.name/animation/example/savehtml/)
     * [other functions here](https://cran.r-project.org/web/packages/animation/animation.pdf)
+  
+* [magick package](https://cran.r-project.org/web/packages/magick/vignettes/intro.html#animation) for ImageMagick use in R
 
 * [gganimate](https://github.com/dgrtwo/gganimate)
     * additional use of package [tweenr](http://blog.revolutionanalytics.com/2017/05/tweenr.html) makes a result smother
 
 * [animated maps](https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/)
+
+* [write.gif from caTools](https://www.rdocumentation.org/packages/caTools/versions/1.2/topics/GIF) from matrix of data or 3D array directly to gif file
 
 ### saveGIF
 
@@ -74,3 +78,18 @@ saveGIF({
 
 knitr::include_graphics(file_path_for_gif)
 ```
+
+
+### write.gif (from caTools)
+
+Let say we have a 3D array in variable df_array 1000x1000x600 (600 frames).
+
+```{r, eval=F}
+library(caTools)
+write.gif(df_array, 
+          filename = "examples/test_all_rainbow.gif", 
+          col=rainbow(256)
+          )
+
+```
+

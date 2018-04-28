@@ -10,13 +10,6 @@
   </url>
   
   <url>
-    <loc>https://www.ssamsonau.com/essentials-of-data-science/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://www.ssamsonau.com/projects/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -26,6 +19,13 @@
   <url>
     <loc>https://www.ssamsonau.com/teaching/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ssamsonau.com/post/essentials-of-data-science/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -51,8 +51,8 @@
   </url>
   
   <url>
-    <loc>https://www.ssamsonau.com/categories/data-science/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <loc>https://www.ssamsonau.com/tags/data-science/</loc>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -73,14 +73,7 @@
   
   <url>
     <loc>https://www.ssamsonau.com/tags/r/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.ssamsonau.com/categories/r/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -101,7 +94,7 @@
   
   <url>
     <loc>https://www.ssamsonau.com/tags/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-03-21T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

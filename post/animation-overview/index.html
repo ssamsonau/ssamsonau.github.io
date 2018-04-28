@@ -75,7 +75,7 @@
 
 <meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="179">
+<meta itemprop="wordCount" content="223">
 
 
 
@@ -113,8 +113,6 @@
         <li class="mobile-menu-item">Teaching</li>
       </a><a href="/projects/">
         <li class="mobile-menu-item">Projects</li>
-      </a><a href="/essentials-of-data-science/">
-        <li class="mobile-menu-item">DS-Essentials</li>
       </a>
   </ul>
 </nav>
@@ -132,8 +130,6 @@
         <a class="menu-item-link" href="/teaching/">Teaching</a>
       </li><li class="menu-item">
         <a class="menu-item-link" href="/projects/">Projects</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/essentials-of-data-science/">DS-Essentials</a>
       </li>
   </ul>
 </nav>
@@ -180,11 +176,13 @@
 <li><a href="https://yihui.name/animation/example/savehtml/">saveHTML</a></li>
 <li><a href="https://cran.r-project.org/web/packages/animation/animation.pdf">other functions here</a></li>
 </ul></li>
+<li><p><a href="https://cran.r-project.org/web/packages/magick/vignettes/intro.html#animation">magick package</a> for ImageMagick use in R</p></li>
 <li><a href="https://github.com/dgrtwo/gganimate">gganimate</a>
 <ul>
 <li>additional use of package <a href="http://blog.revolutionanalytics.com/2017/05/tweenr.html">tweenr</a> makes a result smother</li>
 </ul></li>
-<li><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></li>
+<li><p><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></p></li>
+<li><p><a href="https://www.rdocumentation.org/packages/caTools/versions/1.2/topics/GIF">write.gif from caTools</a> from matrix of data or 3D array directly to gif file</p></li>
 </ul>
 <div id="savegif" class="section level3">
 <h3>saveGIF</h3>
@@ -226,6 +224,15 @@ saveGIF({
 <p><img src="/rmarkdown-libs/movies/example2.gif" /><!-- --></p>
 </div>
 </div>
+<div id="write.gif-from-catools" class="section level3">
+<h3>write.gif (from caTools)</h3>
+<p>Let say we have a 3D array in variable df_array 1000x1000x600 (600 frames).</p>
+<pre class="r"><code>library(caTools)
+write.gif(df_array, 
+          filename = &quot;examples/test_all_rainbow.gif&quot;, 
+          col=rainbow(256)
+          )</code></pre>
+</div>
 </div>
 
     </div>
@@ -248,9 +255,9 @@ saveGIF({
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/2018-04-22-data-science-in-science/">
+          <a class="prev" href="/post/essentials-of-data-science/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Data Science in Science</span>
+            <span class="prev-text nav-default">Essentials of Data Science</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
