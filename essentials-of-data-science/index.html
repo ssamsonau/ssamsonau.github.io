@@ -1,357 +1,0 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Essentials of Data Science - Sergey Samsonau</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="Sergey" />
-  <meta name="description" content="There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
-BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc." />
-
-  <meta name="keywords" content="Physics, Data, Science" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.40.1" />
-
-
-<link rel="canonical" href="/essentials-of-data-science/" />
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-
-
-
-<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
-
-
-
-<meta property="og:title" content="Essentials of Data Science" />
-<meta property="og:description" content="There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
-BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/essentials-of-data-science/" />
-
-
-
-<meta property="article:published_time" content="2018-04-22T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2018-04-22T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
-<meta itemprop="name" content="Essentials of Data Science">
-<meta itemprop="description" content="There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
-BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc.">
-
-
-<meta itemprop="datePublished" content="2018-04-22T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-04-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="420">
-
-
-
-<meta itemprop="keywords" content="R," />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Essentials of Data Science"/>
-<meta name="twitter:description" content="There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
-BooksR for Data ScienceAn Introduction to Statistical LearningData Science for BusinessTools, Installation and updatinginstallr packagefor updating R to a newer version (from RGui do installr::updateR())installing Rtools, git, ImageMagick, etc."/>
-
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
-
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
-
-</head>
-<body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Sergey Samsonau</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/teaching/">
-        <li class="mobile-menu-item">Teaching</li>
-      </a><a href="/projects/">
-        <li class="mobile-menu-item">Projects</li>
-      </a><a href="/essentials-of-data-science/">
-        <li class="mobile-menu-item">DS-Essentials</li>
-      </a>
-  </ul>
-</nav>
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Sergey Samsonau</a>
-</div>
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/teaching/">Teaching</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/projects/">Projects</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/essentials-of-data-science/">DS-Essentials</a>
-      </li>
-  </ul>
-</nav>
-    </header>
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-  <div class="post-content">
-      <p>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).</p>
-<div id="books" class="section level3">
-<h3>Books</h3>
-<ul>
-<li><a href="http://r4ds.had.co.nz/">R for Data Science</a></li>
-<li><a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a></li>
-<li><a href="http://shop.oreilly.com/product/0636920028918.do">Data Science for Business</a></li>
-</ul>
-</div>
-<div id="tools-installation-and-updating" class="section level3">
-<h3>Tools, Installation and updating</h3>
-<ul>
-<li>installr package
-<ul>
-<li>for updating R to a newer version (from RGui do installr::updateR())</li>
-<li>installing Rtools, git, ImageMagick, etc. <a href="https://cran.r-project.org/web/packages/installr/installr.pdf">Link</a></li>
-</ul></li>
-<li>devtools package for installation of packages from github repositories directly</li>
-</ul>
-</div>
-<div id="interactive-dashboards" class="section level3">
-<h3>Interactive dashboards</h3>
-<ul>
-<li><a href="https://shiny.rstudio.com/">R Shiny</a></li>
-<li><a href="https://shiny.rstudio.com/gallery/">R Shiny Gallery</a></li>
-</ul>
-</div>
-<div id="cheatsheets" class="section level3">
-<h3>Cheatsheets</h3>
-<ul>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">dplyr and tidyr</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot</a>, <a href="http://shiny.rstudio.com/images/shiny-cheatsheet.pdf">shiny sheet 1</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf">shiny sheet 2</a>, <a href="https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf">regular expressions</a></li>
-</ul>
-</div>
-<div id="databases" class="section level3">
-<h3>Databases</h3>
-<ul>
-<li><a href="SQLZOO">sqlzoo</a>, <a href="https://db.rstudio.com/dplyr/">sql</a></li>
-</ul>
-</div>
-<div id="working-with-medium-data" class="section level3">
-<h3>Working with medium data</h3>
-<ul>
-<li>If data can still fit in RAM of local machine, but slow to process with dplyr, a package <a href="https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf">data.table</a> can provide a faster alternative</li>
-</ul>
-</div>
-<div id="working-with-big-data-located-in-cluster" class="section level3">
-<h3>Working with Big data (located in cluster)</h3>
-<ul>
-<li>sparklyr: <a href="http://spark.rstudio.com/index.html">R interface for Apache Spark</a></li>
-<li>rsparkling: <a href="http://spark.rstudio.com/h2o.html">Sparkling Water (H2O) Machine Learning, including deep learning</a></li>
-<li><a href="http://blog.revolutionanalytics.com/2015/06/using-hadoop-with-r-it-depends.html">R with Hadoop</a></li>
-<li><a href="http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize">Visualize Large Data</a></li>
-</ul>
-</div>
-<div id="text-mining-in-r" class="section level3">
-<h3>Text mining in R</h3>
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/tm/vignettes/tm.pdf">tm</a> package</li>
-<li><a href="https://www.tidytextmining.com/">Text Mining with R (book)</a></li>
-</ul>
-</div>
-<div id="plotting-libraries" class="section level3">
-<h3>Plotting libraries</h3>
-<ul>
-<li>ggplot2 - see <a href="http://r4ds.had.co.nz/">R for Data Science</a>. There are many <a href="https://www.ggplot2-exts.org/">extentions</a> for ggplot2. Some of them are here:
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html">gridExtra</a> to allign plots</li>
-<li><a href="https://www.bioconductor.org/packages/release/bioc/html/ggbio.html">ggbio</a> - can be usefull in order to allign several plots (instead of gridExtra)</li>
-<li><a href="https://github.com/dkahle/ggmap">ggmap</a> to make plots with geographical maps</li>
-<li><a href="http://www.sthda.com/english/wiki/ggpubr-r-package-ggplot2-based-publication-ready-plots#at_pco=smlwn-1.0&amp;at_si=58e452e3ade9d20c&amp;at_ab=per-2&amp;at_pos=0&amp;at_tot=1">ggpubr</a> - modified ggplot2 for publication ready plots</li>
-</ul></li>
-<li><a href="https://plot.ly/ggplot2/">plotly</a> - makes ggplot2 interactive</li>
-<li><a href="http://ggvis.rstudio.com/0.1/ggvis-basics.html">ggvis</a> - interactive plots (behind the scenes, interactive plots are built with shiny)</li>
-<li><a href="https://rstudio.github.io/dygraphs/">dygraph</a> - R interface to the dygraphs JavaScript charting library. It provides rich facilities for charting time-series data in R</li>
-<li><a href="http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize">Visualize Large Data</a></li>
-</ul>
-</div>
-<div id="books-with-rmarkdown" class="section level3">
-<h3>Books with Rmarkdown</h3>
-<ul>
-<li><a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a></li>
-</ul>
-</div>
-<div id="websites-with-rmarkdown" class="section level3">
-<h3>Websites with Rmarkdown</h3>
-<p>Static sites (no need of databases, use of wordpress, etc.). Host for free on GitHub pages</p>
-<ul>
-<li><a href="https://www.rstudio.com/resources/webinars/introducing-blogdown/" class="uri">https://www.rstudio.com/resources/webinars/introducing-blogdown/</a></li>
-<li><a href="https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html" class="uri">https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html</a></li>
-<li>themes for hugo (a static site generator used by blogdown package)
-<ul>
-<li>find the one you like on this site <a href="https://themes.gohugo.io/" class="uri">https://themes.gohugo.io/</a></li>
-<li>press Download - it should open a github address (if it is not GitHub it is ok..)</li>
-<li>use this to install blogdown::install_theme(“user/repo”). It it is not on GitHub speicify hostname</li>
-<li>fine tune the theme</li>
-<li>host on GitHub pages or better in <a href="https://www.netlify.com/github-pages-vs-netlify/">netfly</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="additional-recommended-packagestriks" class="section level3">
-<h3>Additional Recommended Packages/triks</h3>
-<ul>
-<li><a href="https://cran.r-project.org/web/packages/magick/vignettes/intro.html">magick</a> and <a href="https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html">EBImage</a> - all kinds of image transformation, combination, animation, etc.</li>
-<li><a href="https://github.com/pzhaonet/postr">postr</a> - making posters in R</li>
-<li><a href="https://rstudio.github.io/profvis/">profvis</a> - profile the code: see which part of code runs longer</li>
-<li>Adv. shiny tricks <a href="https://github.com/daattali/advanced-shiny" class="uri">https://github.com/daattali/advanced-shiny</a></li>
-<li><a href="https://cran.r-project.org/web/packages/rMouse/vignettes/rMouseVignette.html">rMouse</a> - control mouse</li>
-</ul>
-</div>
-<div id="generally-interesting-resources" class="section level3">
-<h3>Generally interesting resources</h3>
-<ul>
-<li><a href="https://www.reddit.com/r/dataisbeautiful/" class="uri">https://www.reddit.com/r/dataisbeautiful/</a></li>
-<li><a href="https://awesome-r.com/" class="uri">https://awesome-r.com/</a></li>
-<li><a href="http://www.htmlwidgets.org/showcase_leaflet.html" class="uri">http://www.htmlwidgets.org/showcase_leaflet.html</a></li>
-<li>Overview of data sources <a href="https://www.kdnuggets.com/datasets/index.html">here</a></li>
-<li><a href="https://www.drivendata.org/competitions/">DrivenData</a></li>
-<li><a href="https://www.crowdanalytix.com/community">CrowDanalytix</a></li>
-<li><a href="https://www.kaggle.com/competitions?sortBy=deadline&amp;group=all&amp;page=1&amp;segment=allCategories">Kaggle</a></li>
-<li><a href="http://tunedit.org/challenges">Tunedit</a></li>
-</ul>
-</div>
-
-  </div>
-</article>
-        </div>
-        
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    (function() {
-      
-      
-      if (window.location.hostname === 'localhost') return;
-
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      var disqus_shortname = 'www-ssamsonau-com';
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-  
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
-  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    
-      2017 - 
-    2018
-    
-    <span class="author">Sergey Samsonau</span>
-  </span>
-</div>
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      TeX: {equationNumbers: {autoNumber: "AMS"}},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-
-
-
-
-
-
-
-</body>
-</html>

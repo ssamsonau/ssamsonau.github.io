@@ -1,320 +1,0 @@
-<!DOCTYPE html>
-<html lang='en'>
-
-<head>
-  <meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’plot(mtcars)prefix &lt;- &#39;2017-11-22-animation_files&#39;if(!'>
-<meta name='theme-color' content='#ffcd00'>
-
-<meta property='og:title' content='Animation Overview • Sergey Samsonau'>
-<meta property='og:description' content='Let see what is available for antimation in R
-General ideause saveGIFor saveVideo (animation package)or use gganimate: linksaveGIFGeneral overview with executable examples: link
-Other Examples here:
-link1link2animated mapsBefore it will work you need to install one of this:
-ImageMagick (how to install on MAC)GraphicsMagick (how ot install GraphicsMagick on Windows). In saveGIF function, you have to use option convert = ‘gm convert’plot(mtcars)prefix &lt;- &#39;2017-11-22-animation_files&#39;if(!'>
-<meta property='og:url' content='/2017/11/22/animation-overview/'>
-<meta property='og:site_name' content='Sergey Samsonau'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post'><meta property='article:tag' content='R'><meta property='article:published_time' content='2017-11-22T00:00:00Z'/><meta property='article:modified_time' content='2017-11-22T00:00:00Z'/><meta name='twitter:card' content='summary'>
-
-<meta name="generator" content="Hugo 0.40.1" />
-
-  <title>Animation Overview • Sergey Samsonau</title>
-  <link rel='canonical' href='/2017/11/22/animation-overview/'>
-  
-  
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.b0a0b202.css'><style>
-:root{--color-accent:#ffcd00;}
-</style>
-
-</head>
-
-
-<body class='page type-post'>
-
-  <div class='site'>
-
-    <a class='screen-reader-text' href='#content'>Skip to Content</a>
-
-    <div class='main'>
-
-      <nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
-  <div class='container'>
-    
-    <ul><li class='item'>
-        <a href='/'>Home</a>
-      </li><li class='item'>
-        <a href='/teaching/'>Teaching</a>
-      </li><li class='item'>
-        <a href='/projects/'>Projects</a>
-      </li><li class='item'>
-        <a href='/essentials-of-data-science/'>Essentials of Data Science</a>
-      </li><li class='item'>
-        <a href='https://github.com/ssamsonau'>GitHub</a>
-      </li></ul>
-  </div>
-</nav>
-
-      <header id='header' class='header site-header'>
-        <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Sergey Samsonau</p><p class='desc site-desc'></p>
-          </div>
-        </div>
-      </header>
-
-      <main id='content'>
-
-
-<article lang='en' class='entry'>
-  <header class='header entry-header'>
-  <div class='container sep-after'>
-    <div class='header-info'>
-      <h1 class='title'>Animation Overview</h1>
-      
-
-    </div>
-    
-<div class='entry-meta'>
-  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-  
-</svg>
-<span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2017-11-22T00:00:00Z'>2017, Nov 22</time>
-</span>
-
-  
-  
-
-</div>
-
-
-  </div>
-</header>
-
-  
-  
-
-  <div class='container entry-content'>
-  <p>Let see what is available for antimation in R</p>
-<!--more-->
-<div id="general-idea" class="section level3">
-<h3>General idea</h3>
-<ul>
-<li>use saveGIF</li>
-<li>or saveVideo (animation package)</li>
-<li>or use gganimate: <a href="https://github.com/dgrtwo/gganimate">link</a></li>
-</ul>
-</div>
-<div id="savegif" class="section level3">
-<h3>saveGIF</h3>
-<p><em>General overview with executable examples:</em> <a href="https://yihui.name/animation/">link</a></p>
-<p><em>Other Examples here:</em></p>
-<ul>
-<li><a href="https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout">link1</a></li>
-<li><a href="https://yihui.name/animation/example/savegif/">link2</a></li>
-<li><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></li>
-</ul>
-<p>Before it will work you need to install one of this:</p>
-<ul>
-<li>ImageMagick (<a href="https://encodable.com/install_imagemagick_on_mac_osx/">how to install on MAC</a>)</li>
-<li>GraphicsMagick (<a href="http://www.graphicsmagick.org/INSTALL-windows.html">how ot install GraphicsMagick on Windows</a>). In saveGIF function, you have to use option convert = ‘gm convert’</li>
-</ul>
-<pre class="r"><code>plot(mtcars)</code></pre>
-<p><img src="/post/2017-11-22-animation_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="r"><code>prefix &lt;- &#39;2017-11-22-animation_files&#39;
-if(!dir.exists(prefix)) dir.create(prefix)
-if(!dir.exists(paste0(prefix, &quot;/movies&quot;))) 
-  dir.create(paste0(prefix, &quot;/movies&quot;))</code></pre>
-<pre class="r"><code>library(animation)
-library(ggplot2)
-  
-saveGIF({
-    for (i in 1:10) 
-      plot(runif(10), ylim = 0:1)
-        }, 
-        convert = &#39;gm convert&#39;, 
-        movie.name = paste0(prefix, &quot;/test1.gif&quot;))</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<div class="figure">
-<img src="/rmarkdown-libs/test1.gif" alt="Brownian motion" />
-<p class="caption">Brownian motion</p>
-</div>
-<pre class="r"><code>saveGIF({
-  brownian.motion(
-    pch = 21,
-    cex = 5,
-    col = &quot;red&quot;,
-    bg = &quot;yellow&quot;
-  )
-},
-movie.name = paste0(prefix, &quot;/movies/brownian_motion2.gif&quot;),
-interval = runif(30, 0.01, 1),
-nmax = 30, convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<div class="figure">
-<img src="/rmarkdown-libs/movies/brownian_motion2.gif" alt="Brownian motion" />
-<p class="caption">Brownian motion</p>
-</div>
-<p><em>Note:</em> N of steps, is controled by nmax in saveGIF does this. Alternativelly, change in globally with ani.options(“nmax” = 50)</p>
-<div id="example-with-brownian.motion" class="section level5">
-<h5>Example with brownian.motion</h5>
-<p>Look at function brownian.motion and create your own by analog See code iside function</p>
-<pre class="r"><code>brownian.motion</code></pre>
-<pre><code>## function (n = 10, xlim = c(-20, 20), ylim = c(-20, 20), ...) 
-## {
-##     x = rnorm(n)
-##     y = rnorm(n)
-##     for (i in seq_len(ani.options(&quot;nmax&quot;))) {
-##         dev.hold()
-##         plot(x, y, xlim = xlim, ylim = ylim, ...)
-##         text(x, y)
-##         x = x + rnorm(n)
-##         y = y + rnorm(n)
-##         ani.pause()
-##     }
-## }
-## &lt;bytecode: 0x000000000c5f6bb8&gt;
-## &lt;environment: namespace:animation&gt;</code></pre>
-<p>Make your own</p>
-<pre class="r"><code>my_plot &lt;- function() {
-  for (i in 1:10)
-    plot(runif(10), ylim = 0:1)
-}
-
-saveGIF({
-  my_plot()
-}, movie.name = paste0(prefix, &quot;/movies/example2.gif&quot;),
-convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<pre class="r"><code>library(tidyverse)
-mtcars &lt;- mtcars %&gt;%
-  arrange(mpg)
-
-my_plot_2 &lt;- function() {
-  for (i in 1:nrow(mtcars)) {
-    ggplot(mtcars[i,], aes(x = mpg, y = hp))  +
-      geom_point() +
-      xlim(range(mtcars[, &quot;mpg&quot;])) +
-      ylim(range(mtcars[, &quot;hp&quot;]))
-  }
-}
-
-saveGIF({
-  my_plot_2()
-}, movie.name = paste0(prefix, &quot;/movies/example_mtcars.gif&quot;),
-convert = &#39;gm convert&#39;)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<div class="figure">
-<img src="/rmarkdown-libs/movies/example2.gif" alt="Example2" />
-<p class="caption">Example2</p>
-</div>
-<div class="figure">
-<img src="/rmarkdown-libs/movies/example_mtcars.gif" alt="Example mtcars" />
-<p class="caption">Example mtcars</p>
-</div>
-</div>
-</div>
-<div id="animation-package" class="section level3">
-<h3>Animation package</h3>
-<div id="save-html" class="section level4">
-<h4>Save html</h4>
-<p>example from <a href="https://yihui.name/animation/example/savehtml/">here</a></p>
-<pre class="r"><code>current_wd &lt;- getwd()
-if(!dir.exists(paste0(prefix, &quot;/movies/html&quot;))) 
-  dir.create(paste0(prefix, &quot;/movies/html&quot;))
-    
-setwd(paste0(prefix, &quot;/movies/html&quot;)))
-
-des = c(&quot;description&quot;)
-saveHTML({
-  par(mar = c(4, 4, 0.5, 0.5))
-  ani.options(interval = 0.5)
-  for (i in 1:10) {
-    plot(rnorm(50), ylim = c(-3, 3))
-    ani.pause()
-  }
-}, img.name = &quot;norm_plot&quot;, single.opts = &quot;utf8: false&quot;, autoplay = FALSE, 
-interval = 0.5, imgdir = &quot;norm_dir&quot;, htmlfile = &quot;random.html&quot;, 
-ani.height = 400, ani.width = 600, title = &quot;Demo of 50 Normal random numbers&quot;, 
-description = des)
-  
-setwd(current_wd)</code></pre>
-</div>
-</div>
-
-</div>
-
-  
-<footer class='entry-footer'>
-  <div class='container sep-before'>
-  <div class='categories'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
-  
-</svg>
-</span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/data-science'>data science</a>, <a class='category' href='/categories/r'>R</a></div>
-<div class='tags'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
-  <line x1="7" y1="7" x2="7" y2="7"/>
-  
-</svg>
-</span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/r'>R</a></div>
-
-  </div>
-</footer>
-
-
-</article>
-
-<nav class='entry-nav'>
-  <div class='container'><div class='next-entry sep-before'>
-      <a href='/2018/04/22/data-science-in-science/'>
-        <span class='screen-reader-text'>Next post: </span>Data Science in Science<span aria-hidden='true'>Next <svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-  
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-  
-</svg>
-</span>
-      </a>
-    </div></div>
-</nav>
-
-
-
-
-      </main>
-
-      <footer id='footer' class='footer'>
-        <div class='container sep-before'>
-          
-          <div class='copyright'>
-  <p></p>
-</div>
-
-        </div>
-      </footer>
-
-    </div>
-  </div><script>window.__public_path__='\/assets\/js\/'</script>
-
-<script src='/assets/js/main.53e19345.js'></script>
-</body>
-
-</html>
-
