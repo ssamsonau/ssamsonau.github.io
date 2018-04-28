@@ -1,8 +1,13 @@
 ---
 title: Teaching
-author: ~
+author: null
 date: '2018-04-22'
 slug: teaching
+comment: no
+toc: yes
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ## Physics
@@ -12,7 +17,7 @@ slug: teaching
 * Quantum Mechanics (high school)
 * I did setup and now supervise a nanotechnology research laboratory at a high school
 * A course of labs designed to develop student's research skill was developed and will be described soon 
-* A course of labs combining numerical simulations with experiments which I developed will be soon availabe on arxiv.org
+* A course of labs combining numerical simulations with experiments which I developed is now availabe on arxiv.org. [Link](https://arxiv.org/abs/1804.09264)
 
 ## Data Science
 

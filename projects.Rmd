@@ -3,6 +3,10 @@ title: Projects
 author: ~
 date: '2018-04-22'
 slug: projects
+comment: no
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ## Recent papers and preprints

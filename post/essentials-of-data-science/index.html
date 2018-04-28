@@ -28,7 +28,7 @@
 <meta name="generator" content="Hugo 0.40.1" />
 
 
-<link rel="canonical" href="https://www.ssamsonau.com/post/essentials-of-data-science/" />
+<link rel="canonical" href="/post/essentials-of-data-science/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -51,13 +51,13 @@
 <meta property="og:title" content="Essentials of Data Science" />
 <meta property="og:description" content="There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.ssamsonau.com/post/essentials-of-data-science/" />
+<meta property="og:url" content="/post/essentials-of-data-science/" />
 
 
 
 <meta property="article:published_time" content="2018-03-21T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2018-03-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2018-04-28T13:46:55-04:00"/>
 
 
 
@@ -156,82 +156,114 @@
 <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   
-  <div class="post-toc-content always-active">
-    
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#tools-installation-and-updating">Tools, Installation and updating</a></li>
+<li><a href="#interactive-dashboards">Interactive dashboards</a></li>
+<li><a href="#cheatsheets">Cheatsheets</a></li>
+<li><a href="#databases">Databases</a></li>
+<li><a href="#working-with-medium-data">Working with medium data</a></li>
+<li><a href="#working-with-big-data-located-in-cluster">Working with Big data (located in cluster)</a></li>
+<li><a href="#text-mining-in-r">Text mining in R</a></li>
+<li><a href="#plotting-libraries">Plotting libraries</a></li>
+<li><a href="#books-with-rmarkdown">Books with Rmarkdown</a></li>
+<li><a href="#websites-with-rmarkdown">Websites with Rmarkdown</a></li>
+<li><a href="#additional-recommended-packages-triks">Additional Recommended Packages/triks</a></li>
+<li><a href="#generally-interesting-resources">Generally interesting resources</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      <p>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).</p>
-<div id="books" class="section level3">
-<h3>Books</h3>
+      
+
+<p>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).</p>
+
+<h3 id="books">Books</h3>
+
 <ul>
 <li><a href="http://r4ds.had.co.nz/">R for Data Science</a></li>
 <li><a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a></li>
 <li><a href="http://shop.oreilly.com/product/0636920028918.do">Data Science for Business</a></li>
 </ul>
-</div>
-<div id="tools-installation-and-updating" class="section level3">
-<h3>Tools, Installation and updating</h3>
+
+<h3 id="tools-installation-and-updating">Tools, Installation and updating</h3>
+
 <ul>
-<li>installr package
+<li><p>installr package</p>
+
 <ul>
 <li>for updating R to a newer version (from RGui do installr::updateR())</li>
 <li>installing Rtools, git, ImageMagick, etc. <a href="https://cran.r-project.org/web/packages/installr/installr.pdf">Link</a></li>
 </ul></li>
-<li>devtools package for installation of packages from github repositories directly</li>
+
+<li><p>devtools package for installation of packages from github repositories directly</p></li>
 </ul>
-</div>
-<div id="interactive-dashboards" class="section level3">
-<h3>Interactive dashboards</h3>
+
+<h3 id="interactive-dashboards">Interactive dashboards</h3>
+
 <ul>
 <li><a href="https://shiny.rstudio.com/">R Shiny</a></li>
 <li><a href="https://shiny.rstudio.com/gallery/">R Shiny Gallery</a></li>
 <li><a href="https://rstudio.github.io/shinythemes/">R Shiny themes</a></li>
 </ul>
-</div>
-<div id="cheatsheets" class="section level3">
-<h3>Cheatsheets</h3>
+
+<h3 id="cheatsheets">Cheatsheets</h3>
+
 <ul>
-<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">dplyr and tidyr</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot</a>, <a href="http://shiny.rstudio.com/images/shiny-cheatsheet.pdf">shiny sheet 1</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf">shiny sheet 2</a>, <a href="https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf">regular expressions</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">dplyr and tidyr</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot</a>,
+<a href="http://shiny.rstudio.com/images/shiny-cheatsheet.pdf">shiny sheet 1</a>, <a href="https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf">shiny sheet 2</a>,
+<a href="https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf">regular expressions</a></li>
 </ul>
-</div>
-<div id="databases" class="section level3">
-<h3>Databases</h3>
+
+<h3 id="databases">Databases</h3>
+
 <ul>
 <li><a href="SQLZOO">sqlzoo</a>, <a href="https://db.rstudio.com/dplyr/">sql</a></li>
 </ul>
-</div>
-<div id="working-with-medium-data" class="section level3">
-<h3>Working with medium data</h3>
+
+<h3 id="working-with-medium-data">Working with medium data</h3>
+
 <ul>
-<li>If data can still fit in RAM of local machine, but slow to process with dplyr, a package <a href="https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf">data.table</a> can provide a faster alternative
+<li>If data can still fit in RAM of local machine, but slow to process with dplyr, a package  <a href="https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf">data.table</a> can provide a faster alternative
+
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/data.table/vignettes/">vignettes</a></li>
 </ul></li>
 </ul>
-</div>
-<div id="working-with-big-data-located-in-cluster" class="section level3">
-<h3>Working with Big data (located in cluster)</h3>
+
+<h3 id="working-with-big-data-located-in-cluster">Working with Big data (located in cluster)</h3>
+
 <ul>
 <li>sparklyr: <a href="http://spark.rstudio.com/index.html">R interface for Apache Spark</a></li>
 <li>rsparkling: <a href="http://spark.rstudio.com/h2o.html">Sparkling Water (H2O) Machine Learning, including deep learning</a></li>
 <li><a href="http://blog.revolutionanalytics.com/2015/06/using-hadoop-with-r-it-depends.html">R with Hadoop</a></li>
 <li><a href="http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize">Visualize Large Data</a></li>
 </ul>
-</div>
-<div id="text-mining-in-r" class="section level3">
-<h3>Text mining in R</h3>
+
+<h3 id="text-mining-in-r">Text mining in R</h3>
+
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/tm/vignettes/tm.pdf">tm</a> package</li>
 <li><a href="https://www.tidytextmining.com/">Text Mining with R (book)</a></li>
 </ul>
-</div>
-<div id="plotting-libraries" class="section level3">
-<h3>Plotting libraries</h3>
+
+<h3 id="plotting-libraries">Plotting libraries</h3>
+
 <ul>
-<li>ggplot2 - see <a href="http://r4ds.had.co.nz/">R for Data Science</a>. There are many <a href="https://www.ggplot2-exts.org/">extentions</a> for ggplot2. Some of them are here:
+<li>ggplot2 - see <a href="http://r4ds.had.co.nz/">R for Data Science</a>.
+There are many <a href="https://www.ggplot2-exts.org/">extentions</a> for ggplot2. Some of them are here:
+
 <ul>
 <li><a href="https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html">gridExtra</a> to allign plots</li>
 <li><a href="https://www.bioconductor.org/packages/release/bioc/html/ggbio.html">ggbio</a> - can be usefull in order to allign several plots (instead of gridExtra)</li>
@@ -244,52 +276,53 @@
 <li><a href="http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize">Visualize Large Data</a></li>
 <li><a href="https://github.com/EmilHvitfeldt/r-color-palettes">color palletes in R</a></li>
 </ul>
-</div>
-<div id="books-with-rmarkdown" class="section level3">
-<h3>Books with Rmarkdown</h3>
+
+<h3 id="books-with-rmarkdown">Books with Rmarkdown</h3>
+
 <ul>
-<li><a href="https://bookdown.org/yihui/bookdown/" class="uri">https://bookdown.org/yihui/bookdown/</a></li>
+<li><a href="https://bookdown.org/yihui/bookdown/">https://bookdown.org/yihui/bookdown/</a></li>
 </ul>
-</div>
-<div id="websites-with-rmarkdown" class="section level3">
-<h3>Websites with Rmarkdown</h3>
+
+<h3 id="websites-with-rmarkdown">Websites with Rmarkdown</h3>
+
 <p>Static sites (no need of databases, use of wordpress, etc.). Host for free on GitHub pages</p>
+
 <ul>
-<li><a href="https://www.rstudio.com/resources/webinars/introducing-blogdown/" class="uri">https://www.rstudio.com/resources/webinars/introducing-blogdown/</a></li>
-<li><a href="https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html" class="uri">https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html</a></li>
+<li><a href="https://www.rstudio.com/resources/webinars/introducing-blogdown/">https://www.rstudio.com/resources/webinars/introducing-blogdown/</a></li>
+<li><a href="https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html">https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html</a></li>
 <li>themes for hugo (a static site generator used by blogdown package)
+
 <ul>
-<li>find the one you like on this site <a href="https://themes.gohugo.io/" class="uri">https://themes.gohugo.io/</a></li>
+<li>find the one you like on this site <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></li>
 <li>press Download - it should open a github address (if it is not GitHub it is ok..)</li>
-<li>use this to install blogdown::install_theme(“user/repo”). It it is not on GitHub speicify hostname</li>
+<li>use this to install blogdown::install_theme(&ldquo;user/repo&rdquo;). It it is not on GitHub speicify hostname</li>
 <li>fine tune the theme</li>
 <li>host on GitHub pages or better in <a href="https://www.netlify.com/github-pages-vs-netlify/">netfly</a></li>
 </ul></li>
 </ul>
-</div>
-<div id="additional-recommended-packagestriks" class="section level3">
-<h3>Additional Recommended Packages/triks</h3>
+
+<h3 id="additional-recommended-packages-triks">Additional Recommended Packages/triks</h3>
+
 <ul>
-<li><a href="https://cran.r-project.org/web/packages/magick/vignettes/intro.html">magick</a> and <a href="https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html">EBImage</a> - all kinds of image transformation, combination, animation, etc.</li>
+<li><a href="https://cran.r-project.org/web/packages/magick/vignettes/intro.html">magick</a> and <a href="https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html">EBImage</a>  - all kinds of image transformation, combination, animation, etc.</li>
 <li><a href="https://github.com/pzhaonet/postr">postr</a> - making posters in R</li>
 <li><a href="https://rstudio.github.io/profvis/">profvis</a> - profile the code: see which part of code runs longer</li>
-<li>Adv. shiny tricks <a href="https://github.com/daattali/advanced-shiny" class="uri">https://github.com/daattali/advanced-shiny</a></li>
+<li>Adv. shiny tricks <a href="https://github.com/daattali/advanced-shiny">https://github.com/daattali/advanced-shiny</a></li>
 <li><a href="https://cran.r-project.org/web/packages/rMouse/vignettes/rMouseVignette.html">rMouse</a> - control mouse</li>
 </ul>
-</div>
-<div id="generally-interesting-resources" class="section level3">
-<h3>Generally interesting resources</h3>
+
+<h3 id="generally-interesting-resources">Generally interesting resources</h3>
+
 <ul>
-<li><a href="https://www.reddit.com/r/dataisbeautiful/" class="uri">https://www.reddit.com/r/dataisbeautiful/</a></li>
-<li><a href="https://awesome-r.com/" class="uri">https://awesome-r.com/</a></li>
-<li><a href="http://www.htmlwidgets.org/showcase_leaflet.html" class="uri">http://www.htmlwidgets.org/showcase_leaflet.html</a></li>
+<li><a href="https://www.reddit.com/r/dataisbeautiful/">https://www.reddit.com/r/dataisbeautiful/</a></li>
+<li><a href="https://awesome-r.com/">https://awesome-r.com/</a></li>
+<li><a href="http://www.htmlwidgets.org/showcase_leaflet.html">http://www.htmlwidgets.org/showcase_leaflet.html</a></li>
 <li>Overview of data sources <a href="https://www.kdnuggets.com/datasets/index.html">here</a></li>
 <li><a href="https://www.drivendata.org/competitions/">DrivenData</a></li>
 <li><a href="https://www.crowdanalytix.com/community">CrowDanalytix</a></li>
 <li><a href="https://www.kaggle.com/competitions?sortBy=deadline&amp;group=all&amp;page=1&amp;segment=allCategories">Kaggle</a></li>
 <li><a href="http://tunedit.org/challenges">Tunedit</a></li>
 </ul>
-</div>
 
     </div>
 
@@ -351,7 +384,7 @@
       <div class="social-links">
       <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
       <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
-  <a href="https://www.ssamsonau.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">

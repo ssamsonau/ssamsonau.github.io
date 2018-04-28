@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Physics on Sergey Samsonau</title>
+    <link>/tags/physics/</link>
+    <description>Recent content in Physics on Sergey Samsonau</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Sergey Samsonau</copyright>
+    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Experimental labs with computer simulations</title>
+      <link>/post/exp-labs-with-simulations/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/exp-labs-with-simulations/</guid>
+      <description>&lt;p&gt;While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

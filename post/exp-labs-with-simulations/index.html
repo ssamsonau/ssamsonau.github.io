@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Experimental labs with computer simulations - Sergey Samsonau</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Sergey" />
+  <meta name="description" content="While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that.
+
+" />
+
+  <meta name="keywords" content="Physics, Data, Science" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="canonical" href="/post/exp-labs-with-simulations/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+
+
+<meta property="og:title" content="Experimental labs with computer simulations" />
+<meta property="og:description" content="While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/exp-labs-with-simulations/" />
+
+
+
+<meta property="article:published_time" content="2018-04-28T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-04-28T13:46:55-04:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Experimental labs with computer simulations">
+<meta itemprop="description" content="While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that.
+
+">
+
+
+<meta itemprop="datePublished" content="2018-04-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-04-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="0">
+
+
+
+<meta itemprop="keywords" content="teaching,Physics," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Experimental labs with computer simulations"/>
+<meta name="twitter:description" content="While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that.
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Sergey Samsonau</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Blog</li>
+      </a><a href="/teaching/">
+        <li class="mobile-menu-item">Teaching</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">Projects</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Sergey Samsonau</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Blog</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/teaching/">Teaching</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">Projects</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Experimental labs with computer simulations</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-04-28 </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#motivation">Motivation</a></li>
+<li><a href="#description">Description</a></li>
+<li><a href="#more-details">More details</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      <p>While teaching laboratories for caclus-based Phyisics I fugured out there is no teaching curriculum available wich would combine actuall experiments with computer (or also called numerical) simulations. So, I developed a sequence fo 7 lab modules to implement exactly that.</p>
+
+<p></p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>Computer simulations are now everywhere. Complexity of many real system does not allow to obtain a model written through analytic equations. In such situations numerical simulations provide a good (if not the only one) way to do address them.</p>
+
+<p>Computer simulations allow people to perform weather forecasting, understand dynamics of star clusters, enhance particle physics research, allow to perform simulations of chemical interactions, as well as address many other systems.</p>
+
+<p>So&hellip; why don&rsquo;t we teach them to Physics students?</p>
+
+<h2 id="description">Description</h2>
+
+<p>The developed curriculum is composed from modules - each module uses both simulations and experiments to address a phenomena under study, and lasts for 3 weeks (21 weeks total for the whole set).</p>
+
+<p>Wolfram Mathematica was chosen as a language for computer because itprovides an easy to understand, follow (and modify) way to perform fairly good numerical simulations without a need of teaching students a full scale programming class.</p>
+
+<p>Topics are:</p>
+
+<ul>
+<li>Motion with a drag</li>
+<li>Pendulum with an arbitrary amplitude</li>
+<li>Magnus effect</li>
+<li>Centripetal force acting on a pendulum</li>
+<li>A ball rolling from paths of various shapes</li>
+<li>Doppler shift and Fourier transformation</li>
+<li>Equipotential lines.</li>
+</ul>
+
+<p>Students generally only have a task setup by a teacher and some &ldquo;starter code&rdquo;. They have to develop an experiemnt and perform it by themselves. They also have to write the full simulaiton code and then compare experiment results with simulations.</p>
+
+<p>This set was taught for two years in a calculus-based Physics Class in the following settings: 40 minutes once a week of class time (plus time allocated by students for work outside of classroom), 3 weeks per module. Most students went through advanced open-ended algebra-based labs the year before and were ready to work with open ended tasks.</p>
+
+<h2 id="more-details">More details</h2>
+
+<ul>
+<li><a href="https://arxiv.org/abs/1804.09264">preprint on arxiv.org</a></li>
+<li><a href="https://github.com/ssamsonau/NumSim_Exp_PhysLabs">code on GitHub</a></li>
+</ul>
+    </div>
+
+    
+    
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/teaching/">teaching</a>
+          
+          <a href="/tags/physics/">Physics</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/2018-04-22-data-science-in-science/">
+            <span class="next-text nav-default">Data Science in Science</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'www-ssamsonau-com';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    
+      2017 - 
+    2018
+    
+    <span class="author">Sergey Samsonau</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-118372959-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

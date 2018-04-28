@@ -1,22 +1,19 @@
 ---
 date: 2018-04-22
+lastmod: '2018-04-28T13:46:55-04:00'
 title:  "Data Science in Science"
 tags: [data science, science]
 summary: "A custom summary of my post."
 description: "Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others"
+toc: yes
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others
 
 <!--more-->
-
-
-## Microfluidics
-
-* _Chip in a lab: Microfluidics for next generation life science research._ [link](http://scitation.aip.org/content/aip/journal/bmf/7/1/10.1063/1.4789751)
-
-* _A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing._ [link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0104539)
-
 
 ## Chemistry
 
@@ -48,7 +45,7 @@ Here I gather some examples of use of Data Scince in a traditional sciences: Phy
 
 * _Machine Learning in Nuclear Energy Applications._ [link](http://large.stanford.edu/courses/2015/ph241/alhusseini2/)
 
-### Higs boson
+### Higgs boson
 
 * _Use the ATLAS experiment to identify the Higgs boson._ [link](https://www.kaggle.com/c/higgs-boson)
 
@@ -58,6 +55,13 @@ Here I gather some examples of use of Data Scince in a traditional sciences: Phy
 ## Medicine
 
 * _Predicting non-small cell lung cancer prognosis by fully automated microscopic pathology image features._ [link](http://www.nature.com/articles/ncomms12474)
+
+
+## Microfluidics
+
+* _Chip in a lab: Microfluidics for next generation life science research._ [link](http://scitation.aip.org/content/aip/journal/bmf/7/1/10.1063/1.4789751)
+
+* _A Contact-Imaging Based Microfluidic Cytometer with Machine-Learning for Single-Frame Super-Resolution Processing._ [link](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0104539)
 
 
 ## Oceanography

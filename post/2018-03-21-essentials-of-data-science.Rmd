@@ -2,6 +2,7 @@
 title: Essentials of Data Science
 author: Sergey Samsonau
 date: '2018-03-21'
+lastmod: '2018-04-28T13:46:55-04:00'
 slug: essentials-of-data-science
 tags: [Data Science, R]
 description: There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).

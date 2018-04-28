@@ -16,7 +16,10 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Sergey" /><meta name="description" content="A short review of some methods allowing to create animations in R is presented bellow. " />
+<meta name="author" content="Sergey" />
+  <meta name="description" content="A short review of some methods allowing to create animations in R is presented bellow.
+
+" />
 
   <meta name="keywords" content="Physics, Data, Science" />
 
@@ -28,7 +31,7 @@
 <meta name="generator" content="Hugo 0.40.1" />
 
 
-<link rel="canonical" href="https://www.ssamsonau.com/post/animation-overview/" />
+<link rel="canonical" href="/post/animation-overview/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,15 +52,17 @@
 
 
 <meta property="og:title" content="Animation Overview" />
-<meta property="og:description" content="A short review of some methods allowing to create animations in R is presented bellow. " />
+<meta property="og:description" content="A short review of some methods allowing to create animations in R is presented bellow.
+
+" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.ssamsonau.com/post/animation-overview/" />
+<meta property="og:url" content="/post/animation-overview/" />
 
 
 
-<meta property="article:published_time" content="2017-11-22T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2017-04-02T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2017-11-22T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2017-04-02T00:00:00&#43;00:00"/>
 
 
 
@@ -70,19 +75,23 @@
 
 
 <meta itemprop="name" content="Animation Overview">
-<meta itemprop="description" content="A short review of some methods allowing to create animations in R is presented bellow. ">
+<meta itemprop="description" content="A short review of some methods allowing to create animations in R is presented bellow.
+
+">
 
 
-<meta itemprop="datePublished" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2017-11-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="223">
+<meta itemprop="datePublished" content="2017-04-02T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2017-04-02T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="0">
 
 
 
 <meta itemprop="keywords" content="data science,R," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Animation Overview"/>
-<meta name="twitter:description" content="A short review of some methods allowing to create animations in R is presented bellow. "/>
+<meta name="twitter:description" content="A short review of some methods allowing to create animations in R is presented bellow.
+
+"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -144,7 +153,7 @@
       <h1 class="post-title">Animation Overview</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2017-11-22 </span>
+        <span class="post-time"> 2017-04-02 </span>
         
         
         
@@ -157,50 +166,80 @@
   <h2 class="post-toc-title">Contents</h2>
   
   <div class="post-toc-content always-active">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#available-options">Available options</a>
+<ul>
+<li><a href="#savegif">saveGIF</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#write-gif-from-catools">write.gif (from caTools)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
   </div>
 </div>
 
     
     <div class="post-content">
       <p>A short review of some methods allowing to create animations in R is presented bellow.</p>
-<!--more-->
-<div id="available-options" class="section level2">
-<h2>Available options</h2>
+
+<p></p>
+
+<h2 id="available-options">Available options</h2>
+
 <ul>
-<li>library(animation)
+<li><p>library(animation)</p>
+
 <ul>
 <li><a href="https://yihui.name/animation/example/savegif/">saveGIF</a> (relies on ImageMagick or GraphicsMagick)</li>
 <li><a href="https://yihui.name/animation/example/savevideo/">saveVideo</a></li>
 <li><a href="https://github.com/tidyverse/ggplot2/wiki/Using-ggplot2-animations-to-demonstrate-several-parallel-numerical-experiments-in-a-single-layout">saveMovie</a></li>
 <li><a href="https://yihui.name/animation/example/savehtml/">saveHTML</a></li>
-<li><a href="https://cran.r-project.org/web/packages/animation/animation.pdf">other functions here</a></li>
+<li><a href="https://cran.r-project.org/web/packages/animation/animation.pdf">other functions here</a>
+<br /></li>
 </ul></li>
+
 <li><p><a href="https://cran.r-project.org/web/packages/magick/vignettes/intro.html#animation">magick package</a> for ImageMagick use in R</p></li>
-<li><a href="https://github.com/dgrtwo/gganimate">gganimate</a>
+
+<li><p><a href="https://github.com/dgrtwo/gganimate">gganimate</a></p>
+
 <ul>
 <li>additional use of package <a href="http://blog.revolutionanalytics.com/2017/05/tweenr.html">tweenr</a> makes a result smother</li>
 </ul></li>
+
 <li><p><a href="https://ryanpeek.github.io/2016-10-19-animated-gif_maps_in_R/">animated maps</a></p></li>
+
 <li><p><a href="https://www.rdocumentation.org/packages/caTools/versions/1.2/topics/GIF">write.gif from caTools</a> from matrix of data or 3D array directly to gif file</p></li>
 </ul>
-<div id="savegif" class="section level3">
-<h3>saveGIF</h3>
+
+<h3 id="savegif">saveGIF</h3>
+
 <p>saveGIF requires to for ImageMagick or GraphicsMagick to be installed.</p>
+
 <ul>
 <li>ImageMagick (<a href="https://encodable.com/install_imagemagick_on_mac_osx/">how to install on MAC</a>)</li>
 <li>GraphicsMagick (<a href="http://www.graphicsmagick.org/INSTALL-windows.html">how ot install GraphicsMagick on Windows</a>).<br />
-In saveGIF function, you have to use option convert = ‘gm convert’</li>
+In saveGIF function, you have to use option convert = &lsquo;gm convert&rsquo;</li>
 <li>alternativelly, one can use installr::install.ImageMagick()</li>
 </ul>
-<div id="example" class="section level4">
-<h4>Example</h4>
-<pre class="r"><code>if(!dir.exists(&quot;movies&quot;))
+
+<h4 id="example">Example</h4>
+
+<pre><code class="language-r">if(!dir.exists(&quot;movies&quot;))
   dir.create(&quot;movies&quot;)
 
-file_path_for_gif &lt;- &quot;movies/example.gif&quot;</code></pre>
-<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need. Options for gif file can be specified using ani.options().</p>
-<pre class="r"><code>my_plot &lt;- function() {
+file_path_for_gif &lt;- &quot;movies/example.gif&quot;
+</code></pre>
+
+<p>Now you can just use a code bellow. Replace a plot() function by the ploting funciton you need.
+Options for gif file can be specified using ani.options().</p>
+
+<pre><code class="language-r">my_plot &lt;- function() {
   for (i in 1:10){
     plot(runif(10), ylim = 0:1)
   }
@@ -215,26 +254,30 @@ saveGIF({
     my_plot()
   }, 
   movie.name = file_path_for_gif,
-  convert = &#39;gm convert&#39;,
+  convert = 'gm convert',
   # animation options can be specified locally as well
   nmax = 40 
-)</code></pre>
-<pre><code>## [1] TRUE</code></pre>
-<pre class="r"><code>knitr::include_graphics(file_path_for_gif)</code></pre>
-<p><img src="/rmarkdown-libs/movies/example2.gif" /><!-- --></p>
-</div>
-</div>
-<div id="write.gif-from-catools" class="section level3">
-<h3>write.gif (from caTools)</h3>
+)
+</code></pre>
+
+<pre><code>## [1] TRUE
+</code></pre>
+
+<pre><code class="language-r">knitr::include_graphics(file_path_for_gif)
+</code></pre>
+
+<p><img src="movies/example.gif" alt="" /><!-- --></p>
+
+<h3 id="write-gif-from-catools">write.gif (from caTools)</h3>
+
 <p>Let say we have a 3D array in variable df_array 1000x1000x600 (600 frames).</p>
-<pre class="r"><code>library(caTools)
+
+<pre><code class="language-r">library(caTools)
 write.gif(df_array, 
           filename = &quot;examples/test_all_rainbow.gif&quot;, 
           col=rainbow(256)
-          )</code></pre>
-</div>
-</div>
-
+          )
+</code></pre>
     </div>
 
     
@@ -290,7 +333,7 @@ write.gif(df_array,
       <div class="social-links">
       <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
       <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
-  <a href="https://www.ssamsonau.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
