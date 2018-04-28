@@ -35,6 +35,8 @@ knitr::opts_chunk$set(echo = TRUE, cache = T, warning = F, message = F)
 
 * [write.gif from caTools](https://www.rdocumentation.org/packages/caTools/versions/1.2/topics/GIF) from matrix of data or 3D array directly to gif file
 
+## Some examples
+
 ### saveGIF
 
 saveGIF requires to for ImageMagick or GraphicsMagick to be installed. 
