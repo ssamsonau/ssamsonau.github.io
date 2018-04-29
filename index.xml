@@ -24,6 +24,17 @@
     </item>
     
     <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>For my Master&amp;rsquo;s degree (theoretical Physics) I was playing with a behavior of a particle transitioning between potential wells. This was addressed using computer simulations in Matlab and Wolfram Mathematica.
+ Later I got interested in psychology, took some training, and went to work in IT, playing with algorithms for stock market trading (mostly using C).
+ For PhD degree (Physics) I was working on studying a growth mechanism of graphene-like (1 layer carbon film) films on a quartz substrate.</description>
+    </item>
+    
+    <item>
       <title>Data Science in Science</title>
       <link>/post/2018-04-22-data-science-in-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>

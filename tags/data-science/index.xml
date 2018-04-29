@@ -1,50 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data science on Sergey Samsonau</title>
+    <title>Data Science on Sergey Samsonau</title>
     <link>/tags/data-science/</link>
-    <description>Recent content in Data science on Sergey Samsonau</description>
+    <description>Recent content in Data Science on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Sun, 22 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Data Science in Science</title>
-      <link>/post/2018-04-22-data-science-in-science/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
+      <title>Essentials of Data Science</title>
+      <link>/post/essentials-of-data-science/</link>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018-04-22-data-science-in-science/</guid>
-      <description>&lt;p&gt;Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>/projects/</link>
-      <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/projects/</guid>
-      <description>Recent papers and preprints  Computer simulations combined with experiments for calculus-based Physics laboratory course. Sergey V. Samsonau. arXiv:1804.09264 [physics.ed-ph], April 2018. Link
- Integrating Science Through Authentic Research in Secondary Schools
-E. Mohlhenrich, S. V. Samsonau, R. P. Spencer. IEEE Integrated STEM Education Conference, March 2018. Link
- Thyroid Hormone Status in Stroke and Transient Ischemic Attack Patients
-Halinouskaya, N. V.; Samsonau, S. V.; Usava, N. N.; Smychek, V.</description>
-    </item>
-    
-    <item>
-      <title>Animation Overview</title>
-      <link>/post/animation-overview/</link>
-      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/animation-overview/</guid>
-      <description>&lt;p&gt;A short review of some methods allowing to create animations in R is presented bellow.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>/post/essentials-of-data-science/</guid>
+      <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
+Books  R for Data Science An Introduction to Statistical Learning Data Science for Business  Tools, Installation and updating  installr package</description>
     </item>
     
   </channel>
