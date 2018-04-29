@@ -38,6 +38,13 @@
   </url>
   
   <url>
+    <loc>/form_success/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/essentials-of-data-science/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
