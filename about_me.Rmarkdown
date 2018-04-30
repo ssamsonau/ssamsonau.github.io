@@ -7,38 +7,46 @@ comment: no
 toc: no
 ---
 
+My interests include Physics, Data Science, Education.
 
-* For my Master's degree (theoretical Physics) I was playing with a behavior of a particle transitioning between potential wells. This was addressed using computer simulations in Matlab and Wolfram Mathematica.
+### Short story
 
-* Later I got interested in psychology, took some training, and went to work in IT, playing with algorithms for stock market trading (mostly using C).
+* For my _Master's degree_ (theoretical Physics) I was playing with a behavior of a particle transitioning between potential wells. This was addressed using computer simulations in Matlab and Wolfram Mathematica.
 
-* For PhD degree (Physics) I was working on studying a growth mechanism of graphene-like (1 layer carbon film) films on a quartz substrate. Part of work - experiment, part - computer simulation using Quantum Espresso and CUNY high performance computer center resources.
+* Later I got interested in _psychology_, participated in some educational classes, which now, probably, influences my teaching a lot.  
 
-* After teaching Physics at City University of New York for several years I formed an impression, that introducing Physics to students at a college level may be much less efficient comparing to do doing that at a High School (I was introduced to Physics at 9th grade, and had some basis for comparison). 
+* Then I went to _work in IT_, playing with algorithms for stock market trading (mostly using C).
 
-    * So I went to work at a High School to teach Physics. I focused on labs for core classes (algebra- and calculus-based) and on Quantum Mechanics
+* For _PhD degree_ (Physics) I was working on studying a growth mechanism of graphene-like (1 layer carbon film) films on a quartz substrate. Part of work - experiment, part - computer simulation using Quantum Espresso and CUNY high performance computer center resources.
+
+* After _teaching Physics at City University of New York_ for several years I formed an impression, that introducing Physics to students at a college level may be much less efficient comparing to do doing that at a High School (I was introduced to Physics at 9th grade, and had some basis for comparison). 
+
+    * So I went to work at a _High School to teach Physics_. I focused on labs for core classes (algebra- and calculus-based) and on Quantum Mechanics
     * It appeared that having an opportunity to introduce research as part of a Physics curriculum is really beneficial for general kids' understanding on how Physics works
     * At the high school I was (and am) working on 1) teaching kids stuff 2) preparing them to do research 3) mentoring them in their research activities
     * I did organize and do mentor lab on micro- and nano- technology
     * Quantum Mechanics class follows a college level book, starting with Dirac notation at the beginning - much better way comparing to wave mechanics (from my teaching experience)
     
-* While teaching Physics I also started learning/doing Data Science. 
+* While teaching Physics I also started _learning/doing Data Science_. 
     * Coursera classes, projects on Kaggle, books, projects, etc 
     * In 2016 I and a colleague [organized a training program](https://www.ket-labs.com) for PhDs at Columbia University  
     * In 2017 I started teaching a full year class of Data Science for kids at a High School (see [teaching page](/teaching)).
-    * I also spend some time working as a consultant at NYC firms.
+    * I also spend some time working as a _consultant at NYC firms_.
     
-* At this moment I continue to teach Physics (theory, experiment, computer simulations), and Data Science, while also doing some projects and consulting as time allows
+### At this moment 
+
+I continue to teach Physics (theory, experiment, computer simulations), and Data Science, while also doing some projects and consulting as time allows
 
 ### Tools I have being using
 
 #### Data Science and Programming
-R, R shiny, SQL, bash, Spark, H2O, C, Matlab, Wolfram Mathematica
+R, R shiny, SQL, bash, Spark, H2O, C, Matlab, Wolfram Mathematica.    
+High performance computing(HPC), Density Functional Theory (DFT), Quantum ESPRESSO
 
 
 #### Experimental Physics
 
-CVD, MBE, photo-lithography, plasma and etching, sputtering, processing in clean room environment, AFM, SEM, spectroscopy, photo-lithography. High performance computing(HPC), Density Functional Theory (DFT), Quantum ESPRESSO
+CVD, MBE, photo-lithography, plasma and etching, sputtering, processing in clean room environment, AFM, SEM, spectroscopy, photo-lithography. 
 
 ## Contact Form
 
