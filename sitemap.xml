@@ -1,127 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://www.ssamsonau.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/post/exp-labs-with-simulations/</loc>
+    <loc>https://www.ssamsonau.com/post/exp-labs-with-simulations/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>https://www.ssamsonau.com/about/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/post/2018-04-22-data-science-in-science/</loc>
+    <loc>https://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>https://www.ssamsonau.com/projects/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/teaching/</loc>
+    <loc>https://www.ssamsonau.com/teaching/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/message_sent/</loc>
+    <loc>https://www.ssamsonau.com/message_sent/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/post/essentials-of-data-science/</loc>
+    <loc>https://www.ssamsonau.com/post/essentials-of-data-science/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/post/animation-overview/</loc>
+    <loc>https://www.ssamsonau.com/post/animation-overview/</loc>
     <lastmod>2017-04-02T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://www.ssamsonau.com/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/data-science/</loc>
+    <loc>https://www.ssamsonau.com/tags/data-science/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/data-science/</loc>
+    <loc>https://www.ssamsonau.com/tags/data-science/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/physics/</loc>
+    <loc>https://www.ssamsonau.com/tags/physics/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/</loc>
+    <loc>https://www.ssamsonau.com/post/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>https://www.ssamsonau.com/tags/r/</loc>
     <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/science/</loc>
+    <loc>https://www.ssamsonau.com/tags/science/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>https://www.ssamsonau.com/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://www.ssamsonau.com/tags/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/teaching/</loc>
+    <loc>https://www.ssamsonau.com/tags/teaching/</loc>
     <lastmod>2018-04-28T13:46:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
