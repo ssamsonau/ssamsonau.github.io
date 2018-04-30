@@ -35,6 +35,17 @@
     </item>
     
     <item>
+      <title>Animation Overview</title>
+      <link>/post/animation-overview/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/animation-overview/</guid>
+      <description>&lt;p&gt;A short review of some methods allowing to create animations in R is presented bellow.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Essentials of Data Science</title>
       <link>/post/essentials-of-data-science/</link>
       <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
@@ -42,17 +53,6 @@
       <guid>/post/essentials-of-data-science/</guid>
       <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
 Books  R for Data Science An Introduction to Statistical Learning Data Science for Business  Tools, Installation and updating  installr package</description>
-    </item>
-    
-    <item>
-      <title>Animation Overview</title>
-      <link>/post/animation-overview/</link>
-      <pubDate>Sun, 02 Apr 2017 00:00:00 +0000</pubDate>
-      
-      <guid>/post/animation-overview/</guid>
-      <description>&lt;p&gt;A short review of some methods allowing to create animations in R is presented bellow.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
