@@ -3,7 +3,7 @@ title: Animation Overview
 date: '2018-04-02'
 slug: animation-overview
 tags: [data science, R]
-draft: yes
+draft: TRUE
 ---
 
 A short review of some methods allowing to create animations in R is presented bellow.
