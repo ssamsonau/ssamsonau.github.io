@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Sergey Samsonau</title>
-    <link>https://www.ssamsonau.com/post/</link>
+    <link>/post/</link>
     <description>Recent content in Posts on Sergey Samsonau</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ssamsonau.com/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Experimental labs with computer simulations</title>
-      <link>https://www.ssamsonau.com/post/exp-labs-with-simulations/</link>
+      <link>/post/exp-labs-with-simulations/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/post/exp-labs-with-simulations/</guid>
+      <guid>/post/exp-labs-with-simulations/</guid>
       <description>&lt;p&gt;While teaching laboratories for calculus-based Physics I figured out there is no teaching curriculum available which would combine actual experiments with computer (or also called numerical) simulations. So, I developed a sequence of 7 lab modules to implement exactly that.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -25,10 +25,10 @@
     
     <item>
       <title>Data Science in Science</title>
-      <link>https://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</link>
+      <link>/post/2018-04-22-data-science-in-science/</link>
       <pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/post/2018-04-22-data-science-in-science/</guid>
+      <guid>/post/2018-04-22-data-science-in-science/</guid>
       <description>&lt;p&gt;Here I gather some examples of use of Data Scince in a traditional sciences: Physics, Chemistry, Biology, and others&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -36,10 +36,10 @@
     
     <item>
       <title>Animation Overview</title>
-      <link>https://www.ssamsonau.com/post/animation-overview/</link>
+      <link>/post/animation-overview/</link>
       <pubDate>Mon, 02 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/post/animation-overview/</guid>
+      <guid>/post/animation-overview/</guid>
       <description>&lt;p&gt;A short review of some methods allowing to create animations in R is presented bellow.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
@@ -47,10 +47,10 @@
     
     <item>
       <title>Essentials of Data Science</title>
-      <link>https://www.ssamsonau.com/post/essentials-of-data-science/</link>
+      <link>/post/essentials-of-data-science/</link>
       <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ssamsonau.com/post/essentials-of-data-science/</guid>
+      <guid>/post/essentials-of-data-science/</guid>
       <description>There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).
 Books  R for Data Science An Introduction to Statistical Learning Data Science for Business  Tools, Installation and updating  installr package</description>
     </item>
