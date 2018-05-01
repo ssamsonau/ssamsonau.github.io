@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Sergey Samsonau</title>
+    <title>Posts on Simplissimo</title>
     <link>/post/</link>
-    <description>Recent content in Posts on Sergey Samsonau</description>
+    <description>Recent content in Posts on Simplissimo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Multiple comparison</title>
+      <link>/post/multiple-comparison/</link>
+      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/multiple-comparison/</guid>
+      <description>&lt;p&gt;Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &amp;lt; 0.05 - right?&lt;/p&gt;
+
+&lt;p&gt;Actually no&amp;hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &amp;ldquo;multiple comparison&amp;rdquo; problem.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Experimental labs with computer simulations</title>
