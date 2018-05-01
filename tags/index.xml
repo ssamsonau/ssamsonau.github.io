@@ -6,13 +6,23 @@
     <description>Recent content in Tags on Simplissimo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <copyright>Sergey Samsonau</copyright>
+    <lastBuildDate>Wed, 21 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science</title>
+      <link>/tags/data-science/</link>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data science</title>
       <link>/tags/data-science/</link>
       <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
       
