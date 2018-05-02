@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teaching Data Science in a High School</title>
+      <link>/post/teaching-data-science-in-a-high-school/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/teaching-data-science-in-a-high-school/</guid>
+      <description>&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Multiple comparison</title>
@@ -617,6 +626,7 @@ There are many &lt;a href=&#34;https://www.ggplot2-exts.org/&#34;&gt;extentions&
 &lt;li&gt;fine tune the theme&lt;/li&gt;
 &lt;li&gt;host on GitHub pages or better in &lt;a href=&#34;https://www.netlify.com/github-pages-vs-netlify/&#34;&gt;netfly&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;If you want to edit directly online, you can use this free service - &lt;a href=&#34;https://cloudcannon.com/&#34;&gt;cloudcannon&lt;/a&gt;. Also static webistes.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;additional-recommended-packages-triks&#34;&gt;Additional Recommended Packages/triks&lt;/h3&gt;
