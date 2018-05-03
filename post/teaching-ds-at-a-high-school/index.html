@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Teaching Data Science at a High School - Simplissimo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Sergey Samsonau" />
+  <meta name="description" content="For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.
+
+" />
+
+  <meta name="keywords" content="Physics, Data, Science" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.40.1" />
+
+
+<link rel="canonical" href="/post/teaching-ds-at-a-high-school/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+
+
+<meta property="og:title" content="Teaching Data Science at a High School" />
+<meta property="og:description" content="For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.
+
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/teaching-ds-at-a-high-school/" />
+
+
+
+<meta property="article:published_time" content="2018-05-01T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-05-03T00:00:00&#43;00:00"/>
+
+<meta property="og:site_name" content="Simplissimo" />
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="Teaching Data Science at a High School">
+<meta itemprop="description" content="For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.
+
+">
+
+
+<meta itemprop="datePublished" content="2018-05-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-05-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="0">
+
+
+
+<meta itemprop="keywords" content="R,data science," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Teaching Data Science at a High School"/>
+<meta name="twitter:description" content="For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.
+
+"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Simplissimo</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Blog</li>
+      </a><a href="/teaching/">
+        <li class="mobile-menu-item">Teaching</li>
+      </a><a href="/projects/">
+        <li class="mobile-menu-item">Projects</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Simplissimo</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Blog</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/teaching/">Teaching</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/projects/">Projects</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Teaching Data Science at a High School</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-05-01 </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#class-organization">Class organization</a>
+<ul>
+<li><a href="#class-format">Class format</a></li>
+<li><a href="#material-distribution">Material distribution</a>
+<ul>
+<li><a href="#semester-1-data-exploration-and-communication">Semester 1 - Data Exploration and Communication</a></li>
+<li><a href="#semester-2-machine-learning">Semester 2 - Machine Learning</a></li>
+</ul></li>
+<li><a href="#tests">Tests</a></li>
+</ul></li>
+<li><a href="#why-r">Why R?</a></li>
+<li><a href="#is-there-a-place-for-data-science-in-a-high-school">Is there a place for Data Science in a High School?</a>
+<ul>
+<li><a href="#4-quadrants-of-science-education">4 Quadrants of Science education</a></li>
+<li><a href="#data-science-naturally-forces-open-ended-thinking">Data Science naturally forces open ended thinking</a></li>
+</ul></li>
+<li><a href="#outcomes">Outcomes</a>
+<ul>
+<li><a href="#projects-examples">Projects examples</a>
+<ul>
+<li><a href="#group-project">Group project</a></li>
+<li><a href="#class-projects">Class projects</a></li>
+<li><a href="#students-research-projects">Students&rsquo; research projects</a></li>
+</ul></li>
+<li><a href="#p-s-when-data-science-shines">P.S. When data science shines</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    
+
+    
+    <div class="post-content">
+      <p>For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.</p>
+
+<p></p>
+
+<p>I started mentoring high school student research projects in Data Science 3 years ago, and this lead to a full scale 1 year class of Data Science. The class was taught at The Princeton International School of Mathematics and Science (<a href="http://www.prismsus.org/">PRISMS</a>) - a small private school with exceptional students and research program for students. More about why doing research at high school makes sense and why it beneficial to students you can find <a href="https://ieeexplore.ieee.org/abstract/document/8340465/">here</a>.</p>
+
+<h2 id="class-organization">Class organization</h2>
+
+<h3 id="class-format">Class format</h3>
+
+<ul>
+<li>Monday (40 minutes) - work on Shiny (1st semester)</li>
+<li>Tue (90 min) - work on material: theory, exercises, practical examples, etc.</li>
+<li>Thu (90 min) - work on a class projects (independent by each student, and 1 joint project)</li>
+</ul>
+
+<h3 id="material-distribution">Material distribution</h3>
+
+<h4 id="semester-1-data-exploration-and-communication">Semester 1 - Data Exploration and Communication</h4>
+
+<p>The first thing I figured is that data exploration education takes time&hellip; I am using the whole semester to go over the book <a href="http://r4ds.had.co.nz/">&ldquo;R for Data Science&rdquo;</a>, where students learn to load data, explore and modify it using dplyr, plot data using ggplot2. The exercises in the book are just great!</p>
+
+<p>On top of that once a week we spend time to implement some data analysis in R Shiny. This is extremely important for students to be able to make a completed project they can show to others. R Shiny puts abstract data exploration into a context of real world use by other people.</p>
+
+<p>Git. Important. Really important. Students learn to use Git/GitHub independently and in group. We use both internal R studio&rsquo;s Git interface and <a href="https://www.sourcetreeapp.com/">SourceTree</a> (no bash).</p>
+
+<p>To summarize, we do cover:</p>
+
+<ul>
+<li>Data exploration and plotting following <a href="http://r4ds.had.co.nz/">&ldquo;R for Data Science&rdquo;</a></li>
+<li>Careful reading of errors produced by R. Looking for solutions online</li>
+<li>Use of internal R help, packages vignettes and documentation</li>
+<li>Learning new tools/packages independently</li>
+<li>Shiny</li>
+<li>Git and GitHub</li>
+<li>Mentioning on how to use SQL if needed</li>
+<li>Students make an independent and a group project</li>
+<li>getting data by API (twitter)</li>
+</ul>
+
+<h4 id="semester-2-machine-learning">Semester 2 - Machine Learning</h4>
+
+<p>In the second semester we move to machine learning and follow the book <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning</a>. We cover all the topics in the book. In the first chapters exercises are quite useful. However later, we move to use caret for most of the machine learning work.</p>
+
+<p>To summarize, things covered are:</p>
+
+<ul>
+<li>machine learning following <a href="http://www-bcf.usc.edu/~gareth/ISL/">Introduction to Statistical Learning</a> book</li>
+<li><a href="http://caret.r-forge.r-project.org/">caret package</a> for machine learning</li>
+<li>text mining</li>
+<li>getting data by API (twitter)</li>
+<li>Big data (basic examples and intro only): Spark (<a href="http://spark.rstudio.com/">sparklyr</a>), H2o.ai with R, deep learning</li>
+<li>students make independent machine learning projects.</li>
+</ul>
+
+<h3 id="tests">Tests</h3>
+
+<p>Every test is a small project students have to do. I usually give some general points students shall address in their data exploration or ML algorithm.</p>
+
+<p>Tests are a perfect time to introduce new tools as well. As this way students are forced to learn them and at the same time learning to learn new tools on their own.<br />
+For example, students can be asked to work with dates/times and advised to use lubridate package. Or for a machine learning test, students can be given a task with text, accompanied by an initial introduction to a text-mining approaches/packages.</p>
+
+<h2 id="why-r">Why R?</h2>
+
+<p>Why did I choose to use R for the class (and not Python, Mathematica, MATLAB&hellip;)?</p>
+
+<p>The first obvious reason to choose R vs Mathematica/MATLAB is that it is free and open source. It is also easier to work with than let say Mathematica.</p>
+
+<p>R has tons of packages that <em>are easy to install</em>, which allow to do almost anything.</p>
+
+<p>Python package dependences can be hard to manage. It can be OK for yourself, but when you have many students and you have to deal with installation problems which differ among platforms, the choice is clear - R just works on different platforms (most of the time :) )</p>
+
+<p>And, I personally, like R, especially <a href="https://www.tidyverse.org/">tidyverse</a> universe of packages. R is built around data analysis, and focuses students on that!</p>
+
+<h2 id="is-there-a-place-for-data-science-in-a-high-school">Is there a place for Data Science in a High School?</h2>
+
+<p>The valid question actually&hellip; Why bother? Why not to focus student on more traditional classes, or give him/her to take one more AP?</p>
+
+<h3 id="4-quadrants-of-science-education">4 Quadrants of Science education</h3>
+
+<p>A science education curriculum in a high school (Physics, Chemistry, Biology, &hellip;) is often focuses on theory. However, in real science there are at least 3 main parts: theory, experiment, and computer(numerical) simulations. And in order to present science to students in a right light, all of them should be covered in parallel (if possible). Data analysis traditionally was included into an experiment. However, the modern tools available make this area much wider and much more powerful than before. Now we can even build new type of models - ML models, in addition to theoretical models, and computer simulation models. (I do address computer simulations in another post <a href="/post/exp-labs-with-simulations/">here</a>)</p>
+
+<p>Thus, I strongly believe modern education in science should include the following 4 parts - 4 quadrants of science if you will. Such education will allow students to enrich their experience in any science they do. Students can perform better, reproducible data analysis, can do better clearer plots, will communicate better, and may find many more new ways to get something useful out of the data.</p>
+
+<p><img src="/images/2018-05-03-teaching-ds-at-a-high-school/4_quadrants.png" width="200px" style="display: block; margin: auto;" /></p>
+
+<h3 id="data-science-naturally-forces-open-ended-thinking">Data Science naturally forces open ended thinking</h3>
+
+<p>High school students learn new tools fast. It is not an issue at all to teach students &ldquo;how&rdquo; to use R and various packages. At the same time Data Science class provides a perfect platform to teach students to address the following:</p>
+
+<ul>
+<li>how to formulate a question</li>
+<li>which questions are meaningful</li>
+<li>why do you do this or this action with data</li>
+<li>why would you want to have this or this plot</li>
+<li>how do you make a clear message</li>
+<li>generally, &ldquo;why&rdquo; and &ldquo;what&rdquo; instead of a simple &ldquo;how&rdquo; - the question generally found in open ended tasks</li>
+</ul>
+
+<p>Thus, there is a lot of time spend in a classroom to have discussions of such sort. It is of a paramount importance.  This is one of the reasons making Data Science class such a good fit for a high school - it naturally forces kids to think independently on open ended tasks!</p>
+
+<h2 id="outcomes">Outcomes</h2>
+
+<ul>
+<li>It is not a big deal for students to learn to code in R.</li>
+<li>Generally, after the class students get much more confident to address open ended problems.</li>
+<li>They learn to &ldquo;figure out things&rdquo; instead of asking for help (or even worse getting stuck) for every small detail.</li>
+<li>At the same time, they learn to formulate good question when they actually need help. Students get a practice in making a &ldquo;complete project&rdquo;, which is presentable to the public and self-explanatory (in an ideal case).</li>
+<li>Students learn tools which they can apply (and they actually do) in other disciplines (especially in research projects). Examples include:
+
+<ul>
+<li>Cellphone tower data analysis</li>
+<li>Astrophysics data</li>
+<li>Electron microscope (SEM) image segmentation</li>
+<li>Atomic force microscope (AFM) image analysis</li>
+<li>Analysis of data obtained from a school-launched satellite</li>
+<li>Visualization of genomic data</li>
+<li>Analysis of text in a literature class</li>
+</ul></li>
+</ul>
+
+<h3 id="projects-examples">Projects examples</h3>
+
+<h4 id="group-project">Group project</h4>
+
+<ul>
+<li><em>Renewable Energy exploration. Big Data Challenge</em>:<br />
+<a href="https://gk-233.shinyapps.io/BigData_PRISMS/">Shiny app</a>, <a href="https://github.com/prismsus/DS_2017-18-big-data-Pr">code on GitHub</a>, <a href="https://github.com/prismsus/DS_2017-18-big-data-Pr/blob/master/bdc-challenge-2018.pdf">Report in PDF</a></li>
+</ul>
+
+<h4 id="class-projects">Class projects</h4>
+
+<ul>
+<li><p>Television show &ldquo;Produce 101&rdquo; seasons 1 &amp; 2 data analysis:
+<a href="http://rpubs.com/gk_233/351143">Report</a> and <a href="https://gk-233.shinyapps.io/Produce_101_Data_Analysis/">Shiny App</a></p></li>
+
+<li><p><em>The Quality of National Top Universities in Each State</em>:
+<a href="https://gk-233.shinyapps.io/Produce_101_Data_Analysis/">Shiny app</a></p></li>
+</ul>
+
+<h4 id="students-research-projects">Students&rsquo; research projects</h4>
+
+<ul>
+<li><p><em>Automating Reconstruction of Focused Ion Beam Current Density Distribution</em><br />
+poster presented at FIBSEM meeting on March, 2017 (X. Li, S. Samsonau, E. Chang, V. Ray)<br />
+<em>Poster at professional meeting:</em> Click for <a href="http://www.fibsem.net/web_documents/2017Presentations/P08-Ray-PBS-poster.pdf">poster</a> and an <a href="https://cloud.ket-labs.com/shiny/FIB/">interactive application</a><br />
+Code is not published yet - work in progress</p></li>
+
+<li><p><em>Application of data science in tourism</em><br />
+<em>1st Place in Behavioral and Social Science at Mercer County Fair</em> (<a href="http://www.mercersec.org/sites/default/files/2018%20Compact%20Awards%20Ceremony%20Report.pdf">link to results</a>)<br />
+Code is not published yet - work in progress</p></li>
+
+<li><p><em>Correlation between emotional factors and the stock market</em><br />
+Click for <a href="https://github.com/prismsus/HighFrequency/blob/master/Final_Presentation.Rmd">report</a>, <a href="https://github.com/prismsus/HighFrequency/blob/master/poster/Final_poster.pdf">poster</a>, <a href="https://github.com/prismsus/HighFrequency">code</a></p></li>
+
+<li><p><em>Detecting fraud in election by statistical method</em><br />
+Click for <a href="https://github.com/prismsus/election/blob/master/presentation.md">report</a> and <a href="https://github.com/prismsus/election">code</a></p></li>
+</ul>
+
+<h3 id="p-s-when-data-science-shines">P.S. When data science shines</h3>
+
+<p>It is actually often the case, that most interesting data projects come from applying data science tools/methodology to an area where a student has an extensive knowledge, or at least has a profound interest. High school is a perfect place for students to learn data science tools and apply them, to whatever area they like!</p>
+    </div>
+    
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Sergey Samsonau</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2018-05-03</span>
+  </p>
+  
+  
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/r/">R</a>
+          
+          <a href="/tags/data-science/">data science</a>
+          
+        </div>
+
+ 
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	 
+</style>
+<div id="mc_embed_signup">
+<form action="https://ssamsonau.us18.list-manage.com/subscribe/post?u=22c2a422869c46f4edff2c1db&amp;id=7bee2ad4cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address to subscribe" required>
+    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_22c2a422869c46f4edff2c1db_7bee2ad4cc" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+
+
+ 
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/multiple-comparison/">
+            <span class="next-text nav-default">Multiple comparison</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+          
+<div class="addthis_inline_share_toolbox"></div>
+            
+        </div>
+        
+
+      
+  <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    (function() {
+      
+      
+      if (window.location.hostname === 'localhost') return;
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      var disqus_shortname = 'www-ssamsonau-com';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://twitter.com/ssamsonau" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
+  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    
+    <span class="author">Sergey Samsonau</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: {equationNumbers: {autoNumber: "AMS"}},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-118372959-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+
+   
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ae63d0eb9a1c0ad" async></script>
+
+ 
+</body>
+</html>
