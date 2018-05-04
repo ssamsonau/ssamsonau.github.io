@@ -7,22 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Mon, 30 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Data Science</title>
-      <link>/tags/data-science/</link>
-      <pubDate>Mon, 30 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/data-science/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data science</title>
       <link>/tags/data-science/</link>
       <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
@@ -51,7 +42,7 @@
     <item>
       <title>Teaching</title>
       <link>/tags/teaching/</link>
-      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/teaching/</guid>
       <description></description>

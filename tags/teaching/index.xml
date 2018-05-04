@@ -7,10 +7,180 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Teaching Data Science at a High School</title>
+      <link>/post/teaching-ds-at-a-high-school/</link>
+      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/teaching-ds-at-a-high-school/</guid>
+      <description>&lt;p&gt;For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I started mentoring high school student research projects in Data Science 3 years ago, and this lead to a full scale 1 year class of Data Science. The class was taught at The Princeton International School of Mathematics and Science (&lt;a href=&#34;http://www.prismsus.org/&#34;&gt;PRISMS&lt;/a&gt;) - a small private school with exceptional students and research program for students. More about why doing research at high school makes sense and why it beneficial to students you can find &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/8340465/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;class-organization&#34;&gt;Class organization&lt;/h2&gt;
+
+&lt;h3 id=&#34;class-format&#34;&gt;Class format&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Monday (40 minutes) - work on Shiny (1st semester)&lt;/li&gt;
+&lt;li&gt;Tue (90 min) - work on material: theory, exercises, practical examples, etc.&lt;/li&gt;
+&lt;li&gt;Thu (90 min) - work on a class projects (independent by each student, and 1 joint project)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;material-distribution&#34;&gt;Material distribution&lt;/h3&gt;
+
+&lt;h4 id=&#34;semester-1-data-exploration-and-communication&#34;&gt;Semester 1 - Data Exploration and Communication&lt;/h4&gt;
+
+&lt;p&gt;The first thing I figured is that data exploration education takes time&amp;hellip; I am using the whole semester to go over the book &lt;a href=&#34;http://r4ds.had.co.nz/&#34;&gt;&amp;ldquo;R for Data Science&amp;rdquo;&lt;/a&gt;, where students learn to load data, explore and modify it using dplyr, plot data using ggplot2. The exercises in the book are just great!&lt;/p&gt;
+
+&lt;p&gt;On top of that once a week we spend time to implement some data analysis in R Shiny. This is extremely important for students to be able to make a completed project they can show to others. R Shiny puts abstract data exploration into a context of real world use by other people.&lt;/p&gt;
+
+&lt;p&gt;Git. Important. Really important. Students learn to use Git/GitHub independently and in group. We use both internal R studio&amp;rsquo;s Git interface and &lt;a href=&#34;https://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; (no bash).&lt;/p&gt;
+
+&lt;p&gt;To summarize, we do cover:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Data exploration and plotting following &lt;a href=&#34;http://r4ds.had.co.nz/&#34;&gt;&amp;ldquo;R for Data Science&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Careful reading of errors produced by R. Looking for solutions online&lt;/li&gt;
+&lt;li&gt;Use of internal R help, packages vignettes and documentation&lt;/li&gt;
+&lt;li&gt;Learning new tools/packages independently&lt;/li&gt;
+&lt;li&gt;Shiny&lt;/li&gt;
+&lt;li&gt;Git and GitHub&lt;/li&gt;
+&lt;li&gt;Mentioning on how to use SQL if needed&lt;/li&gt;
+&lt;li&gt;Students make an independent and a group project&lt;/li&gt;
+&lt;li&gt;getting data by API (twitter)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;semester-2-machine-learning&#34;&gt;Semester 2 - Machine Learning&lt;/h4&gt;
+
+&lt;p&gt;In the second semester we move to machine learning and follow the book &lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;Introduction to Statistical Learning&lt;/a&gt;. We cover all the topics in the book. In the first chapters exercises are quite useful. However later, we move to use caret for most of the machine learning work.&lt;/p&gt;
+
+&lt;p&gt;To summarize, things covered are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;machine learning following &lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;Introduction to Statistical Learning&lt;/a&gt; book&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://caret.r-forge.r-project.org/&#34;&gt;caret package&lt;/a&gt; for machine learning&lt;/li&gt;
+&lt;li&gt;text mining&lt;/li&gt;
+&lt;li&gt;getting data by API (twitter)&lt;/li&gt;
+&lt;li&gt;Big data (basic examples and intro only): Spark (&lt;a href=&#34;http://spark.rstudio.com/&#34;&gt;sparklyr&lt;/a&gt;), H2o.ai with R, deep learning&lt;/li&gt;
+&lt;li&gt;students make independent machine learning projects.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tests&#34;&gt;Tests&lt;/h3&gt;
+
+&lt;p&gt;Every test is a small project students have to do. I usually give some general points students shall address in their data exploration or ML algorithm.&lt;/p&gt;
+
+&lt;p&gt;Tests are a perfect time to introduce new tools as well. As this way students are forced to learn them and at the same time learning to learn new tools on their own.&lt;br /&gt;
+For example, students can be asked to work with dates/times and advised to use lubridate package. Or for a machine learning test, students can be given a task with text, accompanied by an initial introduction to a text-mining approaches/packages.&lt;/p&gt;
+
+&lt;h2 id=&#34;why-r&#34;&gt;Why R?&lt;/h2&gt;
+
+&lt;p&gt;Why did I choose to use R for the class (and not Python, Mathematica, MATLAB&amp;hellip;)?&lt;/p&gt;
+
+&lt;p&gt;The first obvious reason to choose R vs Mathematica/MATLAB is that it is free and open source. It is also easier to work with than let say Mathematica.&lt;/p&gt;
+
+&lt;p&gt;R has tons of packages that &lt;em&gt;are easy to install&lt;/em&gt;, which allow to do almost anything.&lt;/p&gt;
+
+&lt;p&gt;Python package dependences can be hard to manage. It can be OK for yourself, but when you have many students and you have to deal with installation problems which differ among platforms, the choice is clear - R just works on different platforms (most of the time :) )&lt;/p&gt;
+
+&lt;p&gt;And, I personally, like R, especially &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;tidyverse&lt;/a&gt; universe of packages. R is built around data analysis, and focuses students on that!&lt;/p&gt;
+
+&lt;h2 id=&#34;is-there-a-place-for-data-science-in-a-high-school&#34;&gt;Is there a place for Data Science in a High School?&lt;/h2&gt;
+
+&lt;p&gt;The valid question actually&amp;hellip; Why bother? Why not to focus student on more traditional classes, or give him/her to take one more AP?&lt;/p&gt;
+
+&lt;h3 id=&#34;4-quadrants-of-science-education&#34;&gt;4 Quadrants of Science education&lt;/h3&gt;
+
+&lt;p&gt;A science education curriculum in a high school (Physics, Chemistry, Biology, &amp;hellip;) is often focuses on theory. However, in real science there are at least 3 main parts: theory, experiment, and computer(numerical) simulations. And in order to present science to students in a right light, all of them should be covered in parallel (if possible). Data analysis traditionally was included into an experiment. However, the modern tools available make this area much wider and much more powerful than before. Now we can even build new type of models - ML models, in addition to theoretical models, and computer simulation models. (I do address computer simulations in another post &lt;a href=&#34;/post/exp-labs-with-simulations/&#34;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Thus, I strongly believe modern education in science should include the following 4 parts - 4 quadrants of science if you will. Such education will allow students to enrich their experience in any science they do. Students can perform better, reproducible data analysis, can do better clearer plots, will communicate better, and may find many more new ways to get something useful out of the data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/images/2018-05-03-teaching-ds-at-a-high-school/4_quadrants.png&#34; width=&#34;200px&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;data-science-naturally-forces-open-ended-thinking&#34;&gt;Data Science naturally forces open ended thinking&lt;/h3&gt;
+
+&lt;p&gt;High school students learn new tools fast. It is not an issue at all to teach students &amp;ldquo;how&amp;rdquo; to use R and various packages. At the same time Data Science class provides a perfect platform to teach students to address the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;how to formulate a question&lt;/li&gt;
+&lt;li&gt;which questions are meaningful&lt;/li&gt;
+&lt;li&gt;why do you do this or this action with data&lt;/li&gt;
+&lt;li&gt;why would you want to have this or this plot&lt;/li&gt;
+&lt;li&gt;how do you make a clear message&lt;/li&gt;
+&lt;li&gt;generally, &amp;ldquo;why&amp;rdquo; and &amp;ldquo;what&amp;rdquo; instead of a simple &amp;ldquo;how&amp;rdquo; - the question generally found in open ended tasks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thus, there is a lot of time spend in a classroom to have discussions of such sort. It is of a paramount importance.  This is one of the reasons making Data Science class such a good fit for a high school - it naturally forces kids to think independently on open ended tasks!&lt;/p&gt;
+
+&lt;h2 id=&#34;outcomes&#34;&gt;Outcomes&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It is not a big deal for students to learn to code in R.&lt;/li&gt;
+&lt;li&gt;Generally, after the class students get much more confident to address open ended problems.&lt;/li&gt;
+&lt;li&gt;They learn to &amp;ldquo;figure out things&amp;rdquo; instead of asking for help (or even worse getting stuck) for every small detail.&lt;/li&gt;
+&lt;li&gt;At the same time, they learn to formulate good question when they actually need help. Students get a practice in making a &amp;ldquo;complete project&amp;rdquo;, which is presentable to the public and self-explanatory (in an ideal case).&lt;/li&gt;
+&lt;li&gt;Students learn tools which they can apply (and they actually do) in other disciplines (especially in research projects). Examples include:
+
+&lt;ul&gt;
+&lt;li&gt;Cellphone tower data analysis&lt;/li&gt;
+&lt;li&gt;Astrophysics data&lt;/li&gt;
+&lt;li&gt;Electron microscope (SEM) image segmentation&lt;/li&gt;
+&lt;li&gt;Atomic force microscope (AFM) image analysis&lt;/li&gt;
+&lt;li&gt;Analysis of data obtained from a school-launched satellite&lt;/li&gt;
+&lt;li&gt;Visualization of genomic data&lt;/li&gt;
+&lt;li&gt;Analysis of text in a literature class&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;projects-examples&#34;&gt;Projects examples&lt;/h3&gt;
+
+&lt;h4 id=&#34;group-project&#34;&gt;Group project&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Renewable Energy exploration. Big Data Challenge&lt;/em&gt;:&lt;br /&gt;
+&lt;a href=&#34;https://gk-233.shinyapps.io/BigData_PRISMS/&#34;&gt;Shiny app&lt;/a&gt;, &lt;a href=&#34;https://github.com/prismsus/DS_2017-18-big-data-Pr&#34;&gt;code on GitHub&lt;/a&gt;, &lt;a href=&#34;https://github.com/prismsus/DS_2017-18-big-data-Pr/blob/master/bdc-challenge-2018.pdf&#34;&gt;Report in PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;class-projects&#34;&gt;Class projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Television show &amp;ldquo;Produce 101&amp;rdquo; seasons 1 &amp;amp; 2 data analysis:
+&lt;a href=&#34;http://rpubs.com/gk_233/351143&#34;&gt;Report&lt;/a&gt; and &lt;a href=&#34;https://gk-233.shinyapps.io/Produce_101_Data_Analysis/&#34;&gt;Shiny App&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;The Quality of National Top Universities in Each State&lt;/em&gt;:
+&lt;a href=&#34;https://gk-233.shinyapps.io/Produce_101_Data_Analysis/&#34;&gt;Shiny app&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;students-research-projects&#34;&gt;Students&amp;rsquo; research projects&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Automating Reconstruction of Focused Ion Beam Current Density Distribution&lt;/em&gt;&lt;br /&gt;
+poster presented at FIBSEM meeting on March, 2017 (X. Li, S. Samsonau, E. Chang, V. Ray)&lt;br /&gt;
+&lt;em&gt;Poster at professional meeting:&lt;/em&gt; Click for &lt;a href=&#34;http://www.fibsem.net/web_documents/2017Presentations/P08-Ray-PBS-poster.pdf&#34;&gt;poster&lt;/a&gt; and an &lt;a href=&#34;https://cloud.ket-labs.com/shiny/FIB/&#34;&gt;interactive application&lt;/a&gt;&lt;br /&gt;
+Code is not published yet - work in progress&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Application of data science in tourism&lt;/em&gt;&lt;br /&gt;
+&lt;em&gt;1st Place in Behavioral and Social Science at Mercer County Fair&lt;/em&gt; (&lt;a href=&#34;http://www.mercersec.org/sites/default/files/2018%20Compact%20Awards%20Ceremony%20Report.pdf&#34;&gt;link to results&lt;/a&gt;)&lt;br /&gt;
+Code is not published yet - work in progress&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Correlation between emotional factors and the stock market&lt;/em&gt;&lt;br /&gt;
+Click for &lt;a href=&#34;https://github.com/prismsus/HighFrequency/blob/master/Final_Presentation.Rmd&#34;&gt;report&lt;/a&gt;, &lt;a href=&#34;https://github.com/prismsus/HighFrequency/blob/master/poster/Final_poster.pdf&#34;&gt;poster&lt;/a&gt;, &lt;a href=&#34;https://github.com/prismsus/HighFrequency&#34;&gt;code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Detecting fraud in election by statistical method&lt;/em&gt;&lt;br /&gt;
+Click for &lt;a href=&#34;https://github.com/prismsus/election/blob/master/presentation.md&#34;&gt;report&lt;/a&gt; and &lt;a href=&#34;https://github.com/prismsus/election&#34;&gt;code&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;p-s-when-data-science-shines&#34;&gt;P.S. When data science shines&lt;/h3&gt;
+
+&lt;p&gt;It is actually often the case, that most interesting data projects come from applying data science tools/methodology to an area where a student has an extensive knowledge, or at least has a profound interest. High school is a perfect place for students to learn data science tools and apply them, to whatever area they like!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Experimental labs with computer simulations</title>
@@ -58,6 +228,154 @@
 &lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1804.09264&#34;&gt;preprint on arxiv.org&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ssamsonau/NumSim_Exp_PhysLabs&#34;&gt;code on GitHub&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Essentials of Data Science (with R)</title>
+      <link>/post/essentials-of-data-science/</link>
+      <pubDate>Wed, 21 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/essentials-of-data-science/</guid>
+      <description>
+
+&lt;p&gt;There is a lot of information on Data Science on Internet. On this page I summarize the most essential things you would need to know to start working on real projects. The rest you can figure out on the way. This page is intentionally short (relativelly).&lt;/p&gt;
+
+&lt;h3 id=&#34;books&#34;&gt;Books&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www-bcf.usc.edu/~gareth/ISL/&#34;&gt;An Introduction to Statistical Learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://shop.oreilly.com/product/0636920028918.do&#34;&gt;Data Science for Business&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tools-installation-and-updating&#34;&gt;Tools, Installation and updating&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;installr package&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;for updating R to a newer version (from RGui do installr::updateR())&lt;/li&gt;
+&lt;li&gt;installing Rtools, git, ImageMagick, etc. &lt;a href=&#34;https://cran.r-project.org/web/packages/installr/installr.pdf&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;devtools package for installation of packages from github repositories directly&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;interactive-dashboards&#34;&gt;Interactive dashboards&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://shiny.rstudio.com/&#34;&gt;R Shiny&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://shiny.rstudio.com/gallery/&#34;&gt;R Shiny Gallery&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.github.io/shinythemes/&#34;&gt;R Shiny themes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;cheatsheets&#34;&gt;Cheatsheets&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf&#34;&gt;dplyr and tidyr&lt;/a&gt;, &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf&#34;&gt;ggplot&lt;/a&gt;,
+&lt;a href=&#34;http://shiny.rstudio.com/images/shiny-cheatsheet.pdf&#34;&gt;shiny sheet 1&lt;/a&gt;, &lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2015/02/shiny-cheatsheet.pdf&#34;&gt;shiny sheet 2&lt;/a&gt;,
+&lt;a href=&#34;https://www.rstudio.com/wp-content/uploads/2016/09/RegExCheatsheet.pdf&#34;&gt;regular expressions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;databases&#34;&gt;Databases&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;SQLZOO&#34;&gt;sqlzoo&lt;/a&gt;, &lt;a href=&#34;https://db.rstudio.com/dplyr/&#34;&gt;sql&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;working-with-medium-data&#34;&gt;Working with medium data&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If data can still fit in RAM of local machine, but slow to process with dplyr, a package  &lt;a href=&#34;https://s3.amazonaws.com/assets.datacamp.com/img/blog/data+table+cheat+sheet.pdf&#34;&gt;data.table&lt;/a&gt; can provide a faster alternative
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/data.table/vignettes/&#34;&gt;vignettes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;working-with-big-data-located-in-cluster&#34;&gt;Working with Big data (located in cluster)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;sparklyr: &lt;a href=&#34;http://spark.rstudio.com/index.html&#34;&gt;R interface for Apache Spark&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;rsparkling: &lt;a href=&#34;http://spark.rstudio.com/h2o.html&#34;&gt;Sparkling Water (H2O) Machine Learning, including deep learning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.revolutionanalytics.com/2015/06/using-hadoop-with-r-it-depends.html&#34;&gt;R with Hadoop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize&#34;&gt;Visualize Large Data&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;text-mining-in-r&#34;&gt;Text mining in R&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/tm/vignettes/tm.pdf&#34;&gt;tm&lt;/a&gt; package&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tidytextmining.com/&#34;&gt;Text Mining with R (book)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;plotting-libraries&#34;&gt;Plotting libraries&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ggplot2 - see &lt;a href=&#34;http://r4ds.had.co.nz/&#34;&gt;R for Data Science&lt;/a&gt;.
+There are many &lt;a href=&#34;https://www.ggplot2-exts.org/&#34;&gt;extentions&lt;/a&gt; for ggplot2. Some of them are here:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html&#34;&gt;gridExtra&lt;/a&gt; to allign plots&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bioconductor.org/packages/release/bioc/html/ggbio.html&#34;&gt;ggbio&lt;/a&gt; - can be usefull in order to allign several plots (instead of gridExtra)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/dkahle/ggmap&#34;&gt;ggmap&lt;/a&gt; to make plots with geographical maps&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.sthda.com/english/wiki/ggpubr-r-package-ggplot2-based-publication-ready-plots#at_pco=smlwn-1.0&amp;amp;at_si=58e452e3ade9d20c&amp;amp;at_ab=per-2&amp;amp;at_pos=0&amp;amp;at_tot=1&#34;&gt;ggpubr&lt;/a&gt; - modified ggplot2 for publication ready plots&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://plot.ly/ggplot2/&#34;&gt;plotly&lt;/a&gt; - makes ggplot2 interactive&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ggvis.rstudio.com/0.1/ggvis-basics.html&#34;&gt;ggvis&lt;/a&gt; - interactive plots (behind the scenes, interactive plots are built with shiny)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.github.io/dygraphs/&#34;&gt;dygraph&lt;/a&gt; - R interface to the dygraphs JavaScript charting library. It provides rich facilities for charting time-series data in R&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://spark.rstudio.com/taxiDemoH2O.nb.html#visualize&#34;&gt;Visualize Large Data&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/EmilHvitfeldt/r-color-palettes&#34;&gt;color palletes in R&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;books-with-rmarkdown&#34;&gt;Books with Rmarkdown&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bookdown.org/yihui/bookdown/&#34;&gt;https://bookdown.org/yihui/bookdown/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;websites-with-rmarkdown&#34;&gt;Websites with Rmarkdown&lt;/h3&gt;
+
+&lt;p&gt;Static sites (no need of databases, use of wordpress, etc.). Host for free on GitHub pages&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rstudio.com/resources/webinars/introducing-blogdown/&#34;&gt;https://www.rstudio.com/resources/webinars/introducing-blogdown/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html&#34;&gt;https://slides.yihui.name/2017-rstudio-webinar-blogdown-Yihui-Xie.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;themes for hugo (a static site generator used by blogdown package)
+
+&lt;ul&gt;
+&lt;li&gt;find the one you like on this site &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;press Download - it should open a github address (if it is not GitHub it is ok..)&lt;/li&gt;
+&lt;li&gt;use this to install blogdown::install_theme(&amp;ldquo;user/repo&amp;rdquo;). It it is not on GitHub speicify hostname&lt;/li&gt;
+&lt;li&gt;fine tune the theme&lt;/li&gt;
+&lt;li&gt;host on GitHub pages or better in &lt;a href=&#34;https://www.netlify.com/github-pages-vs-netlify/&#34;&gt;netfly&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;If you want to edit directly online, you can use this free service - &lt;a href=&#34;https://cloudcannon.com/&#34;&gt;cloudcannon&lt;/a&gt;. Also static webistes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;additional-recommended-packages-triks&#34;&gt;Additional Recommended Packages/triks&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/magick/vignettes/intro.html&#34;&gt;magick&lt;/a&gt; and &lt;a href=&#34;https://www.bioconductor.org/packages/3.7/bioc/vignettes/EBImage/inst/doc/EBImage-introduction.html&#34;&gt;EBImage&lt;/a&gt;  - all kinds of image transformation, combination, animation, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/pzhaonet/postr&#34;&gt;postr&lt;/a&gt; - making posters in R&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rstudio.github.io/profvis/&#34;&gt;profvis&lt;/a&gt; - profile the code: see which part of code runs longer&lt;/li&gt;
+&lt;li&gt;Adv. shiny tricks &lt;a href=&#34;https://github.com/daattali/advanced-shiny&#34;&gt;https://github.com/daattali/advanced-shiny&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rMouse/vignettes/rMouseVignette.html&#34;&gt;rMouse&lt;/a&gt; - control mouse&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;generally-interesting-resources&#34;&gt;Generally interesting resources&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.reddit.com/r/dataisbeautiful/&#34;&gt;https://www.reddit.com/r/dataisbeautiful/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://awesome-r.com/&#34;&gt;https://awesome-r.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.htmlwidgets.org/showcase_leaflet.html&#34;&gt;http://www.htmlwidgets.org/showcase_leaflet.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Overview of data sources &lt;a href=&#34;https://www.kdnuggets.com/datasets/index.html&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.drivendata.org/competitions/&#34;&gt;DrivenData&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.crowdanalytix.com/community&#34;&gt;CrowDanalytix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.kaggle.com/competitions?sortBy=deadline&amp;amp;group=all&amp;amp;page=1&amp;amp;segment=allCategories&#34;&gt;Kaggle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://tunedit.org/challenges&#34;&gt;Tunedit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>
