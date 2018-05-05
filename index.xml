@@ -80,6 +80,8 @@
 &lt;p&gt;Tests are a perfect time to introduce new tools as well. As this way students are forced to learn them and at the same time learning to learn new tools on their own.&lt;br /&gt;
 For example, students can be asked to work with dates/times and advised to use lubridate package. Or for a machine learning test, students can be given a task with text, accompanied by an initial introduction to a text-mining approaches/packages.&lt;/p&gt;
 
+&lt;p&gt;Tests often take a form of take-home-tests and can last anywhere between 1 and 7 days. The tests are submitted using GitHub.&lt;/p&gt;
+
 &lt;h2 id=&#34;why-r&#34;&gt;Why R?&lt;/h2&gt;
 
 &lt;p&gt;Why did I choose to use R for the class (and not Python, Mathematica, MATLAB&amp;hellip;)?&lt;/p&gt;
@@ -88,7 +90,7 @@ For example, students can be asked to work with dates/times and advised to use l
 
 &lt;p&gt;R has tons of packages that &lt;em&gt;are easy to install&lt;/em&gt;, which allow to do almost anything.&lt;/p&gt;
 
-&lt;p&gt;Python package dependences can be hard to manage. It can be OK for yourself, but when you have many students and you have to deal with installation problems which differ among platforms, the choice is clear - R just works on different platforms (most of the time :) )&lt;/p&gt;
+&lt;p&gt;Python package dependencies can be hard to manage. It can be OK for yourself, but when you have many students and you have to deal with installation problems which differ among platforms, the choice is clear - R just works on different platforms (most of the time :) )&lt;/p&gt;
 
 &lt;p&gt;And, I personally, like R, especially &lt;a href=&#34;https://www.tidyverse.org/&#34;&gt;tidyverse&lt;/a&gt; universe of packages. R is built around data analysis, and focuses students on that!&lt;/p&gt;
 
@@ -126,6 +128,7 @@ For example, students can be asked to work with dates/times and advised to use l
 &lt;li&gt;Generally, after the class students get much more confident to address open ended problems.&lt;/li&gt;
 &lt;li&gt;They learn to &amp;ldquo;figure out things&amp;rdquo; instead of asking for help (or even worse getting stuck) for every small detail.&lt;/li&gt;
 &lt;li&gt;At the same time, they learn to formulate good question when they actually need help. Students get a practice in making a &amp;ldquo;complete project&amp;rdquo;, which is presentable to the public and self-explanatory (in an ideal case).&lt;/li&gt;
+&lt;li&gt;Invited speakers can help students to see a beauty and potential of this new field. We were fortunate that Dr. Hadley Wickham accepted an invitation to give a remote talk. The talk did inspire students!&lt;/li&gt;
 &lt;li&gt;Students learn tools which they can apply (and they actually do) in other disciplines (especially in research projects). Examples include:
 
 &lt;ul&gt;
