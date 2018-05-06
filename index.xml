@@ -358,13 +358,9 @@ ggplot(sub_df) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
       <guid>/about/</guid>
       <description>
 
-&lt;p&gt;My interests include Physics, Data Science, Education.&lt;/p&gt;
+&lt;p&gt;This blog presents a &lt;em&gt;simplissimo&lt;/em&gt;-st (as I see it) introduction/discussion of a topics or an idea, related to Physics, Data Science, and Education. It does not mean just simple, it means simplest possible, given the task at hand.&lt;/p&gt;
 
-&lt;p&gt;In education I like designing a simplest possible way to deliver an idea, and create conditions for natural further development.&lt;/p&gt;
-
-&lt;p&gt;This blog presents a &lt;em&gt;simplissimost&lt;/em&gt; introduction (as I see it) to topics or ideas. And some other stuff from time to time.&lt;/p&gt;
-
-&lt;h3 id=&#34;short-story&#34;&gt;Short story&lt;/h3&gt;
+&lt;h3 id=&#34;short-story-about-me&#34;&gt;Short story about me&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;For my &lt;em&gt;Master&amp;rsquo;s degree&lt;/em&gt; (theoretical Physics) I was playing with a behavior of a particle transitioning between potential wells. This was addressed using computer simulations in Matlab and Wolfram Mathematica.&lt;/p&gt;&lt;/li&gt;
