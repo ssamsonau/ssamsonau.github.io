@@ -4735,51 +4735,23 @@ ggplot(sub_df) &lt;span style=&#34;color:#666&#34;&gt;+&lt;/span&gt;
       <guid>/about/</guid>
       <description>
 
-&lt;p&gt;This blog presents a &lt;em&gt;simplissimo&lt;/em&gt;-st (as I see it) introduction/discussion of a topics or an idea, related to Physics, Data Science, and Education. It does not mean just simple, it means simplest possible, given the task at hand.&lt;/p&gt;
+&lt;p&gt;In this blog I focus on presenting &lt;em&gt;simplissimo&lt;/em&gt;-st (as I see it) introduction/discussion of a topics or an idea, related to Physics, Data Science, and Education. It does not mean just simple, it means the simplest possible, given a task at hand.&lt;/p&gt;
 
-&lt;h3 id=&#34;short-story-about-me&#34;&gt;Short story about me&lt;/h3&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For my &lt;em&gt;Master&amp;rsquo;s degree&lt;/em&gt; (theoretical Physics) I was playing with a behavior of a particle transitioning between potential wells. This was addressed using computer simulations in Matlab and Wolfram Mathematica.&lt;/p&gt;&lt;/li&gt;
+&lt;p&gt;I have being coding in various languages for Physics simulations and data processing. I also have being working working in experimental nanotechnology and education.&lt;/p&gt;
 
-&lt;li&gt;&lt;p&gt;Later I got interested in &lt;em&gt;psychology&lt;/em&gt;, participated in some educational classes, which now, probably, influences my teaching a lot.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Then I went to &lt;em&gt;work in IT&lt;/em&gt;, playing with algorithms for stock market trading (mostly using C).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For &lt;em&gt;PhD degree&lt;/em&gt; (Physics) I was working on studying a growth mechanism of graphene-like (1 layer carbon film) films on a quartz substrate. Part of work - experiment, part - computer simulation using Quantum Espresso and CUNY high performance computer center resources.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;After &lt;em&gt;teaching Physics at City University of New York&lt;/em&gt; for several years I formed an impression, that introducing Physics to students at a college level may be much less efficient comparing to do doing that at a High School (I was introduced to Physics at 9th grade, and had some basis for comparison).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;So I went to work at a &lt;em&gt;High School to teach Physics&lt;/em&gt;. I focused on labs for core classes (algebra- and calculus-based) and on Quantum Mechanics&lt;/li&gt;
-&lt;li&gt;It appeared that having an opportunity to introduce research as part of a Physics curriculum is really beneficial for general kids&amp;rsquo; understanding on how Physics works&lt;/li&gt;
-&lt;li&gt;At the high school I was (and am) working on 1) teaching kids stuff 2) preparing them to do research 3) mentoring them in their research activities&lt;/li&gt;
-&lt;li&gt;I did organize and do mentor lab on micro- and nano- technology&lt;/li&gt;
-&lt;li&gt;Quantum Mechanics class follows a college level book, starting with Dirac notation at the beginning - much better way comparing to wave mechanics (from my teaching experience)
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;While teaching Physics I also started &lt;em&gt;learning/doing Data Science&lt;/em&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Coursera classes, projects on Kaggle, books, projects, etc&lt;/li&gt;
-&lt;li&gt;In 2016 I and a colleague &lt;a href=&#34;https://www.ket-labs.com&#34;&gt;organized a training program&lt;/a&gt; for PhDs at Columbia University&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;In 2017 I started teaching a full year class of Data Science for kids at a High School (see &lt;a href=&#34;/teaching&#34;&gt;teaching page&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;I also spend some time working as a &lt;em&gt;consultant at NYC firms&lt;/em&gt;.
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;at-this-moment&#34;&gt;At this moment&lt;/h3&gt;
-
-&lt;p&gt;I continue to teach Physics (theory, experiment, computer simulations), Data Science. I also support an enterprenership club in the school. As time allows, I also do other projects and consulting.&lt;/p&gt;
+&lt;p&gt;At this moment I do consulting projects in Data Science and teach at a High School (core Physics classes, Quantum Mechanics, Data Science, Research in Data Science and experimental Physics.)&lt;/p&gt;
 
 &lt;h3 id=&#34;tools-i-have-being-using&#34;&gt;Tools I have being using&lt;/h3&gt;
 
 &lt;h4 id=&#34;data-science-and-programming&#34;&gt;Data Science and Programming&lt;/h4&gt;
 
-&lt;p&gt;R, R shiny, SQL, bash, Spark, H2O, C, Matlab, Wolfram Mathematica.&lt;br /&gt;
-High performance computing(HPC), Density Functional Theory (DFT), Quantum ESPRESSO&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;R, R shiny, Python, C, Matlab, Wolfram Mathematica, SQL&lt;/li&gt;
+&lt;li&gt;Spark, H2O for big data&lt;/li&gt;
+&lt;li&gt;Physics simulations: Density Functional Theory (DFT), Quantum ESPRESSO, high performance computing(HPC)&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h4 id=&#34;experimental-physics&#34;&gt;Experimental Physics&lt;/h4&gt;
 
