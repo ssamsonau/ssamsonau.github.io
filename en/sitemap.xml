@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/3d-plots-as-in-mathematica/</loc>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/teaching-ds-at-a-high-school/</loc>
     <lastmod>2018-05-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -73,7 +80,7 @@
   
   <url>
     <loc>/tags/data-science/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -87,35 +94,42 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r_bloggers/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -364,6 +364,8 @@ There are many &lt;a href=&#34;https://www.ggplot2-exts.org/&#34;&gt;extentions&
 &lt;li&gt;&lt;a href=&#34;https://rstudio.github.io/profvis/&#34;&gt;profvis&lt;/a&gt; - profile the code: see which part of code runs longer&lt;/li&gt;
 &lt;li&gt;Adv. shiny tricks &lt;a href=&#34;https://github.com/daattali/advanced-shiny&#34;&gt;https://github.com/daattali/advanced-shiny&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/rMouse/vignettes/rMouseVignette.html&#34;&gt;rMouse&lt;/a&gt; - control mouse&lt;/li&gt;
+&lt;li&gt;use Vectorize function to turn any function to a vectorized form&lt;br /&gt;
+sinv &amp;lt;- Vectorize(sin); sinv(matrix(1:25, ncol = 5))&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;generally-interesting-resources&#34;&gt;Generally interesting resources&lt;/h3&gt;

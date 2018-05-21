@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>Data Science</title>
       <link>/tags/data-science/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/data-science/</guid>
       <description></description>
@@ -31,9 +31,18 @@
     </item>
     
     <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
@@ -42,7 +51,7 @@
     <item>
       <title>R_bloggers</title>
       <link>/tags/r_bloggers/</link>
-      <pubDate>Thu, 03 May 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/r_bloggers/</guid>
       <description></description>
