@@ -20,56 +20,6 @@
       <guid>/ru/about/</guid>
       <description>
 
-&lt;p&gt;My interests include Physics, Data Science, Education.&lt;/p&gt;
-
-&lt;h3 id=&#34;short-story&#34;&gt;Short story&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;For my &lt;em&gt;Master&amp;rsquo;s degree&lt;/em&gt; (theoretical Physics) I was playing with a behavior of a particle transitioning between potential wells. This was addressed using computer simulations in Matlab and Wolfram Mathematica.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Later I got interested in &lt;em&gt;psychology&lt;/em&gt;, participated in some educational classes, which now, probably, influences my teaching a lot.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Then I went to &lt;em&gt;work in IT&lt;/em&gt;, playing with algorithms for stock market trading (mostly using C).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For &lt;em&gt;PhD degree&lt;/em&gt; (Physics) I was working on studying a growth mechanism of graphene-like (1 layer carbon film) films on a quartz substrate. Part of work - experiment, part - computer simulation using Quantum Espresso and CUNY high performance computer center resources.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;After &lt;em&gt;teaching Physics at City University of New York&lt;/em&gt; for several years I formed an impression, that introducing Physics to students at a college level may be much less efficient comparing to do doing that at a High School (I was introduced to Physics at 9th grade, and had some basis for comparison).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;So I went to work at a &lt;em&gt;High School to teach Physics&lt;/em&gt;. I focused on labs for core classes (algebra- and calculus-based) and on Quantum Mechanics&lt;/li&gt;
-&lt;li&gt;It appeared that having an opportunity to introduce research as part of a Physics curriculum is really beneficial for general kids&amp;rsquo; understanding on how Physics works&lt;/li&gt;
-&lt;li&gt;At the high school I was (and am) working on 1) teaching kids stuff 2) preparing them to do research 3) mentoring them in their research activities&lt;/li&gt;
-&lt;li&gt;I did organize and do mentor lab on micro- and nano- technology&lt;/li&gt;
-&lt;li&gt;Quantum Mechanics class follows a college level book, starting with Dirac notation at the beginning - much better way comparing to wave mechanics (from my teaching experience)
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;While teaching Physics I also started &lt;em&gt;learning/doing Data Science&lt;/em&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Coursera classes, projects on Kaggle, books, projects, etc&lt;/li&gt;
-&lt;li&gt;In 2016 I and a colleague &lt;a href=&#34;https://www.ket-labs.com&#34;&gt;organized a training program&lt;/a&gt; for PhDs at Columbia University&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;In 2017 I started teaching a full year class of Data Science for kids at a High School (see &lt;a href=&#34;/teaching&#34;&gt;teaching page&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;I also spend some time working as a &lt;em&gt;consultant at NYC firms&lt;/em&gt;.
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;at-this-moment&#34;&gt;At this moment&lt;/h3&gt;
-
-&lt;p&gt;I continue to teach Physics (theory, experiment, computer simulations), and Data Science, while also doing some projects and consulting as time allows&lt;/p&gt;
-
-&lt;h3 id=&#34;tools-i-have-being-using&#34;&gt;Tools I have being using&lt;/h3&gt;
-
-&lt;h4 id=&#34;data-science-and-programming&#34;&gt;Data Science and Programming&lt;/h4&gt;
-
-&lt;p&gt;R, R shiny, SQL, bash, Spark, H2O, C, Matlab, Wolfram Mathematica.&lt;br /&gt;
-High performance computing(HPC), Density Functional Theory (DFT), Quantum ESPRESSO&lt;/p&gt;
-
-&lt;h4 id=&#34;experimental-physics&#34;&gt;Experimental Physics&lt;/h4&gt;
-
-&lt;p&gt;CVD, MBE, photo-lithography, plasma and etching, sputtering, processing in clean room environment, AFM, SEM, spectroscopy, photo-lithography.&lt;/p&gt;
-
 &lt;h2 id=&#34;contact-form&#34;&gt;Contact Form&lt;/h2&gt;
 
 &lt;form name=&#34;contact&#34; method=&#34;POST&#34; action=&#34;/message_sent&#34; netlify&gt;
