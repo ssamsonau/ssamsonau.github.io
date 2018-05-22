@@ -13,7 +13,7 @@
     
     
     <item>
-      <title>Lasso Regularization</title>
+      <title>Lasso regularization</title>
       <link>/post/lasso-regularization/</link>
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
@@ -24,14 +24,17 @@
 
 &lt;h2 id=&#34;cost-function&#34;&gt;Cost function&lt;/h2&gt;
 
-&lt;p&gt;In a typical case of regression a cost function (which is to be minimized) for lasso is defined like follows (where n is a number of observations, m - number of predictors)&lt;/p&gt;
+&lt;p&gt;In a typical case of regression a cost function (which is to be minimized) for lasso is defined like follows&lt;/p&gt;
 
 &lt;p&gt;$$ CostFunciton = RSS + penalty $$
-$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i| $$&lt;/p&gt;
+$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i| $$
+where m is a number of predictors, and&lt;/p&gt;
 
 &lt;p&gt;$$ RSS =  \frac{1}{n} \sum_{i=1}^{n} (y_i-\hat{y_i})^2 $$&lt;/p&gt;
 
-&lt;p&gt;$$ \hat{y_i} = \beta&lt;em&gt;0 + \sum&lt;/em&gt;{j = 1}^{m} \beta_j * x_j $$&lt;/p&gt;
+&lt;p&gt;where n is a number of observations, and&lt;/p&gt;
+
+&lt;p&gt;$$ \hat{y}_i=\beta&lt;em&gt;0 + \sum&lt;/em&gt;{j = 1}^{m} \beta_j * x_j $$&lt;/p&gt;
 
 &lt;h2 id=&#34;helping-functions&#34;&gt;Helping functions&lt;/h2&gt;
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Lasso Regularization - Simplissimo</title>
+  <title>Lasso regularization - Simplissimo</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -51,7 +51,7 @@
 
 
 
-<meta property="og:title" content="Lasso Regularization" />
+<meta property="og:title" content="Lasso regularization" />
 <meta property="og:description" content="Lasso regularization. An example helping to develop an intuition of why and how it works.
 
 " />
@@ -75,7 +75,7 @@
 
 
 
-<meta itemprop="name" content="Lasso Regularization">
+<meta itemprop="name" content="Lasso regularization">
 <meta itemprop="description" content="Lasso regularization. An example helping to develop an intuition of why and how it works.
 
 ">
@@ -89,7 +89,7 @@
 
 <meta itemprop="keywords" content="R,Data Science," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Lasso Regularization"/>
+<meta name="twitter:title" content="Lasso regularization"/>
 <meta name="twitter:description" content="Lasso regularization. An example helping to develop an intuition of why and how it works.
 
 "/>
@@ -155,7 +155,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Lasso Regularization</h1>
+      <h1 class="post-title">Lasso regularization</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2018-05-22 </span>
@@ -201,14 +201,17 @@
 
 <h2 id="cost-function">Cost function</h2>
 
-<p>In a typical case of regression a cost function (which is to be minimized) for lasso is defined like follows (where n is a number of observations, m - number of predictors)</p>
+<p>In a typical case of regression a cost function (which is to be minimized) for lasso is defined like follows</p>
 
 <p>$$ CostFunciton = RSS + penalty $$
-$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i| $$</p>
+$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i| $$
+where m is a number of predictors, and</p>
 
 <p>$$ RSS =  \frac{1}{n} \sum_{i=1}^{n} (y_i-\hat{y_i})^2 $$</p>
 
-<p>$$ \hat{y_i} = \beta<em>0 + \sum</em>{j = 1}^{m} \beta_j * x_j $$</p>
+<p>where n is a number of observations, and</p>
+
+<p>$$ \hat{y}_i=\beta<em>0 + \sum</em>{j = 1}^{m} \beta_j * x_j $$</p>
 
 <h2 id="helping-functions">Helping functions</h2>
 
