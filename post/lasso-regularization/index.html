@@ -204,11 +204,11 @@
 <p>In a typical case of regression a cost function (which is to be minimized) for lasso is defined like follows (where n is a number of observations, m - number of predictors)</p>
 
 <p>$$ CostFunciton = RSS + penalty $$
-$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i|$$</p>
+$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i| $$</p>
 
 <p>$$ RSS =  \frac{1}{n} \sum_{i=1}^{n} (y_i-\hat{y_i})^2 $$</p>
 
-<p>$$ \hat{y_i} = \beta<em>0 + \sum</em>{j = 1}^{m} \beta_j * x_j$$</p>
+<p>$$ \hat{y_i} = \beta<em>0 + \sum</em>{j = 1}^{m} \beta_j * x_j $$</p>
 
 <h2 id="helping-functions">Helping functions</h2>
 
@@ -377,7 +377,7 @@ api_create(p, filename <span style="color:#666">=</span> <span style="color:#b44
 Which one? The one which changes the cost less than another - in this case first &lsquo;x&rsquo;, then &lsquo;sin&rsquo;, until only &lsquo;cos&rsquo; is left.</p>
 
 <p>In case of <em>ridge</em> regression coefficients are not driven to complete zero, due to the fact that penalty has a form
-$$ penalty =  \lambda \sum_{i=i}^{m} \beta_i^2$$</p>
+$$ penalty =  \lambda \sum_{i=i}^{m} \beta_i^2 $$</p>
 
 <p>Thus such penalty looks like a circle and does force one of coefficients to become zero: see the plot bellow</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p <span style="color:#666">&lt;-</span> plot_ly(x <span style="color:#666">=</span> obj<span style="color:#666">$</span>xy<span style="color:#666">$</span>X[<span style="color:#666">1</span>, ], y <span style="color:#666">=</span> obj<span style="color:#666">$</span>xy<span style="color:#666">$</span>Y[, <span style="color:#666">1</span>]) <span style="color:#666">%&gt;%</span>

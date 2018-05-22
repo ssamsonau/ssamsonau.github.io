@@ -27,11 +27,11 @@
 &lt;p&gt;In a typical case of regression a cost function (which is to be minimized) for lasso is defined like follows (where n is a number of observations, m - number of predictors)&lt;/p&gt;
 
 &lt;p&gt;$$ CostFunciton = RSS + penalty $$
-$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i|$$&lt;/p&gt;
+$$ penalty =  \lambda \sum_{i=i}^{m} |\beta_i| $$&lt;/p&gt;
 
 &lt;p&gt;$$ RSS =  \frac{1}{n} \sum_{i=1}^{n} (y_i-\hat{y_i})^2 $$&lt;/p&gt;
 
-&lt;p&gt;$$ \hat{y_i} = \beta&lt;em&gt;0 + \sum&lt;/em&gt;{j = 1}^{m} \beta_j * x_j$$&lt;/p&gt;
+&lt;p&gt;$$ \hat{y_i} = \beta&lt;em&gt;0 + \sum&lt;/em&gt;{j = 1}^{m} \beta_j * x_j $$&lt;/p&gt;
 
 &lt;h2 id=&#34;helping-functions&#34;&gt;Helping functions&lt;/h2&gt;
 
@@ -200,7 +200,7 @@ api_create(p, filename &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt
 Which one? The one which changes the cost less than another - in this case first &amp;lsquo;x&amp;rsquo;, then &amp;lsquo;sin&amp;rsquo;, until only &amp;lsquo;cos&amp;rsquo; is left.&lt;/p&gt;
 
 &lt;p&gt;In case of &lt;em&gt;ridge&lt;/em&gt; regression coefficients are not driven to complete zero, due to the fact that penalty has a form
-$$ penalty =  \lambda \sum_{i=i}^{m} \beta_i^2$$&lt;/p&gt;
+$$ penalty =  \lambda \sum_{i=i}^{m} \beta_i^2 $$&lt;/p&gt;
 
 &lt;p&gt;Thus such penalty looks like a circle and does force one of coefficients to become zero: see the plot bellow&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;p &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; plot_ly(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;xy&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;X[&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;, ], y &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;xy&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;Y[, &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;]) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
