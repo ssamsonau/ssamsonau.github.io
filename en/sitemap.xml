@@ -3,13 +3,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/post/lasso-regularization/</loc>
-    <lastmod>2018-05-22T00:11:53-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/post/3d-plots-as-in-mathematica/</loc>
     <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -87,7 +80,7 @@
   
   <url>
     <loc>/tags/data-science/</loc>
-    <lastmod>2018-05-22T00:11:53-04:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -101,7 +94,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-05-22T00:11:53-04:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -115,7 +108,7 @@
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2018-05-22T00:11:53-04:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -129,14 +122,14 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-05-22T00:11:53-04:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-05-22T00:11:53-04:00</lastmod>
+    <lastmod>2018-05-20T22:39:03-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
