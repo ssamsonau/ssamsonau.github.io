@@ -181,8 +181,8 @@
 <li><a href="#fit">Fit</a></li>
 <li><a href="#plot-cost-function">Plot cost function</a>
 <ul>
-<li><a href="#beta-for-predictor-sin-on-x-axis-for-cos-on-y-axis">beta for predictor &lsquo;sin&rsquo; on x axis, for &lsquo;cos&rsquo;  - on y axis</a></li>
-<li><a href="#beta-for-predictor-x-on-x-axis-for-cos-on-y-axis">beta for predictor &lsquo;x&rsquo; on x axis, for &lsquo;cos&rsquo; - on y axis</a></li>
+<li><a href="#beta-for-cos-vs-beta-for-sin">beta for &lsquo;cos&rsquo; vs beta for &lsquo;sin&rsquo;</a></li>
+<li><a href="#beta-for-cos-vs-beta-for-x">beta for &lsquo;cos&rsquo; vs beta for &lsquo;x&rsquo;</a></li>
 </ul></li>
 <li><a href="#choosing-betas">Choosing betas</a></li>
 <li><a href="#conclusion-with-a-note-about-ridge">Conclusion, with a note about ridge</a></li>
@@ -299,7 +299,9 @@ lines(df<span style="color:#666">$</span>x, predict(fit3, df), col <span style="
 
 <p>Time to calculate values needed for plotting</p>
 
-<h3 id="beta-for-predictor-sin-on-x-axis-for-cos-on-y-axis">beta for predictor &lsquo;sin&rsquo; on x axis, for &lsquo;cos&rsquo;  - on y axis</h3>
+<h3 id="beta-for-cos-vs-beta-for-sin">beta for &lsquo;cos&rsquo; vs beta for &lsquo;sin&rsquo;</h3>
+
+<p>Beta for predictor &lsquo;sin&rsquo; on will be on x axis, beta for predictor &lsquo;cos&rsquo; - on y axis</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">obj <span style="color:#666">&lt;-</span> cost_xyz(fit3, df, <span style="color:#b44">&#34;sin&#34;</span>, <span style="color:#b44">&#34;cos&#34;</span>)</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">## minimum of RSS at 
 ## sin   0.2644527 
 ## cos   0.7752775</pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#080;font-style:italic">#Sys.setenv(&#34;plotly_username&#34;=&#34;your_plotly_username&#34;)</span>
@@ -321,7 +323,9 @@ api_create(p, filename <span style="color:#666">=</span> <span style="color:#b44
 
 <p>We can see that when beta for sin is changing, cost changing very little: when we go away form &lsquo;optimal parameter value&rsquo; cost does not suffer too much - this predictor did not catch a very reliable pattern. Thus such predictor is not very useful. And removing it should decrease variance - for a new data this &lsquo;optimal beta for training set&rsquo; (which, as we see does not represent catching of an actual pattern), will be far from optimal. This will increase variance.</p>
 
-<h3 id="beta-for-predictor-x-on-x-axis-for-cos-on-y-axis">beta for predictor &lsquo;x&rsquo; on x axis, for &lsquo;cos&rsquo; - on y axis</h3>
+<h3 id="beta-for-cos-vs-beta-for-x">beta for &lsquo;cos&rsquo; vs beta for &lsquo;x&rsquo;</h3>
+
+<p>Beta for predictor &lsquo;x&rsquo; on will be on x axis, beta for predictor &lsquo;cos&rsquo; - on y axis</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">obj_2 <span style="color:#666">&lt;-</span> cost_xyz(fit3, df, <span style="color:#b44">&#34;x&#34;</span>, <span style="color:#b44">&#34;cos&#34;</span>)</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">## minimum of RSS at 
 ## x   0.04337939 
 ## cos   0.7752775</pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p <span style="color:#666">&lt;-</span> plot_ly(x <span style="color:#666">=</span> obj_2<span style="color:#666">$</span>xy<span style="color:#666">$</span>X[<span style="color:#666">1</span>, ], y <span style="color:#666">=</span> obj_2<span style="color:#666">$</span>xy<span style="color:#666">$</span>Y[, <span style="color:#666">1</span>]) <span style="color:#666">%&gt;%</span>
@@ -361,7 +365,7 @@ api_create(p, filename <span style="color:#666">=</span> <span style="color:#b44
 
 <ul>
 <li>We know that equal values of penalty $\lambda \sum_{i=i}^{m} |\beta_i|$ are following lines displayed on the plot above</li>
-<li>Thus for any combination of $\beta_1$ and $\beta<em>2$, program can &ldquo;move&rdquo; along such line without changing the the part of cost coming from penalty $\lambda \sum</em>{i=i}^{m} |\beta_i|$</li>
+<li>Thus for any combination of beta1 and beta2, program can &ldquo;move&rdquo; along such line without changing the the part of cost coming from penalty $\lambda \sum_{i=i}^{m} |\beta_i|$</li>
 <li>Now looking at plot of RSS, we can imagine several lines crossing a chosen constant line of penalty. We need to choose one of these intersections - any of those will have the same penalty, but will correspond to different RSS.</li>
 <li>One can see that in order to minimize RSS, one of $\beta$ will go to zero</li>
 </ul>
@@ -382,7 +386,7 @@ Which one? The one which changes the cost less than another - in this case first
 <p>In case of <em>ridge</em> regression coefficients are not driven to complete zero, due to the fact that penalty has a form
 $$ penalty =  \lambda \sum_{i=i}^{m} \beta_i^2 $$</p>
 
-<p>Thus such penalty looks like a circle and does force one of coefficients to become zero: see the plot bellow</p>
+<p>Thus such penalty looks like a circle and does <em>not</em> force one of coefficients to become zero: see the plot bellow. However, beta for a &lsquo;bad&rsquo; predictor indeed will become smaller than beta for a &lsquo;good&rsquo; one. And given that our predictors are scaled, this means than an influence of a &lsquo;bad&rsquo; predictor gets lower.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">p <span style="color:#666">&lt;-</span> plot_ly(x <span style="color:#666">=</span> obj<span style="color:#666">$</span>xy<span style="color:#666">$</span>X[<span style="color:#666">1</span>, ], y <span style="color:#666">=</span> obj<span style="color:#666">$</span>xy<span style="color:#666">$</span>Y[, <span style="color:#666">1</span>]) <span style="color:#666">%&gt;%</span>
   add_contour(z <span style="color:#666">=</span> obj<span style="color:#666">$</span>penalty_ridge, name <span style="color:#666">=</span> <span style="color:#b44">&#34;penalty&#34;</span>) <span style="color:#666">%&gt;%</span>
   add_contour(z <span style="color:#666">=</span> obj<span style="color:#666">$</span>z, opacity <span style="color:#666">=</span> <span style="color:#666">0.5</span>, name <span style="color:#666">=</span> <span style="color:#b44">&#34;RSS&#34;</span>) <span style="color:#666">%&gt;%</span>

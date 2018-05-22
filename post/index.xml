@@ -122,7 +122,9 @@ lines(df&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;x, predict(fit3, df
 
 &lt;p&gt;Time to calculate values needed for plotting&lt;/p&gt;
 
-&lt;h3 id=&#34;beta-for-predictor-sin-on-x-axis-for-cos-on-y-axis&#34;&gt;beta for predictor &amp;lsquo;sin&amp;rsquo; on x axis, for &amp;lsquo;cos&amp;rsquo;  - on y axis&lt;/h3&gt;
+&lt;h3 id=&#34;beta-for-cos-vs-beta-for-sin&#34;&gt;beta for &amp;lsquo;cos&amp;rsquo; vs beta for &amp;lsquo;sin&amp;rsquo;&lt;/h3&gt;
+
+&lt;p&gt;Beta for predictor &amp;lsquo;sin&amp;rsquo; on will be on x axis, beta for predictor &amp;lsquo;cos&amp;rsquo; - on y axis&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;obj &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; cost_xyz(fit3, df, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;sin&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;cos&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;## minimum of RSS at 
 ## sin   0.2644527 
 ## cos   0.7752775&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span style=&#34;color:#080;font-style:italic&#34;&gt;#Sys.setenv(&amp;#34;plotly_username&amp;#34;=&amp;#34;your_plotly_username&amp;#34;)&lt;/span&gt;
@@ -144,7 +146,9 @@ api_create(p, filename &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt
 
 &lt;p&gt;We can see that when beta for sin is changing, cost changing very little: when we go away form &amp;lsquo;optimal parameter value&amp;rsquo; cost does not suffer too much - this predictor did not catch a very reliable pattern. Thus such predictor is not very useful. And removing it should decrease variance - for a new data this &amp;lsquo;optimal beta for training set&amp;rsquo; (which, as we see does not represent catching of an actual pattern), will be far from optimal. This will increase variance.&lt;/p&gt;
 
-&lt;h3 id=&#34;beta-for-predictor-x-on-x-axis-for-cos-on-y-axis&#34;&gt;beta for predictor &amp;lsquo;x&amp;rsquo; on x axis, for &amp;lsquo;cos&amp;rsquo; - on y axis&lt;/h3&gt;
+&lt;h3 id=&#34;beta-for-cos-vs-beta-for-x&#34;&gt;beta for &amp;lsquo;cos&amp;rsquo; vs beta for &amp;lsquo;x&amp;rsquo;&lt;/h3&gt;
+
+&lt;p&gt;Beta for predictor &amp;lsquo;x&amp;rsquo; on will be on x axis, beta for predictor &amp;lsquo;cos&amp;rsquo; - on y axis&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;obj_2 &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; cost_xyz(fit3, df, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;x&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;cos&amp;#34;&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;## minimum of RSS at 
 ## x   0.04337939 
 ## cos   0.7752775&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;p &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; plot_ly(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj_2&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;xy&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;X[&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;, ], y &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj_2&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;xy&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;Y[, &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;]) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
@@ -184,7 +188,7 @@ api_create(p, filename &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt
 
 &lt;ul&gt;
 &lt;li&gt;We know that equal values of penalty $\lambda \sum_{i=i}^{m} |\beta_i|$ are following lines displayed on the plot above&lt;/li&gt;
-&lt;li&gt;Thus for any combination of $\beta_1$ and $\beta&lt;em&gt;2$, program can &amp;ldquo;move&amp;rdquo; along such line without changing the the part of cost coming from penalty $\lambda \sum&lt;/em&gt;{i=i}^{m} |\beta_i|$&lt;/li&gt;
+&lt;li&gt;Thus for any combination of beta1 and beta2, program can &amp;ldquo;move&amp;rdquo; along such line without changing the the part of cost coming from penalty $\lambda \sum_{i=i}^{m} |\beta_i|$&lt;/li&gt;
 &lt;li&gt;Now looking at plot of RSS, we can imagine several lines crossing a chosen constant line of penalty. We need to choose one of these intersections - any of those will have the same penalty, but will correspond to different RSS.&lt;/li&gt;
 &lt;li&gt;One can see that in order to minimize RSS, one of $\beta$ will go to zero&lt;/li&gt;
 &lt;/ul&gt;
@@ -205,7 +209,7 @@ Which one? The one which changes the cost less than another - in this case first
 &lt;p&gt;In case of &lt;em&gt;ridge&lt;/em&gt; regression coefficients are not driven to complete zero, due to the fact that penalty has a form
 $$ penalty =  \lambda \sum_{i=i}^{m} \beta_i^2 $$&lt;/p&gt;
 
-&lt;p&gt;Thus such penalty looks like a circle and does force one of coefficients to become zero: see the plot bellow&lt;/p&gt;
+&lt;p&gt;Thus such penalty looks like a circle and does &lt;em&gt;not&lt;/em&gt; force one of coefficients to become zero: see the plot bellow. However, beta for a &amp;lsquo;bad&amp;rsquo; predictor indeed will become smaller than beta for a &amp;lsquo;good&amp;rsquo; one. And given that our predictors are scaled, this means than an influence of a &amp;lsquo;bad&amp;rsquo; predictor gets lower.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;p &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; plot_ly(x &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;xy&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;X[&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;, ], y &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;xy&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;Y[, &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;]) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
   add_contour(z &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;penalty_ridge, name &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;penalty&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
   add_contour(z &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; obj&lt;span style=&#34;color:#666&#34;&gt;$&lt;/span&gt;z, opacity &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#666&#34;&gt;0.5&lt;/span&gt;, name &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#b44&#34;&gt;&amp;#34;RSS&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#666&#34;&gt;%&amp;gt;%&lt;/span&gt;
