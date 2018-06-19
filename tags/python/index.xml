@@ -26,11 +26,11 @@
 
 &lt;p&gt;&lt;/p&gt;
 
-&lt;p&gt;I was looking for a way to do the same task with only one line of code in R and Python.&lt;/p&gt;
+&lt;h2 id=&#34;overview-of-2d-and-3d&#34;&gt;Overview of 2D and 3D&lt;/h2&gt;
 
-&lt;h4 id=&#34;2d&#34;&gt;2D&lt;/h4&gt;
+&lt;h3 id=&#34;2d&#34;&gt;2D&lt;/h3&gt;
 
-&lt;p&gt;In a case of two dimentional plots, functions &lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html&#34;&gt;curve adn plot&lt;/a&gt; will do the job.&lt;/p&gt;
+&lt;p&gt;In a case of two dimentional plots, functions &lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html&#34;&gt;curve&lt;/a&gt; and plot](&lt;a href=&#34;http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html&#34;&gt;http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html&lt;/a&gt;) will do the job.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;par(mfrow &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0b0;font-weight:bold&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#666&#34;&gt;2&lt;/span&gt;))
 curve(&lt;span style=&#34;color:#a2f&#34;&gt;sin&lt;/span&gt;, &lt;span style=&#34;color:#666&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;pi&lt;/span&gt;, &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;pi&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;3&lt;/span&gt;) &lt;span style=&#34;color:#080;font-style:italic&#34;&gt;#plot will work as well&lt;/span&gt;
 
@@ -38,7 +38,7 @@ temp_fun &lt;span style=&#34;color:#666&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span 
 curve(temp_fun, &lt;span style=&#34;color:#666&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;pi&lt;/span&gt;, &lt;span style=&#34;color:#a2f;font-weight:bold&#34;&gt;pi&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;*&lt;/span&gt;&lt;span style=&#34;color:#666&#34;&gt;3&lt;/span&gt;)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&#34;/images/2018-05-20-3d-plots-as-in-mathematica_files/figure-html/unnamed-chunk-3-1.png&#34; alt=&#34;&#34; /&gt;&lt;!-- --&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;par(mfrow &lt;span style=&#34;color:#666&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0b0;font-weight:bold&#34;&gt;c&lt;/span&gt;(&lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#666&#34;&gt;1&lt;/span&gt;))&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id=&#34;3d&#34;&gt;3D&lt;/h4&gt;
+&lt;h3 id=&#34;3d&#34;&gt;3D&lt;/h3&gt;
 
 &lt;p&gt;There are various packages which can do 3D plots in R like &lt;a href=&#34;http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization&#34;&gt;scatterplot3d&lt;/a&gt;, &lt;a href=&#34;http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization&#34;&gt;scatter3d&lt;/a&gt;, &lt;a href=&#34;https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html&#34;&gt;rgl&lt;/a&gt;, &lt;a href=&#34;http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization&#34;&gt;plot3D&lt;/a&gt;; in Python this can be done using  &lt;a href=&#34;https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html&#34;&gt;matplotlib&lt;/a&gt;&lt;/p&gt;
 

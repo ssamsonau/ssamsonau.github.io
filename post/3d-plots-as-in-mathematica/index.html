@@ -188,13 +188,10 @@ and you have a very nice plot. Which is, by the way, interactive (as long as you
 <ul>
 <li>
 <ul>
-<li>
-<ul>
-<li>
+<li><a href="#overview-of-2d-and-3d">Overview of 2D and 3D</a>
 <ul>
 <li><a href="#2d">2D</a></li>
 <li><a href="#3d">3D</a></li>
-</ul></li>
 </ul></li>
 <li><a href="#simplest-way-with-rgl-package">Simplest way with rgl package</a></li>
 <li><a href="#plotly-with-r">Plotly with R</a>
@@ -220,11 +217,11 @@ and you have a very nice plot. Which is, by the way, interactive (as long as you
 
 <p></p>
 
-<p>I was looking for a way to do the same task with only one line of code in R and Python.</p>
+<h2 id="overview-of-2d-and-3d">Overview of 2D and 3D</h2>
 
-<h4 id="2d">2D</h4>
+<h3 id="2d">2D</h3>
 
-<p>In a case of two dimentional plots, functions <a href="http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html">curve adn plot</a> will do the job.</p>
+<p>In a case of two dimentional plots, functions <a href="http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html">curve</a> and plot](<a href="http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html">http://stat.ethz.ch/R-manual/R-devel/library/graphics/html/curve.html</a>) will do the job.</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">par(mfrow <span style="color:#666">=</span> <span style="color:#0b0;font-weight:bold">c</span>(<span style="color:#666">1</span>, <span style="color:#666">2</span>))
 curve(<span style="color:#a2f">sin</span>, <span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">pi</span>, <span style="color:#a2f;font-weight:bold">pi</span><span style="color:#666">*</span><span style="color:#666">3</span>) <span style="color:#080;font-style:italic">#plot will work as well</span>
 
@@ -232,7 +229,7 @@ temp_fun <span style="color:#666">&lt;-</span> <span style="color:#a2f;font-weig
 curve(temp_fun, <span style="color:#666">-</span><span style="color:#a2f;font-weight:bold">pi</span>, <span style="color:#a2f;font-weight:bold">pi</span><span style="color:#666">*</span><span style="color:#666">3</span>)</code></pre></div>
 <p><img src="/images/2018-05-20-3d-plots-as-in-mathematica_files/figure-html/unnamed-chunk-3-1.png" alt="" /><!-- --></p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">par(mfrow <span style="color:#666">=</span> <span style="color:#0b0;font-weight:bold">c</span>(<span style="color:#666">1</span>, <span style="color:#666">1</span>))</code></pre></div>
-<h4 id="3d">3D</h4>
+<h3 id="3d">3D</h3>
 
 <p>There are various packages which can do 3D plots in R like <a href="http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization">scatterplot3d</a>, <a href="http://www.sthda.com/english/wiki/amazing-interactive-3d-scatter-plots-r-software-and-data-visualization">scatter3d</a>, <a href="https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html">rgl</a>, <a href="http://www.sthda.com/english/wiki/impressive-package-for-3d-and-4d-graph-r-software-and-data-visualization">plot3D</a>; in Python this can be done using  <a href="https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html">matplotlib</a></p>
 
