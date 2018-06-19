@@ -4593,10 +4593,12 @@ grid.arrange(p1_1, p1_2, ncol<span style="color:#666">=</span><span style="color
 
 <p>you can compare this to formula for RSS - again, for simplicity, let us take only two predictors. And because we scaled and centered data (predictors and outcome) we can approximate $\beta_0 = 0$</p>
 
-<p>$$ RSS =  \ \frac{1}{n} \sum_{i=1}^{n} (x_1\beta_1 + x_2\beta_2 - yi)^2 = \  p_1<em>\beta_1^2 + p_2</em>\beta_1\beta_2 + p_3*\beta_1^2 + p_4 <em>\beta_1 + p_5</em>\beta_2 + const $$</p>
+<p>$$ RSS =  \frac{1}{n} \sum_{i=1}^{n} (x_1 \beta_1 + x_2 \beta_2 - yi)^2 $$</p>
+
+<p>$$ RSS = p_1 * \beta_1^2 + p_2 * \beta_1 \beta_2 + p_3 * \beta_1^2 + p_4 * \beta_1 + p_5 * \beta_2 + const $$</p>
 
 <p>where $p_1$, &hellip;, $p_5$ are constants (don&rsquo;t depend on $\beta_1$, $\beta_2$).
-We can compare this to a previous equation for ellipse replacing $\beta_1 \rightarrow x, \beta_2 \rightarrowy$. In the ellipse equation thought we don&rsquo;t have $p_4<em>\beta_1$ and $p_5</em>\beta_2$, but we can ignore them for now, as they just come from translating the origin of an ellipse with ($x \rightarrow x-x_0, y\rightarrowy-y_0$), and are not important for our discussion.</p>
+We can compare this to a previous equation for ellipse replacing $\beta_1 \rightarrow x, \beta_2 \rightarrow y$. In the ellipse equation thought we don&rsquo;t have $p_4 * \beta_1$ and $p_5 * \beta_2$, but we can ignore them for now, as they just come from translating the origin of an ellipse with ($x \rightarrow x - x_0$ , $y \rightarrow y - y_0 $), and are not important for our discussion.</p>
 
 <p>Let us look at $p_1 = \sum_i (x_1^i)^2$ and $p_2 = \sum_i (x_2^i)^2$. In order to have an ellipse tilted by $\pm 45^o$ angle, we have to have a situation when coefficients in front of $x^2$ and $y^2$ are equal to each other. In our RSS equation it translates to $p_1 = p_2$, which means</p>
 
