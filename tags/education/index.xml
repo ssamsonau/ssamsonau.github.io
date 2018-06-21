@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Learning</title>
+    <link>/tags/education/</link>
+    <description>Recent content in Education on Learning</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Sergey Samsonau</copyright>
+    <lastBuildDate>Thu, 21 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Comparassion of education with machine learning</title>
+      <link>/post/comparassion-of-education-with-machine-learning/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/comparassion-of-education-with-machine-learning/</guid>
+      <description>&lt;p&gt;Let me speculate a little, and compare what does an educator (teacher/professor/instructor) with what does a machine learning specialist.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-common&#34;&gt;What is common?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Provide information
+
+&lt;ul&gt;
+&lt;li&gt;Educator gives lectures, provides a textbook, or other resources.&lt;/li&gt;
+&lt;li&gt;ML specialist have to find and present data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Adjusts information
+
+&lt;ul&gt;
+&lt;li&gt;Educator have to choose a suitable form and complexity level of information for a particular group of students&lt;/li&gt;
+&lt;li&gt;ML specialist have to clean and reshape data to a form an algorithm can understand&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Give feedback
+
+&lt;ul&gt;
+&lt;li&gt;Educator have to correct and redirect efforts of a student when it is needed. Educators use example problems (when a solution is given) and practice problems (on which students test patterns learned from examples).&lt;/li&gt;
+&lt;li&gt;ML specialist observes how algorithm learns. If this process is inefficient, learning strategy shall be corrected. Training and validation (cross-validation) sets are used.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Perform assessment
+
+&lt;ul&gt;
+&lt;li&gt;Educator gives tests and makes exams, designed to see how a student performs on problems, which are similar to those covered in class, but at the same time different - such that student did not see before.&lt;/li&gt;
+&lt;li&gt;ML specialist evaluates the performance of the algorithm on a test set.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Focus on self-learning
+
+&lt;ul&gt;
+&lt;li&gt;Educator creates conditions for self-learning. A student is the only person who can actually learn. As stated by Isaac Asimov: &amp;ldquo;Self-education is the only kind of education there is&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;ML specialist create conditions and then, in essence, wait for a machine to learn on its own&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Work with models of reality
+
+&lt;ul&gt;
+&lt;li&gt;Educator aims to help students to develop a deep internal understanding (meaning, that at the very least they can use it in practice) of models of reality&lt;/li&gt;
+&lt;li&gt;ML specialist makes a computer create a model describing patterns in data
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;what-is-different&#34;&gt;What is different?&lt;/h2&gt;
+
+&lt;p&gt;Where a machine excels&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ideal information retention&lt;/li&gt;
+&lt;li&gt;fast extraction of unknown patterns, when learning task is clear&lt;/li&gt;
+&lt;li&gt;fast application of learned patterns&lt;/li&gt;
+&lt;li&gt;simple transfer of learned models from computer to computer
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Where a human excels&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;learning from very few examples, efficient generalization&lt;/li&gt;
+&lt;li&gt;generalization to &amp;lsquo;data from new distributions&amp;rsquo;&lt;/li&gt;
+&lt;li&gt;setting up new tasks independently&lt;/li&gt;
+&lt;li&gt;challenging assumptions, and finding limits of applicability of various models&lt;/li&gt;
+&lt;li&gt;learning something as complicated as physics. Look at &lt;a href=&#34;https://goo.gl/images/VDjsbQ&#34;&gt;this&lt;/a&gt; interesting plot describing what infants do in their first year of life&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;final-remark&#34;&gt;Final remark&lt;/h2&gt;
+
+&lt;p&gt;A question: Can we formulate education process using machine learning terminology? What if this will provide us with a more structured way to describe an educational process? Also, maybe we can bring something new to education? For example, what would be an analogy for a regularization technique used in machine learning?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
