@@ -16,14 +16,14 @@
   </url>
   
   <url>
-    <loc>/ru/</loc>
-    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
+    <loc>/ru/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/ru/tags/</loc>
+    <loc>/ru/</loc>
+    <lastmod>2018-04-22T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -87,6 +87,13 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2018-06-21T10:27:27-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -137,13 +144,6 @@
   <url>
     <loc>/tags/r_bloggers/</loc>
     <lastmod>2018-05-25T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-06-21T10:27:27-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
