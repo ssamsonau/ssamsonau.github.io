@@ -59,7 +59,13 @@
 
 &lt;ul&gt;
 &lt;li&gt;Educator aims to help students to develop a deep internal understanding (meaning, that at the very least they can use it in practice) of models of reality&lt;/li&gt;
-&lt;li&gt;ML specialist makes a computer create a model describing patterns in data
+&lt;li&gt;ML specialist makes a computer create a model describing patterns in data&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Use pre-trained models&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ML specialist can use a pre-trained neural network and only moderately retrain it for a particular application&lt;/li&gt;
+&lt;li&gt;Educator provides methods (for problem-solving, research, etc.) which proven to be successful in specific areas. Students work on absorbing those and modifying them for themselves
 &lt;br /&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
