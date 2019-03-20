@@ -24,8 +24,6 @@
 
 &lt;p&gt;&lt;img src=&#34;/images/3D_plot.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;h2 id=&#34;overview-of-2d-and-3d&#34;&gt;Overview of 2D and 3D&lt;/h2&gt;
 
 &lt;h3 id=&#34;2d&#34;&gt;2D&lt;/h3&gt;
@@ -4146,8 +4144,6 @@ plt&lt;span style=&#34;color:#666&#34;&gt;.&lt;/span&gt;show()&lt;/code&gt;&lt;/
       <guid>/post/teaching-ds-at-a-high-school/</guid>
       <description>&lt;p&gt;For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;p&gt;I started mentoring high school student research projects in Data Science 3 years ago, and this lead to a full scale 1 year class of Data Science. The class was taught at The Princeton International School of Mathematics and Science (&lt;a href=&#34;http://www.prismsus.org/&#34;&gt;PRISMS&lt;/a&gt;) - a small private school with exceptional students and research program for students. More about why doing research at high school makes sense and why it beneficial to students you can find &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/8340465/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;class-organization&#34;&gt;Class organization&lt;/h2&gt;
@@ -4320,8 +4316,6 @@ Click for &lt;a href=&#34;https://github.com/prismsus/election/blob/master/prese
       <description>&lt;p&gt;Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &amp;lt; 0.05 - right?&lt;/p&gt;
 
 &lt;p&gt;Actually no&amp;hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &amp;ldquo;multiple comparison&amp;rdquo; problem.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;The problem is &lt;a href=&#34;https://en.wikipedia.org/wiki/Multiple_comparisons_problem&#34;&gt;known&lt;/a&gt;&lt;/p&gt;
 

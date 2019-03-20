@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>/post/a-more-advanced-school-for-stress-reduction/</loc>
+    <lastmod>2019-03-19T22:52:55-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/comparison-of-education-with-machine-learning/</loc>
     <lastmod>2018-06-21T10:27:27-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -88,7 +95,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-06-21T10:27:27-04:00</lastmod>
+    <lastmod>2019-03-19T22:52:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -108,7 +115,7 @@
   
   <url>
     <loc>/tags/education/</loc>
-    <lastmod>2018-06-21T10:27:27-04:00</lastmod>
+    <lastmod>2019-03-19T22:52:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -122,7 +129,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-06-21T10:27:27-04:00</lastmod>
+    <lastmod>2019-03-19T22:52:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -157,7 +164,7 @@
   
   <url>
     <loc>/tags/teaching/</loc>
-    <lastmod>2018-05-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-19T22:52:55-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

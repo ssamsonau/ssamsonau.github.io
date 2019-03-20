@@ -7,10 +7,42 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Thu, 03 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Mar 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Advanced classes for stress reduction?</title>
+      <link>/post/a-more-advanced-school-for-stress-reduction/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/a-more-advanced-school-for-stress-reduction/</guid>
+      <description>&lt;p&gt;Usually, perception is that the more advanced is the school and curriculum, more stressful students are. Is this really the case?&lt;/p&gt;
+
+&lt;p&gt;First, let me define advanced: advance means a more complex, having more inter-connections, and thus triggering interest (given sufficient skillset).&lt;/p&gt;
+
+&lt;p&gt;And let us concentrate on the situation when we have generally strong students.&lt;/p&gt;
+
+&lt;p&gt;Often, when schools are attempting to accommodate demand (from parents and bored students?) for higher standards of education, they introduce into programs more AP classes oriented for test taking. Classes, which will tell a kid who s/he is: A-grade student, B-grade student, etc. Classes that make students &amp;ldquo;run over material&amp;rdquo; instead of enjoying it. This creates a lot of stress. One can find research papers addressing stress level in schools, for example [this])(&lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S1877042811019033&#34;&gt;https://www.sciencedirect.com/science/article/pii/S1877042811019033&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Compare this with advanced classes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Classes are taught by teachers who have in-depth professional knowledge and &lt;em&gt;active interest&lt;/em&gt; in their area&lt;/li&gt;
+&lt;li&gt;Students are presented with an opportunity to go as deep as they can into complicated topics&lt;/li&gt;
+&lt;li&gt;Not every student will go equally deep, which is expected and normal&lt;/li&gt;
+&lt;li&gt;There is a certain expectation to get an A, but material covers much more than that so that every student can find a challenge for him/her self&lt;/li&gt;
+&lt;li&gt;I call this approach &amp;ldquo;No student left bored&amp;rdquo; (in contrast with famous &amp;ldquo;no student left behind&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;There is no clear way to compare yourself with others - because in any complicated area there are many ways to get better in something: while one student is improving one skill, another is improving another. There is no need to compare in this case: every student knows that his/her classmates know something better than s/he, but this is true for this student as well&lt;/li&gt;
+&lt;li&gt;Open-ended assignments without &amp;lsquo;one correct answer&amp;rsquo; allow students to grow and get better relative to themselves a day before&lt;/li&gt;
+&lt;li&gt;Self-assessment becomes very important in this case. And in fact, is one of the goals of this approach.  In contrast, the traditional approach forces students to look for external validation of their knowledge and skills&lt;/li&gt;
+&lt;li&gt;There is generally almost no way to fail&lt;/li&gt;
+&lt;li&gt;It is an interesting and challenging task to help students to develop their internal motivation. Use of a grade, in this case, has a fairly limited power&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And there is also authentic research, which opens even more opportunities for advancing curriculum in every high school, aiming to help students learn about the world around them.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Teaching Data Science at a High School</title>
@@ -19,8 +51,6 @@
       
       <guid>/post/teaching-ds-at-a-high-school/</guid>
       <description>&lt;p&gt;For two years I am teaching a Data Science class at a High School. Here I would like to share my experience and observations.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I started mentoring high school student research projects in Data Science 3 years ago, and this lead to a full scale 1 year class of Data Science. The class was taught at The Princeton International School of Mathematics and Science (&lt;a href=&#34;http://www.prismsus.org/&#34;&gt;PRISMS&lt;/a&gt;) - a small private school with exceptional students and research program for students. More about why doing research at high school makes sense and why it beneficial to students you can find &lt;a href=&#34;https://ieeexplore.ieee.org/abstract/document/8340465/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
@@ -192,8 +222,6 @@ Click for &lt;a href=&#34;https://github.com/prismsus/election/blob/master/prese
       
       <guid>/post/exp-labs-with-simulations/</guid>
       <description>&lt;p&gt;While teaching laboratories for calculus-based Physics I figured out there is no teaching curriculum available which would combine actual experiments with computer (or also called numerical) simulations. So, I developed a sequence of 7 lab modules to implement exactly that.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 

@@ -20,8 +20,6 @@
       <guid>/post/exp-labs-with-simulations/</guid>
       <description>&lt;p&gt;While teaching laboratories for calculus-based Physics I figured out there is no teaching curriculum available which would combine actual experiments with computer (or also called numerical) simulations. So, I developed a sequence of 7 lab modules to implement exactly that.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
 &lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
 
 &lt;p&gt;Computer simulations are now everywhere. Complexity of many real system does not allow to obtain a model written through analytic equations. In such situations numerical simulations provide a good (if not the only one) way to do address them.&lt;/p&gt;

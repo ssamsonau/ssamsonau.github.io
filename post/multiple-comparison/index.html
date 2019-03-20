@@ -19,7 +19,6 @@
 <meta name="author" content="Sergey Samsonau" />
   <meta name="description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &amp;lt; 0.05 - right?
 Actually no&amp;hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &amp;ldquo;multiple comparison&amp;rdquo; problem.
-
 " />
 
   <meta name="keywords" content="Physics, Data, Science" />
@@ -29,7 +28,7 @@ Actually no&amp;hellip; You are almost guarantied to have at least 5% of those c
 
 
 
-<meta name="generator" content="Hugo 0.40.1" />
+<meta name="generator" content="Hugo 0.54.0" />
 
 
 <link rel="canonical" href="/post/multiple-comparison/" />
@@ -55,40 +54,21 @@ Actually no&amp;hellip; You are almost guarantied to have at least 5% of those c
 <meta property="og:title" content="Multiple comparison" />
 <meta property="og:description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?
 
-Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.
-
-" />
+Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/multiple-comparison/" />
-
-
-
 <meta property="article:published_time" content="2018-04-30T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2018-04-30T22:25:01-04:00"/>
-
-<meta property="og:site_name" content="Blog" />
-
-
-
-
-
-
-
-
-
+<meta property="article:modified_time" content="2018-04-30T22:25:01-04:00"/><meta property="og:site_name" content="Blog" />
 
 <meta itemprop="name" content="Multiple comparison">
 <meta itemprop="description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?
 
-Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.
-
-">
+Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.">
 
 
 <meta itemprop="datePublished" content="2018-04-30T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-04-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="dateModified" content="2018-04-30T22:25:01-04:00" />
+<meta itemprop="wordCount" content="573">
 
 
 
@@ -97,9 +77,7 @@ Actually no&hellip; You are almost guarantied to have at least 5% of those colum
 <meta name="twitter:title" content="Multiple comparison"/>
 <meta name="twitter:description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?
 
-Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.
-
-"/>
+Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -199,8 +177,6 @@ Actually no&hellip; You are almost guarantied to have at least 5% of those colum
       <p>Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?</p>
 
 <p>Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.</p>
-
-<p></p>
 
 <p>The problem is <a href="https://en.wikipedia.org/wiki/Multiple_comparisons_problem">known</a></p>
 
@@ -425,7 +401,9 @@ ggplot(sub_df) <span style="color:#666">+</span>
   
   <span class="copyright-year">
     &copy; 
-    2018
+    
+      2018 - 
+    2019
     
     <span class="author">Sergey Samsonau</span>
   </span>
@@ -444,12 +422,16 @@ ggplot(sub_df) <span style="color:#666">+</span>
 <script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
 
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-118372959-1', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-118372959-1', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
 
