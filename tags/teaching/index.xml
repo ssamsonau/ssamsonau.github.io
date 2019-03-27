@@ -26,13 +26,25 @@
 
 &lt;ul&gt;
 &lt;li&gt;Read a book. Understand precisely what an author is saying, understand his/her model/view of reality/world&lt;br /&gt;
--&amp;gt; Fit a tree to get a simple model. Build a fully grown tree (don&amp;rsquo;t prune)&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fit a tree to get a simple model. Build a fully grown tree (don&amp;rsquo;t prune)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Read another book. Get another view of reality. Ideally, this shall be done without any filters of perception which may have been learned from the 1st book&lt;br /&gt;
--&amp;gt; Fit another tree&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fit another tree&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Read many more books&lt;br /&gt;
--&amp;gt; Fit many trees&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fit many trees&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Make up your mind based on conglomerations of all those ideas and some other experiences&lt;br /&gt;
--&amp;gt; Use an aggregation of trees as a final model&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Use an aggregation of trees as a final model&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In both cases, there is a high variance of views from book to book (from model to model), and ideally low bias (deep understanding of every book). Aggregation helps reduce variance in both cases.&lt;/p&gt;
@@ -41,11 +53,20 @@
 
 &lt;ul&gt;
 &lt;li&gt;Read one book/take intro class. Understand it as much as you can on the first run&lt;br /&gt;
--&amp;gt; fit shallow tree&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fit shallow tree&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Address what you did not understand from the first run. Try to understand those things which are still not clear&lt;br /&gt;
--&amp;gt; fit another shallow tree on the residuals&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fit another shallow tree on the residuals&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Continue the refinement of the knowledge&lt;br /&gt;
--&amp;gt; fit many more shallow trees, every time on residuals of previous models&lt;/li&gt;
+
+&lt;ul&gt;
+&lt;li&gt;fit many more shallow trees, every time on residuals of previous models&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;In this case, every new iteration never (almost) makes understanding (model) learned (obtained) on previous iterations wrong, and mostly fine tunes those.&lt;/p&gt;</description>
