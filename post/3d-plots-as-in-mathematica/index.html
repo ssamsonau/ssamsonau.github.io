@@ -28,7 +28,7 @@ Plot3D[Sin[x*y],{x,0,5},{y,0,5}] and you have a very nice plot. Which is, by the
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.57.2" />
 
 
 <link rel="canonical" href="/post/3d-plots-as-in-mathematica/" />
@@ -59,9 +59,8 @@ and you have a very nice plot. Which is, by the way, interactive (as long as you
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/3d-plots-as-in-mathematica/" />
-<meta property="article:published_time" content="2018-05-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2018-05-25T00:00:00&#43;00:00"/><meta property="og:site_name" content="Blog" />
-
+<meta property="article:published_time" content="2018-05-20T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-05-25T00:00:00+00:00" /><meta property="og:site_name" content="Blog" />
 <meta itemprop="name" content="3D plots as in Mathematica">
 <meta itemprop="description" content="Sometimes you just need to visualize a shape of a function. Ideally this should be fast, intuitive and simple. I always liked the simplicity of Wolfram Mathematica 3D plots. Just do
 Plot3D[Sin[x*y], {x, 0, 5}, {y, 0, 5}]
@@ -4275,10 +4274,7 @@ api_create(p, filename <span style="color:#666">=</span> <span style="color:#b44
 <li><p>Python code can be executed in Rstudio and plot be included in the html file with reticulate package - more details <a href="https://rstudio.github.io/reticulate/articles/r_markdown.html">here</a></p>
 
 <ul>
-<li>If there is an error &ldquo;could not find or load the Qt platform plugin windows&rdquo;, look <a href="https://stackoverflow.com/questions/41994485/error-could-not-find-or-load-the-qt-platform-plugin-windows-while-using-matplo">here</a> for a solution - for example you may need to use a command Sys.setenv(QT_PLUGIN_PATH = &ldquo;c:/Users/..your_user../Anaconda3/Library/plugins/&ldquo;)
-<br /></li>
-</ul></li>
-</ul>
+<li><p>If there is an error &ldquo;could not find or load the Qt platform plugin windows&rdquo;, look <a href="https://stackoverflow.com/questions/41994485/error-could-not-find-or-load-the-qt-platform-plugin-windows-while-using-matplo">here</a> for a solution - for example you may need to use a command Sys.setenv(QT_PLUGIN_PATH = &ldquo;c:/Users/..your_user../Anaconda3/Library/plugins/&ldquo;)</p>
 <div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#a2f;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">mpl_toolkits.mplot3d</span> <span style="color:#a2f;font-weight:bold">import</span> Axes3D
 <span style="color:#a2f;font-weight:bold">import</span> <span style="color:#00f;font-weight:bold">matplotlib.pyplot</span> <span style="color:#a2f;font-weight:bold">as</span> <span style="color:#00f;font-weight:bold">plt</span>
 <span style="color:#a2f;font-weight:bold">from</span> <span style="color:#00f;font-weight:bold">matplotlib</span> <span style="color:#a2f;font-weight:bold">import</span> cm
@@ -4292,10 +4288,13 @@ X, Y <span style="color:#666">=</span> np<span style="color:#666">.</span>meshgr
 Z <span style="color:#666">=</span> np<span style="color:#666">.</span>sin(X<span style="color:#666">*</span>Y)
 <span style="color:#080;font-style:italic"># Plot the surface.</span>
 surf <span style="color:#666">=</span> ax<span style="color:#666">.</span>plot_surface(X, Y, Z, cmap<span style="color:#666">=</span>cm<span style="color:#666">.</span>coolwarm,
-                       linewidth<span style="color:#666">=</span><span style="color:#666">0</span>, antialiased<span style="color:#666">=</span>False)
+               linewidth<span style="color:#666">=</span><span style="color:#666">0</span>, antialiased<span style="color:#666">=</span>False)
 <span style="color:#080;font-style:italic"># Add a color bar which maps values to colors.</span>
 fig<span style="color:#666">.</span>colorbar(surf, shrink<span style="color:#666">=</span><span style="color:#666">0.5</span>, aspect<span style="color:#666">=</span><span style="color:#666">5</span>)
-plt<span style="color:#666">.</span>show()</code></pre></div>
+plt<span style="color:#666">.</span>show()</code></pre></div></li>
+</ul></li>
+</ul>
+
 <p><img src="/images/2018-05-20-3d-plots-as-in-mathematica_files/figure-html/python-plot-1.png" alt="" /><!-- --></p>
 
 <p>This plot will be interactive while one uses Matplotlib&rsquo;s interactive backend. The interactivity does not translate into Rmd generated html.</p>

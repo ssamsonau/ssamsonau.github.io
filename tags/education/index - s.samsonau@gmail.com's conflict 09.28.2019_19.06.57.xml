@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Blog</title>
+    <link>/tags/education/</link>
+    <description>Recent content in Education on Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Sergey Samsonau</copyright>
+    <lastBuildDate>Mon, 08 Apr 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compliance?</title>
+      <link>/post/compliance/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/compliance/</guid>
+      <description>&lt;p&gt;Is there more serios intention in a school, as to make students to comply? Do homework, do excersizes, behave, think out of the box&amp;hellip; Do you hear me? Think out of the box! I am telling you to!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bagging and Boosting in Human learning</title>
+      <link>/post/bagging-and-boosting-in-human-learning/</link>
+      <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bagging-and-boosting-in-human-learning/</guid>
+      <description>&lt;p&gt;Just a funny thought: education in humanities follows bagging trees, education in natural sciences follows boosting. Here is why..&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Advanced classes for stress reduction?</title>
+      <link>/post/advanced-classes-for-stress-reduction/</link>
+      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/advanced-classes-for-stress-reduction/</guid>
+      <description>&lt;p&gt;Usually, perception is that the more advanced is the school and curriculum, the more stressed students are. Is this really the case?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Comparison of education with machine learning</title>
+      <link>/post/comparison-of-education-with-machine-learning/</link>
+      <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/comparison-of-education-with-machine-learning/</guid>
+      <description>&lt;p&gt;Let me speculate a little, and compare what does an educator (teacher/professor/instructor) with what does a machine learning specialist.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
