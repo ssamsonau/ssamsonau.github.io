@@ -30,6 +30,13 @@
   </url>
   
   <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-03-22T22:38:45-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
     <lastmod>2019-03-22T22:38:45-04:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -67,13 +74,6 @@
   <url>
     <loc>/post/comparison-of-education-with-machine-learning/</loc>
     <lastmod>2018-06-21T10:27:27-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2018-05-25T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
