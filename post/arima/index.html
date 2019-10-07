@@ -62,7 +62,7 @@
 
 <meta itemprop="datePublished" content="2019-09-28T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-03-22T22:38:45-04:00" />
-<meta itemprop="wordCount" content="1113">
+<meta itemprop="wordCount" content="1300">
 
 
 
@@ -177,6 +177,7 @@
 <li><a href="#examples-of-non-stationarity">Examples of non-stationarity</a></li>
 <li><a href="#fitting-arima-p-d-q">Fitting ARIMA(p,d,q)</a></li>
 </ul></li>
+<li><a href="#explore-interactively">Explore interactively</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -317,16 +318,35 @@ e(t, t&gt;t&rsquo;) = 0</li>
 
 <p>Y(t) = 0.8 * Y(t-1) + e</p>
 
-<p>Y(t&rsquo;) = 0.8 * Y(t&rsquo;-1) + e(t&rsquo;) = 0 + e(t&rsquo;)<br />
-Y(t&rsquo;+1) = 0.8 * Y(t&rsquo;) + e(t&rsquo;+1) = 0.8 * e(t&rsquo;) + e(t&rsquo;+1) = 0.8 * e(t&rsquo;) + 0<br />
-Y(t&rsquo;+2) = 0.8 * Y(t&rsquo;+1) + e(t&rsquo;+2) = 0.8 * (0.8 * e(t&rsquo;)) + 0 = 0.8^2 * e(t&rsquo;)<br />
-Y(t&rsquo;+n) = 0.8^n * e(t&rsquo;)</p>
+<p><strong>Y(t&rsquo;)</strong> = 0.8 * Y(t&rsquo;-1) + e(t&rsquo;) = 0 + <strong>e(t&rsquo;)</strong><br />
+<strong>Y(t&rsquo;+1)</strong> = 0.8 * Y(t&rsquo;) + e(t&rsquo;+1) = 0.8 * e(t&rsquo;) + e(t&rsquo;+1) = <strong>0.8 * e(t&rsquo;)</strong> + 0<br />
+<strong>Y(t&rsquo;+2)</strong> = 0.8 * Y(t&rsquo;+1) + e(t&rsquo;+2) = 0.8 * (0.8 * e(t&rsquo;)) + 0 = <strong>0.8^2 * e(t&rsquo;)</strong><br />
+<strong>Y(t&rsquo;+n)</strong> = <strong>0.8^n * e(t&rsquo;)</strong></p>
 
 <p><img src="/images/2019-09-28-arima_files/figure-html/ar1.png" alt="drawing" width="45%"/></p>
 
 <h4 id="ar-2-example">AR(2) example</h4>
 
 <p>Y(t) = 0.8 * Y(t-1) - 0.6 * Y(t-2) + e(t)</p>
+
+<p><strong>Y(t&rsquo;)</strong> = 0.8 * Y(t&rsquo;-1) - 0.6 * Y(t&rsquo;-2) +  e(t&rsquo;) = 0 + 0 + <strong>e(t&rsquo;)</strong></p>
+
+<p><strong>Y(t&rsquo;+1)</strong> = 0.8 * Y(t&rsquo;) - 0.6 * Y(t&rsquo;-1) + e(t&rsquo;+1) = 0.8 * e(t&rsquo;) + 0 + e(t&rsquo;+1) =<br />
+<strong>0.8 * e(t&rsquo;)</strong> + 0 + 0</p>
+
+<p><strong>Y(t&rsquo;+2)</strong> = 0.8 * Y(t&rsquo;+1) - 0.6 * Y(t&rsquo;) + e(t&rsquo;+2) =<br />
+0.8 * (0.8 * e(t&rsquo;)) - 0.6 * e(t&rsquo;) +  0 = <strong>0.8^2 * e(t&rsquo;) - 0.6 * e(t&rsquo;)</strong>  + 0</p>
+
+<p><strong>Y(t&rsquo;+3)</strong> = 0.8 * Y(t&rsquo;+2) - 0.6 * Y(t&rsquo;+1) + e(t&rsquo;+3) =<br />
+0.8 * (0.8^2 * e(t&rsquo;) - 0.6 * e(t&rsquo;)) - 0.6 * (0.8 * e(t&rsquo;)) +  0 =<br />
+<strong>0.8^3 * e(t&rsquo;) - 2*0.8*0.6 * e(t&rsquo;)</strong> + 0</p>
+
+<p><strong>Y(t&rsquo;+4)</strong> = 0.8 * Y(t&rsquo;+3) - 0.6 * Y(t&rsquo;+2) + e(t&rsquo;+4) =<br />
+0.8 * (0.8^3 * e(t&rsquo;) - 2*0.8*0.6 * e(t&rsquo;))
+- 0.6 * (0.8^2 * e(t&rsquo;) - 0.6 * e(t&rsquo;)) +  0 =<br />
+<strong>0.8^4 * e(t&rsquo;) - 2*0.8^2*0.6 * e(t&rsquo;) - 0.8^2*0.6 * e(t&rsquo;) + 0.6^2 e(t&rsquo;)</strong> + 0</p>
+
+<p>Y(t&rsquo;+5) = &hellip;</p>
 
 <p><img src="/images/2019-09-28-arima_files/figure-html/ar2.png" alt="drawing" width="45%"/></p>
 
@@ -345,9 +365,9 @@ e(t, t&gt;t&rsquo;) = 0</li>
 
 <p>Y(t) = a * e(t-1) + e</p>
 
-<p>Y(t&rsquo;) = a * e(t&rsquo;-1) + e(t&rsquo;) = 0 + e(t&rsquo;)<br />
-Y(t&rsquo;+1) = a * e(t&rsquo;) + e(t&rsquo;+1) = a * e(t&rsquo;) + 0<br />
-Y(t&rsquo;+2) = a * e(t&rsquo;+1) + e(t&rsquo;+2) = 0 + 0 = 0</p>
+<p><strong>Y(t&rsquo;)</strong> = a * e(t&rsquo;-1) + e(t&rsquo;) = 0 + <strong>e(t&rsquo;)</strong><br />
+<strong>Y(t&rsquo;+1)</strong> = a * e(t&rsquo;) + e(t&rsquo;+1) = <strong>a * e(t&rsquo;)</strong> + 0<br />
+<strong>Y(t&rsquo;+2)</strong> = a * e(t&rsquo;+1) + e(t&rsquo;+2) = 0 + 0 = <strong>0</strong></p>
 
 <p><img src="/images/2019-09-28-arima_files/figure-html/ma1.png" alt="drawing" width="45%"/></p>
 
@@ -355,10 +375,10 @@ Y(t&rsquo;+2) = a * e(t&rsquo;+1) + e(t&rsquo;+2) = 0 + 0 = 0</p>
 
 <p>Y(t) = a * e(t-1) - b * e(t-2) + e(t)</p>
 
-<p>Y(t&rsquo;) = a * e(t&rsquo;-1) + b * e(t&rsquo;-2) + e(t&rsquo;) = 0 + 0 + e(t&rsquo;)<br />
-Y(t&rsquo;+1) = a * e(t&rsquo;) + b * e(t&rsquo;-1) + e(t&rsquo;+1) = a * e(t&rsquo;) + 0 + 0<br />
-Y(t&rsquo;+2) = a * e(t&rsquo;+1) + b * e(t&rsquo;) + e(t&rsquo;+2) = 0 + b* e(t&rsquo;) + 0<br />
-Y(t&rsquo;+3) = a * e(t&rsquo;+2) + b * e(t&rsquo;+1) + e(t&rsquo;+2) = 0 + 0 + 0 = 0</p>
+<p><strong>Y(t&rsquo;)</strong> = a * e(t&rsquo;-1) + b * e(t&rsquo;-2) + e(t&rsquo;) = 0 + 0 + <strong>e(t&rsquo;)</strong><br />
+<strong>Y(t&rsquo;+1)</strong> = a * e(t&rsquo;) + b * e(t&rsquo;-1) + e(t&rsquo;+1) = <strong>a * e(t&rsquo;)</strong> + 0 + 0<br />
+<strong>Y(t&rsquo;+2)</strong> = a * e(t&rsquo;+1) + b * e(t&rsquo;) + e(t&rsquo;+2) = 0 + <strong>b* e(t&rsquo;)</strong> + 0<br />
+<strong>Y(t&rsquo;+3)</strong> = a * e(t&rsquo;+2) + b * e(t&rsquo;+1) + e(t&rsquo;+2) = 0 + 0 + 0 = <strong>0</strong></p>
 
 <p><img src="/images/2019-09-28-arima_files/figure-html/ma2.png" alt="drawing" width="45%"/></p>
 
@@ -426,6 +446,12 @@ Y(t&rsquo;+3) = a * e(t&rsquo;+2) + b * e(t&rsquo;+1) + e(t&rsquo;+2) = 0 + 0 + 
 </ul></li>
 <li>With chosen p, d, q do forecast and calculate errors (theoretically, or by doing simulations many times)</li>
 </ul>
+
+<h2 id="explore-interactively">Explore interactively</h2>
+
+<p>You can explore AR and MA behaviour using an interactive app bellow (or at this <a href="https://ssamsonau.shinyapps.io/arima/">link</a>).</p>
+
+<iframe src="https://ssamsonau.shinyapps.io/arima/" width="100%" height="1000" style="border: none;"></iframe>
     </div>
     
 
