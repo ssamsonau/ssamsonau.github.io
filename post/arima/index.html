@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Google vs Books - H&lt;&gt;M Learning</title>
+  <title>Arima - H&lt;&gt;M Learning</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="S. Samsonau" /><meta name="description" content="Recently I was participating in a discussion &amp;lsquo;books vs google&amp;rsquo;. The idea is &amp;ldquo;do we just impose our view on the learning process to kids? maybe they don&amp;rsquo;t need books when there is google?&amp;rdquo;
+<meta name="author" content="S. Samsonau" /><meta name="description" content="Let me share with you an intuition behind ARIMA (time series prediction approach). This is based on the content of the great course on econometrics presented by Ben Lambert (link)
 " /><meta name="keywords" content="Education, Physics, Data, Science" />
 
 
@@ -40,23 +40,23 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Google vs Books" />
-<meta property="og:description" content="Recently I was participating in a discussion &lsquo;books vs google&rsquo;. The idea is &ldquo;do we just impose our view on the learning process to kids? maybe they don&rsquo;t need books when there is google?&rdquo;" />
+<meta property="og:title" content="Arima" />
+<meta property="og:description" content="Let me share with you an intuition behind ARIMA (time series prediction approach). This is based on the content of the great course on econometrics presented by Ben Lambert (link)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/arima/" />
-<meta property="article:published_time" content="2020-07-05T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-07-05T11:46:00-04:00" /><meta property="og:site_name" content="H&lt;&gt;M Learning" />
-<meta itemprop="name" content="Google vs Books">
-<meta itemprop="description" content="Recently I was participating in a discussion &lsquo;books vs google&rsquo;. The idea is &ldquo;do we just impose our view on the learning process to kids? maybe they don&rsquo;t need books when there is google?&rdquo;">
-<meta itemprop="datePublished" content="2020-07-05T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2020-07-05T11:46:00-04:00" />
-<meta itemprop="wordCount" content="697">
+<meta property="article:published_time" content="2019-09-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-22T22:38:45-04:00" /><meta property="og:site_name" content="H&lt;&gt;M Learning" />
+<meta itemprop="name" content="Arima">
+<meta itemprop="description" content="Let me share with you an intuition behind ARIMA (time series prediction approach). This is based on the content of the great course on econometrics presented by Ben Lambert (link)">
+<meta itemprop="datePublished" content="2019-09-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-03-22T22:38:45-04:00" />
+<meta itemprop="wordCount" content="1327">
 
 
 
-<meta itemprop="keywords" content="education,teaching," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Google vs Books"/>
-<meta name="twitter:description" content="Recently I was participating in a discussion &lsquo;books vs google&rsquo;. The idea is &ldquo;do we just impose our view on the learning process to kids? maybe they don&rsquo;t need books when there is google?&rdquo;"/>
+<meta itemprop="keywords" content="Data Science,R," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Arima"/>
+<meta name="twitter:description" content="Let me share with you an intuition behind ARIMA (time series prediction approach). This is based on the content of the great course on econometrics presented by Ben Lambert (link)"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -115,10 +115,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Google vs Books</h1>
+      <h1 class="post-title">Arima</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2020-07-05 </span>
+        <span class="post-time"> 2019-09-28 </span>
         
         
       </div>
@@ -129,165 +129,208 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#internetgooglestackoverflow">Internet/Google/Stackoverflow</a></li>
-    <li><a href="#books">Books</a></li>
-    <li><a href="#mooc-khan-academy-coursera-edx-etc">MOOC (Khan Academy, Coursera, edX, etc)</a></li>
-    <li><a href="#instructorteacherexpertprofessor">Instructor/teacher/expert/professor</a></li>
+    <li><a href="#introduction">Introduction</a>
+      <ul>
+        <li><a href="#types-of-forecasting">Types of forecasting</a></li>
+        <li><a href="#time-series-descriptions">Time series descriptions</a></li>
+        <li><a href="#choise">Choise</a></li>
+      </ul>
+    </li>
+    <li><a href="#arima-pdq">ARIMA (p,d,q)</a>
+      <ul>
+        <li><a href="#intuition-behind-arima-math">Intuition behind ARIMA math</a></li>
+        <li><a href="#ar-type-of-model-indefinite-memory">AR type of model (&ldquo;indefinite memory&rdquo;)</a></li>
+        <li><a href="#ma-type-of-model-short-memory">MA type of model (&ldquo;short memory&rdquo;)</a></li>
+        <li><a href="#i-in-arima">I in ARIMA</a></li>
+        <li><a href="#other-types-of-arima">Other Types of ARIMA</a></li>
+      </ul>
+    </li>
+    <li><a href="#closing-remarks">Closing remarks</a>
+      <ul>
+        <li><a href="#nuances-of-arima">Nuances of ARIMA</a></li>
+        <li><a href="#simulation-of-simple-arimapdq-models">Simulation of simple Arima(p,d,q) models</a></li>
+        <li><a href="#examples-of-non-stationarity">Examples of non-stationarity</a></li>
+        <li><a href="#fitting-arimapdq">Fitting ARIMA(p,d,q)</a></li>
+      </ul>
+    </li>
+    <li><a href="#explore-interactively">Explore interactively</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <p>Recently I was participating in a discussion &lsquo;books vs google&rsquo;. The idea is &ldquo;do we just impose our view on the learning process to kids? maybe they don&rsquo;t need books when there is google?&rdquo;</p>
-<p>I think there are several components in the education process and each plays a role:</p>
-<h2 id="internetgooglestackoverflow">Internet/Google/Stackoverflow</h2>
-<p>People use Google/Stackoverflow/other to find answers to specific questions, find examples of code, find solutions to similar problems, etc. Internet is great resource providing an equivalent of access to myriads of reference books, a crowd of experts, and more.</p>
-<p>However, googling/exploring/reading in the internet can&rsquo;t really produce a systematic view of a subject/topic/area. And quite often the answers to questions may be just wrong (an author may think those are right, of course)</p>
-<h2 id="books">Books</h2>
-<p>Books are great for forming a systematic view of the subject. A reader will figure out the overview of main concepts, will find how they connect to each other, will solve practical problems/exercises which will allow to challenge one&rsquo;s brain and thus deeper understanding of the material, form a general view of how all that works together.</p>
-<p>Books may never provide so many different examples, review so many different use-cases as the internet does, but they sure deliver a great foundation. And they can do that level by level (introductory, intermediate/advanced/special topics, etc)</p>
-<p>There is also a fact, that many more people verify the validity of information in a typical textbook, comparing to a typical internet post.</p>
-<h2 id="mooc-khan-academy-coursera-edx-etc">MOOC (Khan Academy, Coursera, edX, etc)</h2>
-<p>This additional way of learning new fields is changing the world! I really like this model and benefited a lot from this approach myself - taking classes from the best professors to learn new areas.</p>
-<p>Khan Academy is a great way to substitute/enrich material given to students about standard content. This approach may help in a situation when there is a bad teacher in school, or enrich instructors given by a good one. However, there is very limited non-verbal feedback</p>
-<p>Advanced classes on Coursera/edX work well when people already know how to learn on their own. Not everybody has this skill developed.</p>
-<h2 id="instructorteacherexpertprofessor">Instructor/teacher/expert/professor</h2>
-<p>Sometimes for very advanced topics, the role of a professor in a college of graduate school is to actually deliver unique material, not present anywhere else.</p>
-<p>However, very often material is already described somewhere else in a textbook (which may be written by 10th of other professors), or just a good book. In such cases (most of the cases in college and high school) the role of an instructor is quite different. In such cases, an instructor works on setting priorities for this particular group of people in front of him/her: given a limited time for the class, what is the best way to use the time. Is it better to read more material? or to solve more problems (and which problems to choose)? Is it better to do more practical labs? Is it better to do open-ended exploration/research? And these priorities may change a lot depending on particular settings and depending on background of students, their interest, and motivation, and the goal of education program in general. 
-But more than that, the instructor translates non-verbally his/her views surrounding a subject. Is it easy/hard, is it interesting/boring, does it has connections to the real world/or it is a dry lifeless set of facts? This second part is often overlooked in high schools: you may have a biology teacher to teach physics because &ldquo;you are a scientist, and we need to cover physics&rdquo;. Most (my speculation) of biology teachers don&rsquo;t really appreciate physics, and most (my speculation) physics teachers don&rsquo;t really appreciate biology, at least not on a level as a person who chose this particular field of study in a college. And this is where many (my speculation) students who &ldquo;don&rsquo;t like the subject&rdquo; come from - if a subject is presented by a person who internally believes it is dry and lifeless, students will absorb this way of thinking, even if they use a great written textbook</p>
-<p>A good instructor will aim to teach students how to learn on their own. Ideally, after a class student may continue to develop skills/knowledge on their own, using internet/books/MOOC</p>
-    </div>
-
-    
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/education/">education</a>
-          <a href="/tags/teaching/">teaching</a>
-          </div>
-      <nav class="post-nav">
-        
-        <a class="next" href="/post/arima/">
-            <span class="next-text nav-default">Arima</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-        </div>
-        
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="https://twitter.com/ssamsonau" class="iconfont icon-twitter" title="twitter"></a>
-      <a href="https://www.linkedin.com/in/ssamsonau/" class="iconfont icon-linkedin" title="linkedin"></a>
-      <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
-  <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  
-  
-  
-  Blog <a class="hexo-link" href="/post/">Archives</a>
-  <span class="division">|</span>
-  Blog <a class="hexo-link" href="/tags/">Tags</a>
-
-
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	 
-</style>
-<div id="mc_embed_signup">
-<form action="https://ssamsonau.us18.list-manage.com/subscribe/post?u=22c2a422869c46f4edff2c1db&amp;id=7bee2ad4cc" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email address to subscribe" required>
-    
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_22c2a422869c46f4edff2c1db_7bee2ad4cc" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
-
-
-
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-  <span class="division">|</span>
-  Hosted at <a class="theme-link" href="https://www.netlify.com/">Netlify</a>
-  <span class="division">|</span>
-  <a class="theme-link" href="https://www.authenticscience.org/">Authentic Science Academy</a>
-
-
-
-  
-
-  <span class="copyright-year">
-    &copy; 
-    2018 - 
-    2020
-    <span class="heart">
-      <i class="iconfont icon-heart"></i>
-    </span>
-    <span class="author">Sergey Samsonau</span>
-  </span>
-</div>
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-
-
-
-<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
-      TeX: {equationNumbers: {autoNumber: "AMS"}},
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
-
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-118372959-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
-
-
-
-
-
-</body>
-</html>
-unt in a model)</li>
+      <p>Let me share with you an intuition behind ARIMA (time series prediction approach). This is based on the content of the great course on econometrics presented by Ben Lambert (<a href="https://www.youtube.com/playlist?list=PLwJRxp3blEvZyQBTTOMFRP_TDaSdly3gU">link</a>)</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="types-of-forecasting">Types of forecasting</h3>
+<ul>
+<li>
+<p>Intuitivelly clear application of ML</p>
+<ul>
+<li>Pictures: when you look at a picture with a cat, you can see a cat</li>
+<li>Sounds: you hear sound of someone saying &ldquo;airplane&rdquo; - you recognize &ldquo;airplane&rdquo;</li>
+<li>Text: you see the letters of the work &ldquo;airplane&rdquo; and your recognize them</li>
+</ul>
+</li>
+<li>
+<p>General properties</p>
+<ul>
+<li>In every case there is a stable intuitivelly clear pattern existing in reality</li>
+<li>This pattern does not depend on how good you can detect it: it does not change when you learn to recognize it</li>
+</ul>
+</li>
+<li>
+<p>Time series difference</p>
+<ul>
+<li>In many cases we don&rsquo;t know whether pattern exist at all, even intuitivelly</li>
+<li>Discovery of pattern may change it. For example: if one would find a pattern for stock market, use of this pattern by many people to earn money will make this pattern not valid any more</li>
+</ul>
+</li>
+</ul>
+<h3 id="time-series-descriptions">Time series descriptions</h3>
+<ul>
+<li>
+<p>Pure description (&lsquo;or&rsquo;)</p>
+<ul>
+<li>Motion of an oscilating mass on a spring: sinusoidal motion:
+<ul>
+<li>pure auto-regression using (ARIMA(2,0,0)) with certain coefficients</li>
+<li>pure external regression using mass, spring constant, time, phase, amplitude</li>
+</ul>
+</li>
+<li>Temperature of air during the day
+<ul>
+<li>pure auro-regression - some form of dependence on previous value could be found</li>
+<li>pure external dependence on time, number of clouds, season, etc.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Mixed description (&lsquo;and&rsquo;)</p>
+<ul>
+<li>Temperture in a room, depends on
+<ul>
+<li>at what time a heater is turning on and off</li>
+<li>what were the previous values of temperature</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="choise">Choise</h3>
+<p>Depending on a problem, auto- or external- regression can have a simpler expression</p>
+<ul>
+<li>small data: may work for auto regression but be insufficient for external regression</li>
+<li>large data: extremelly flexible model with large number of parameters can be fitted</li>
+</ul>
+<p>In this discussion we <em>focus on auto-regression</em></p>
+<h2 id="arima-pdq">ARIMA (p,d,q)</h2>
+<ul>
+<li>
+<p>&lsquo;<!-- raw HTML omitted -->AR<!-- raw HTML omitted -->&rsquo; in ARIMA uses linear combination of previous observations</p>
+</li>
+<li>
+<p>&lsquo;<!-- raw HTML omitted -->MA<!-- raw HTML omitted -->&rsquo; in ARIMA uses linear combinations of previous differences between forecasting and observation (e)</p>
+</li>
+<li>
+<p>We also expect there will be an error term <!-- raw HTML omitted -->$e(t)$<!-- raw HTML omitted --> in our forecast</p>
+</li>
+<li>
+<p>Total model is a combination of <!-- raw HTML omitted -->AR<!-- raw HTML omitted --> and <!-- raw HTML omitted -->MA<!-- raw HTML omitted -->, and <!-- raw HTML omitted -->$e(t)$<!-- raw HTML omitted --></p>
+</li>
+</ul>
+<p>$$ \color{red}{\theta_1 \ Y(t-1) + \theta_2 \ Y(t-2) + &hellip;} + 
+\color{blue}{\phi_1 \ e(t-1) + \phi_2 \ e(t-2) + &hellip;} + 
+\color{green}{e(t)}  $$</p>
+<ul>
+<li>&lsquo;I&rsquo; in ARIMA stands for &lsquo;integrated&rsquo; and reflects the necessity to take a derivative (differencing) to remove trends present in time series</li>
+</ul>
+<h3 id="intuition-behind-arima-math">Intuition behind ARIMA math</h3>
+<p>An example situation:</p>
+<ul>
+<li>We are interested in sales of a particular item in a store</li>
+<li>Let us imagine it has a very consistent value, and thus can be plotted by using a horizontal line (y = 0, if we subtract this constant value)</li>
+<li>At a certain day we make a promotion</li>
+</ul>
+<p>What happens next:</p>
+<ul>
+<li>Ideally a boost of sales on this day</li>
+<li>Does this propagate into future? Is there any &lsquo;memory&rsquo;?</li>
+<li>Does it decay slowly? How long memory persists?</li>
+<li>Does it decay in an oscillating faction?</li>
+<li>Imagine there is no &lsquo;memory&rsquo; in our system. Then every news will trigger 1-day event only</li>
+</ul>
+<!-- raw HTML omitted -->
+<h3 id="ar-type-of-model-indefinite-memory">AR type of model (&ldquo;indefinite memory&rdquo;)</h3>
+<ul>
+<li>t&rsquo; - day of promotion</li>
+<li>e(t): observed minus expected</li>
+<li>Y(t, t &lt; t&rsquo;) = 0 =&gt; <br>
+expect 0 at t&rsquo;, thus e(t&rsquo;) = Y(t&rsquo;)</li>
+<li>t&gt; t&rsquo;: model forecasts =&gt; <br>
+e(t, t&gt;t&rsquo;) = 0</li>
+</ul>
+<h4 id="ar1-example">AR(1) example</h4>
+<p>Y(t) = 0.8 * Y(t-1) + e</p>
+<p><strong>Y(t&rsquo;)</strong> = 0.8 * Y(t&rsquo;-1) + e(t&rsquo;) = 0 + <strong>e(t&rsquo;)</strong>  <br>
+<strong>Y(t'+1)</strong> = 0.8 * Y(t&rsquo;) + e(t'+1) = 0.8 * e(t&rsquo;) + e(t'+1) = <strong>0.8 * e(t&rsquo;)</strong> + 0   <br>
+<strong>Y(t'+2)</strong> = 0.8 * Y(t'+1) + e(t'+2) = 0.8 * (0.8 * e(t&rsquo;)) + 0 = <strong>0.8^2 * e(t&rsquo;)</strong><br>
+<strong>Y(t'+n)</strong> = <strong>0.8^n * e(t&rsquo;)</strong></p>
+<!-- raw HTML omitted -->
+<h4 id="ar2-example">AR(2) example</h4>
+<p>Y(t) = 0.8 * Y(t-1) - 0.6 * Y(t-2) + e(t)</p>
+<p><strong>Y(t&rsquo;)</strong> = 0.8 * Y(t&rsquo;-1) - 0.6 * Y(t&rsquo;-2) +  e(t&rsquo;) = 0 + 0 + <strong>e(t&rsquo;)</strong></p>
+<p><strong>Y(t'+1)</strong> = 0.8 * Y(t&rsquo;) - 0.6 * Y(t&rsquo;-1) + e(t'+1) = 0.8 * e(t&rsquo;) + 0 + e(t'+1) =<br>
+<strong>0.8 * e(t&rsquo;)</strong> + 0 + 0</p>
+<p><strong>Y(t'+2)</strong> = 0.8 * Y(t'+1) - 0.6 * Y(t&rsquo;) + e(t'+2) = <br>
+0.8 * (0.8 * e(t&rsquo;)) - 0.6 * e(t&rsquo;) +  0 = <strong>0.8^2 * e(t&rsquo;) - 0.6 * e(t&rsquo;)</strong>  + 0</p>
+<p><strong>Y(t'+3)</strong> = 0.8 * Y(t'+2) - 0.6 * Y(t'+1) + e(t'+3) = <br>
+0.8 * (0.8^2 * e(t&rsquo;) - 0.6 * e(t&rsquo;)) - 0.6 * (0.8 * e(t&rsquo;)) +  0 =<br>
+<strong>0.8^3 * e(t&rsquo;) - 2<em>0.8</em>0.6 * e(t&rsquo;)</strong> + 0</p>
+<p><strong>Y(t'+4)</strong> = 0.8 * Y(t'+3) - 0.6 * Y(t'+2) + e(t'+4) = <br>
+0.8 * (0.8^3 * e(t&rsquo;) - 2<em>0.8</em>0.6 * e(t&rsquo;))</p>
+<ul>
+<li>0.6 * (0.8^2 * e(t&rsquo;) - 0.6 * e(t&rsquo;)) +  0 = <br>
+<strong>0.8^4 * e(t&rsquo;) - 2<em>0.8^2</em>0.6 * e(t&rsquo;) - 0.8^2*0.6 * e(t&rsquo;) + 0.6^2 e(t&rsquo;)</strong> + 0</li>
+</ul>
+<p>Y(t'+5) = &hellip;</p>
+<!-- raw HTML omitted -->
+<h3 id="ma-type-of-model-short-memory">MA type of model (&ldquo;short memory&rdquo;)</h3>
+<ul>
+<li>t&rsquo; - day of promotion</li>
+<li>e(t): observed - expected</li>
+<li>Y(t, t &lt; t&rsquo;) = 0 =&gt; <br>
+expect 0 at t&rsquo;, thus e(t&rsquo;) = Y(t&rsquo;)</li>
+<li>t&gt; t&rsquo;: model forecasts =&gt; <br>
+e(t, t&gt;t&rsquo;) = 0</li>
+</ul>
+<h4 id="ma1-example">MA(1) example</h4>
+<p>Y(t) = a * e(t-1) + e</p>
+<p><strong>Y(t&rsquo;)</strong> = a * e(t&rsquo;-1) + e(t&rsquo;) = 0 + <strong>e(t&rsquo;)</strong> <br>
+<strong>Y(t'+1)</strong> = a * e(t&rsquo;) + e(t'+1) = <strong>a * e(t&rsquo;)</strong> + 0  <br>
+<strong>Y(t'+2)</strong> = a * e(t'+1) + e(t'+2) = 0 + 0 = <strong>0</strong></p>
+<!-- raw HTML omitted -->
+<h4 id="ma2-example">MA(2) example</h4>
+<p>Y(t) = a * e(t-1) - b * e(t-2) + e(t)</p>
+<p><strong>Y(t&rsquo;)</strong> = a * e(t&rsquo;-1) + b * e(t&rsquo;-2) + e(t&rsquo;) = 0 + 0 + <strong>e(t&rsquo;)</strong> <br>
+<strong>Y(t'+1)</strong> = a * e(t&rsquo;) + b * e(t&rsquo;-1) + e(t'+1) = <strong>a * e(t&rsquo;)</strong> + 0 + 0<br>
+<strong>Y(t'+2)</strong> = a * e(t'+1) + b * e(t&rsquo;) + e(t'+2) = 0 + __b* e(t&rsquo;)__ + 0<br>
+__Y(t'+3)__ = a * e(t'+2) + b * e(t'+1) + e(t'+2) = 0 + 0 + 0 = __0__</p>
+<!-- raw HTML omitted -->
+<h3 id="i-in-arima">I in ARIMA</h3>
+<p>Differencing (Y(t) - Y(t-1)) allows to remove trends (from left to right bellow)</p>
+<!-- raw HTML omitted -->
+<h3 id="other-types-of-arima">Other Types of ARIMA</h3>
+<ul>
+<li>ARIMAX - ARIMA with external predictors (time-series and cross-section forecast at the same time)</li>
+<li>VARIMA - vectorized ARIMA (many-to-many approach)</li>
+</ul>
+<h2 id="closing-remarks">Closing remarks</h2>
+<h3 id="nuances-of-arima">Nuances of ARIMA</h3>
+<p>Data Preparation is essential</p>
+<ul>
+<li>Trend removal if needed (differencing in ARIMA)</li>
+<li>Periodicity (remove or take into account in a model)</li>
 <li>Seasonal adjustment, Holidays adjustment</li>
 <li>Missing values, outliers, trend-shift corrections</li>
 <li>BoxCox transformation (stabilizing a variance) may be needed</li>
@@ -332,7 +375,7 @@ unt in a model)</li>
           <a href="/tags/r/">R</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/arima/">
+        <a class="prev" href="/post/google-vs-books/">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">Google vs Books</span>
             <span class="prev-text nav-mobile">Prev</span>
