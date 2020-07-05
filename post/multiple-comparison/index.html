@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Multiple comparison - H&lt;&gt;M Learning</title>
+  <title>Multiple comparison - </title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,23 +16,19 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Sergey Samsonau" />
-  <meta name="description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &amp;lt; 0.05 - right?
+<meta name="author" content="Sergey Samsonau" /><meta name="description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &amp;lt; 0.05 - right?
 Actually no&amp;hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &amp;ldquo;multiple comparison&amp;rdquo; problem.
-" />
-
-  <meta name="keywords" content="Physics, Data, Science" />
+" /><meta name="keywords" content="Education, Physics, Data, Science" />
 
 
 
 
 
 
-<meta name="generator" content="Hugo 0.57.2" />
+<meta name="generator" content="Hugo 0.72.0 with theme even" />
 
 
 <link rel="canonical" href="/post/multiple-comparison/" />
-
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,41 +37,29 @@ Actually no&amp;hellip; You are almost guarantied to have at least 5% of those c
 
 
 
-
-
-
-
-<link href="/dist/even.min.css?v=3.1.1" rel="stylesheet">
+<link href="/sass/main.min.78f8f17bab244b9ee62ad16480c9584d5fc2db06ae20681d1ca225cefd80767c.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
-
-
 
 
 <meta property="og:title" content="Multiple comparison" />
 <meta property="og:description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?
-
 Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/multiple-comparison/" />
 <meta property="article:published_time" content="2018-04-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2018-04-30T22:25:01-04:00" /><meta property="og:site_name" content="H&lt;&gt;M Learning" />
+<meta property="article:modified_time" content="2018-04-30T22:25:01-04:00" />
 <meta itemprop="name" content="Multiple comparison">
 <meta itemprop="description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?
-
 Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.">
-
-
 <meta itemprop="datePublished" content="2018-04-30T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-04-30T22:25:01-04:00" />
-<meta itemprop="wordCount" content="573">
+<meta itemprop="wordCount" content="576">
 
 
 
-<meta itemprop="keywords" content="Data Science,R,R_bloggers," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Data Science,R," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Multiple comparison"/>
 <meta name="twitter:description" content="Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?
-
 Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem."/>
 
 <!--[if lte IE 9]>
@@ -91,7 +75,7 @@ Actually no&hellip; You are almost guarantied to have at least 5% of those colum
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">H&lt;&gt;M Learning</a>
+    <a href="/" class="logo"></a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -113,7 +97,7 @@ Actually no&hellip; You are almost guarantied to have at least 5% of those colum
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">H&lt;&gt;M Learning</a>
+  <a href="/" class="logo"></a>
 </div>
 
 <nav class="site-navbar">
@@ -141,61 +125,46 @@ Actually no&hellip; You are almost guarantied to have at least 5% of those colum
         <span class="post-time"> 2018-04-30 </span>
         
         
-        
       </div>
     </header>
 
-    
-    
-<div class="post-toc" id="post-toc">
+    <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
-  
   <div class="post-toc-content">
     <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#an-example">An example</a>
-<ul>
-<li><a href="#make-a-data-frame">Make a data frame</a></li>
-<li><a href="#correlations">Correlations</a></li>
-<li><a href="#how-many-significant">How many significant?</a></li>
-<li><a href="#plot-those-with-p-values-of-0-05">Plot those with p values of &lt; 0.05</a></li>
-</ul></li>
-<li><a href="#outcome">Outcome</a></li>
-<li><a href="#solutions">Solutions</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#an-example">An example</a>
+      <ul>
+        <li><a href="#make-a-data-frame">Make a data frame</a></li>
+        <li><a href="#correlations">Correlations</a></li>
+        <li><a href="#how-many-significant">How many significant?</a></li>
+        <li><a href="#plot-those-with-p-values-of--005">Plot those with p values of &lt; 0.05</a></li>
+      </ul>
+    </li>
+    <li><a href="#outcome">Outcome</a></li>
+    <li><a href="#solutions">Solutions</a></li>
+  </ul>
 </nav>
   </div>
 </div>
-    
-
-    
     <div class="post-content">
       <p>Let say you have a data set with many columns and you would like to see if there are is any statistically significant dependence between some of the parameters. Just write a script and find those with p &lt; 0.05 - right?</p>
-
 <p>Actually no&hellip; You are almost guarantied to have at least 5% of those columns to be statistically significantly correlated. This is known as a &ldquo;multiple comparison&rdquo; problem.</p>
-
 <p>The problem is <a href="https://en.wikipedia.org/wiki/Multiple_comparisons_problem">known</a></p>
-
 <h2 id="an-example">An example</h2>
-
 <h3 id="make-a-data-frame">Make a data frame</h3>
-
 <p>Randomly generated 100 columns of 1e5 elements</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a2f">set.seed</span>(<span style="color:#666">123</span>)
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#00a000">set.seed</span>(<span style="color:#666">123</span>)
 
-<span style="color:#a2f;font-weight:bold">library</span>(tidyverse)
-df <span style="color:#666">&lt;-</span> tibble(V1 <span style="color:#666">=</span> runif(<span style="color:#666">1e5</span>))
+<span style="color:#00a000">library</span>(tidyverse)
+df <span style="color:#666">&lt;-</span> <span style="color:#00a000">tibble</span>(V1 <span style="color:#666">=</span> <span style="color:#00a000">runif</span>(<span style="color:#666">1e5</span>))
 
-<span style="color:#a2f;font-weight:bold">for</span>(i <span style="color:#a2f;font-weight:bold">in</span> <span style="color:#666">2</span><span style="color:#666">:</span><span style="color:#666">100</span>)
-  df[[<span style="color:#a2f">paste0</span>(<span style="color:#b44">&#34;V&#34;</span>, i)]] <span style="color:#666">&lt;-</span> runif(<span style="color:#666">1e5</span>)</code></pre></div>
-<h3 id="correlations">Correlations</h3>
-
+<span style="color:#00a000">for</span>(i in <span style="color:#666">2</span><span style="color:#666">:</span><span style="color:#666">100</span>)
+  df[<span style="color:#00a000">[paste0</span>(<span style="color:#b44">&#34;V&#34;</span>, i)]] <span style="color:#666">&lt;-</span> <span style="color:#00a000">runif</span>(<span style="color:#666">1e5</span>)
+</code></pre></div><h3 id="correlations">Correlations</h3>
 <p>Let me calculate correlations of the 1st with all the other columns, and then extract a p-value</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">res <span style="color:#666">&lt;-</span> <span style="color:#a2f">sapply</span>(<span style="color:#666">2</span><span style="color:#666">:</span><span style="color:#666">100</span>, <span style="color:#a2f;font-weight:bold">function</span>(i){
-  cor.test(df[[<span style="color:#b44">&#34;V1&#34;</span>]], df[[<span style="color:#a2f">paste0</span>(<span style="color:#b44">&#34;V&#34;</span>, i)]])<span style="color:#666">$</span>p.value
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">res <span style="color:#666">&lt;-</span> <span style="color:#00a000">sapply</span>(<span style="color:#666">2</span><span style="color:#666">:</span><span style="color:#666">100</span>, <span style="color:#00a000">function</span>(i){
+  <span style="color:#00a000">cor.test</span>(df[[<span style="color:#b44">&#34;V1&#34;</span>]], df[<span style="color:#00a000">[paste0</span>(<span style="color:#b44">&#34;V&#34;</span>, i)]])<span style="color:#666">$</span>p.value
 })
 
 <span style="color:#080;font-style:italic"># if you would like to do the same with a linear model</span>
@@ -204,7 +173,8 @@ df <span style="color:#666">&lt;-</span> tibble(V1 <span style="color:#666">=</s
 <span style="color:#080;font-style:italic">#   summary(mod)$coefficients[2, 4]</span>
 <span style="color:#080;font-style:italic"># })</span>
 
-res</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">##  [1] 0.208857842 0.787683654 0.183882152 0.341214093 0.411887870
+res
+</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">##  [1] 0.208857842 0.787683654 0.183882152 0.341214093 0.411887870
 ##  [6] 0.363300463 0.105245125 0.453033654 0.157776986 0.111031320
 ## [11] 0.434434104 0.375520191 0.850306795 0.953865868 0.905601495
 ## [16] 0.763973248 0.009781952 0.267155852 0.633299729 0.930786113
@@ -223,16 +193,17 @@ res</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f
 ## [81] 0.346320930 0.755064242 0.543012780 0.281395566 0.177204811
 ## [86] 0.465263299 0.865361874 0.195236199 0.004776466 0.865152420
 ## [91] 0.424794023 0.342671717 0.020180190 0.012159762 0.882157414
-## [96] 0.927610375 0.354376533 0.574848895 0.748248143</pre></div>
-<h3 id="how-many-significant">How many significant?</h3>
-
+## [96] 0.927610375 0.354376533 0.574848895 0.748248143
+</code></pre></div><h3 id="how-many-significant">How many significant?</h3>
 <p>How many of these p-values are &ldquo;statistically significant&rdquo;? (p-values &lt; 0.05)</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a2f">sum</span>(res <span style="color:#666">&lt;</span> <span style="color:#666">0.05</span>)</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">## [1] 5</pre></div>
-<p>Let me print summary for the first of such models</p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ind <span style="color:#666">&lt;-</span> <span style="color:#a2f">which</span>(res <span style="color:#666">&lt;</span> <span style="color:#666">0.05</span>) <span style="color:#666">+</span> <span style="color:#666">1</span> <span style="color:#080;font-style:italic"># +1 because in sapply we start with 2</span>
-sub_df <span style="color:#666">&lt;-</span> df[, <span style="color:#0b0;font-weight:bold">c</span>(<span style="color:#666">1</span>, ind)]
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#00a000">sum</span>(res <span style="color:#666">&lt;</span> <span style="color:#666">0.05</span>)
+</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">## [1] 5
+</code></pre></div><p>Let me print summary for the first of such models</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">ind <span style="color:#666">&lt;-</span> <span style="color:#00a000">which</span>(res <span style="color:#666">&lt;</span> <span style="color:#666">0.05</span>) <span style="color:#666">+</span> <span style="color:#666">1</span> <span style="color:#080;font-style:italic"># +1 because in sapply we start with 2</span>
+sub_df <span style="color:#666">&lt;-</span> df[, <span style="color:#00a000">c</span>(<span style="color:#666">1</span>, ind)]
 
-cor.test(df[[<span style="color:#b44">&#34;V1&#34;</span>]], df[[<span style="color:#a2f">paste0</span>(<span style="color:#b44">&#34;V&#34;</span>, ind[<span style="color:#666">1</span>])]])</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">## 
+<span style="color:#00a000">cor.test</span>(df[[<span style="color:#b44">&#34;V1&#34;</span>]], df[<span style="color:#00a000">[paste0</span>(<span style="color:#b44">&#34;V&#34;</span>, ind[1])]])
+</code></pre></div><div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">## 
 ## 	Pearson&#39;s product-moment correlation
 ## 
 ## data:  df[[&#34;V1&#34;]] and df[[paste0(&#34;V&#34;, ind[1])]]
@@ -242,89 +213,70 @@ cor.test(df[[<span style="color:#b44">&#34;V1&#34;</span>]], df[[<span style="co
 ##  0.001971667 0.014366768
 ## sample estimates:
 ##         cor 
-## 0.008169531</pre></div>
-<h3 id="plot-those-with-p-values-of-0-05">Plot those with p values of &lt; 0.05</h3>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#a2f;font-weight:bold">library</span>(ggplot2)
-<span style="color:#a2f;font-weight:bold">library</span>(gridExtra)
+## 0.008169531
+</code></pre></div><h3 id="plot-those-with-p-values-of--005">Plot those with p values of &lt; 0.05</h3>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r"><span style="color:#00a000">library</span>(ggplot2)
+<span style="color:#00a000">library</span>(gridExtra)
 
 sub_df <span style="color:#666">&lt;-</span> sub_df <span style="color:#666">%&gt;%</span>
-  gather(key <span style="color:#666">=</span> other_var, value <span style="color:#666">=</span> value, <span style="color:#666">-</span>V1)
+  <span style="color:#00a000">gather</span>(key <span style="color:#666">=</span> other_var, value <span style="color:#666">=</span> value, <span style="color:#666">-</span>V1)
 
-ggplot(sub_df) <span style="color:#666">+</span>
-  geom_smooth(aes(x <span style="color:#666">=</span> value, y <span style="color:#666">=</span> V1), method <span style="color:#666">=</span> <span style="color:#b44">&#34;lm&#34;</span>) <span style="color:#666">+</span>
-  facet_wrap(<span style="color:#666">~</span>other_var) <span style="color:#666">+</span>
-  scale_x_continuous(breaks <span style="color:#666">=</span> <span style="color:#0b0;font-weight:bold">c</span>(<span style="color:#666">0</span>, <span style="color:#666">0.5</span>, <span style="color:#666">1</span>))</code></pre></div>
-<p><img src="/post/2018-04-30-multiple-comparison_files/figure-html/unnamed-chunk-5-1.png" alt="" /><!-- --></p>
-
+<span style="color:#00a000">ggplot</span>(sub_df) <span style="color:#666">+</span>
+  <span style="color:#00a000">geom_smooth</span>(<span style="color:#00a000">aes</span>(x <span style="color:#666">=</span> value, y <span style="color:#666">=</span> V1), method <span style="color:#666">=</span> <span style="color:#b44">&#34;lm&#34;</span>) <span style="color:#666">+</span>
+  <span style="color:#00a000">facet_wrap</span>(<span style="color:#666">~</span>other_var) <span style="color:#666">+</span>
+  <span style="color:#00a000">scale_x_continuous</span>(breaks <span style="color:#666">=</span> <span style="color:#00a000">c</span>(<span style="color:#666">0</span>, <span style="color:#666">0.5</span>, <span style="color:#666">1</span>))
+</code></pre></div><p><img src="/post/2018-04-30-multiple-comparison_files/figure-html/unnamed-chunk-5-1.png" alt=""><!-- raw HTML omitted --></p>
 <h2 id="outcome">Outcome</h2>
-
 <p>Well&hellip; within 100 randomly generated variables we found 5 correlations which have a p-value which is less than 0.05. There are many examples of that mistake: for instance <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4619385/">here</a>.</p>
-
 <h2 id="solutions">Solutions</h2>
-
 <ul>
-<li>formulate a hypothesis about variables relation <em>before collecting data</em> and test only this relation</li>
-
-<li><p>apply correction</p>
-
+<li>
+<p>formulate a hypothesis about variables relation <em>before collecting data</em> and test only this relation</p>
+</li>
+<li>
+<p>apply correction</p>
 <ul>
 <li><a href="https://en.wikipedia.org/wiki/Bonferroni_correction">Bonferroni_correction</a> - divide threshold for statistical significance by the number of comparisons (0.05 / 5, if there are 5 comparisons)</li>
 <li><a href="https://en.wikipedia.org/wiki/Holm%E2%80%93Bonferroni_method">Holm-Bonferroni</a> is a better method then Boneferroni to control <a href="https://en.wikipedia.org/wiki/Family-wise_error_rate">familywise error rate</a> - it is a default method for <a href="http://stat.ethz.ch/R-manual/R-devel/library/stats/html/p.adjust.html">p.adjust</a> function in R</li>
-</ul></li>
-
-<li><p>A more detailed discussion <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333023/">here</a></p></li>
-
-<li><p>If you have a lot of data, use only small part of it (random selection). Then use other part of data to test findings.</p></li>
-
-<li><p>What about machine learning and fitting parameters? No problem there - read <a href="https://stats.stackexchange.com/questions/241199/bonferroni-correction-machine-learning?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">here</a></p></li>
-
-<li><p>A completelly different approach - <a href="http://www.stat.columbia.edu/~gelman/research/unpublished/multiple2.pdf">Bayesian perspective</a></p></li>
+</ul>
+</li>
+<li>
+<p>A more detailed discussion <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333023/">here</a></p>
+</li>
+<li>
+<p>If you have a lot of data, use only small part of it (random selection). Then use other part of data to test findings.</p>
+</li>
+<li>
+<p>What about machine learning and fitting parameters? No problem there - read <a href="https://stats.stackexchange.com/questions/241199/bonferroni-correction-machine-learning?utm_medium=organic&amp;utm_source=google_rich_qa&amp;utm_campaign=google_rich_qa">here</a></p>
+</li>
+<li>
+<p>A completelly different approach - <a href="http://www.stat.columbia.edu/~gelman/research/unpublished/multiple2.pdf">Bayesian perspective</a></p>
+</li>
 </ul>
     </div>
-    
 
     
-    
-
-    
-    
-
-    <footer class="post-footer">
+<footer class="post-footer">
       <div class="post-tags">
-          
           <a href="/tags/data-science/">Data Science</a>
-          
           <a href="/tags/r/">R</a>
-          
-          <a href="/tags/r_bloggers/">R_bloggers</a>
-          
-        </div>
- 
-      
+          </div>
       <nav class="post-nav">
-        
-          <a class="prev" href="/post/teaching-ds-at-a-high-school/">
+        <a class="prev" href="/post/teaching-ds-at-a-high-school/">
             <i class="iconfont icon-left"></i>
             <span class="prev-text nav-default">Teaching Data Science at a High School</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
-        
-          <a class="next" href="/post/exp-labs-with-simulations/">
+        <a class="next" href="/post/exp-labs-with-simulations/">
             <span class="next-text nav-default">Experimental labs with computer simulations</span>
-            <span class="prev-text nav-mobile">Next</span>
+            <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
       </nav>
     </footer>
   </article>
-          
-<div class="addthis_inline_share_toolbox"></div>
-            
         </div>
-        
-
-      
-  <div id="disqus_thread"></div>
+        <div id="disqus_thread"></div>
     <script type="text/javascript">
     (function() {
       
@@ -341,6 +293,8 @@ ggplot(sub_df) <span style="color:#666">+</span>
 
   
 
+  
+
       </div>
     </main>
 
@@ -351,7 +305,6 @@ ggplot(sub_df) <span style="color:#666">+</span>
       <a href="https://github.com/ssamsonau" class="iconfont icon-github" title="github"></a>
   <a href="/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
-
 
 <div class="copyright">
   
@@ -392,18 +345,19 @@ ggplot(sub_df) <span style="color:#666">+</span>
   <span class="division">|</span>
   Hosted at <a class="theme-link" href="https://www.netlify.com/">Netlify</a>
   <span class="division">|</span>
-  Contributing to <a class="theme-link" href="https://www.r-bloggers.com">R-Bloggers.com</a>
-  
-  
+  <a class="theme-link" href="https://www.authenticscience.org/">Authentic Science Academy</a>
+
+
 
   
-  
+
   <span class="copyright-year">
     &copy; 
-    
-      2018 - 
-    2019
-    
+    2018 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
     <span class="author">Sergey Samsonau</span>
   </span>
 </div>
@@ -414,11 +368,13 @@ ggplot(sub_df) <span style="color:#666">+</span>
     </div>
   </div>
   
-<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/dist/even.min.js?v=3.1.1"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
 
 
 <script type="application/javascript">
@@ -438,10 +394,5 @@ if (!doNotTrack) {
 
 
 
-
-   
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ae63d0eb9a1c0ad" async></script>
-
- 
 </body>
 </html>

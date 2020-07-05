@@ -1,15 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Education on H&lt;&gt;M Learning</title>
+    <title>Education on </title>
     <link>/tags/education/</link>
-    <description>Recent content in Education on H&lt;&gt;M Learning</description>
+    <description>Recent content in Education on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <copyright>Sergey Samsonau</copyright>
-    <lastBuildDate>Fri, 22 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/education/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Google vs Books</title>
+      <link>/post/arima/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/arima/</guid>
+      <description>&lt;p&gt;Recently I was participating in a discussion &amp;lsquo;books vs google&amp;rsquo;. The idea is &amp;ldquo;do we just impose our view on the learning process to kids? maybe they don&amp;rsquo;t need books when there is google?&amp;rdquo;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Bagging and Boosting in Human learning</title>
@@ -17,58 +26,7 @@
       <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/bagging-and-boosting-in-human-learning/</guid>
-      <description>&lt;p&gt;Just a funny thought: education in humanities follows bagging trees, education in natural sciences follows boosting. Here is why..&lt;/p&gt;
-
-&lt;p&gt;Think about this..&lt;/p&gt;
-
-&lt;h2 id=&#34;humanities&#34;&gt;Humanities:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Read a book. Understand precisely what an author is saying, understand his/her model/view of reality/world&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fit a tree to get a simple model. Build a fully grown tree (don&amp;rsquo;t prune)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Read another book. Get another view of reality. Ideally, this shall be done without any filters of perception which may have been learned from the 1st book&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fit another tree&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Read many more books&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Fit many trees&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Make up your mind based on conglomerations of all those ideas and some other experiences&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Use an aggregation of trees as a final model&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In both cases, there is a high variance of views from book to book (from model to model), and ideally low bias (deep understanding of every book). Aggregation helps reduce variance in both cases.&lt;/p&gt;
-
-&lt;h2 id=&#34;natural-sciences-for-example-physics&#34;&gt;Natural sciences (for example Physics)&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Read one book/take intro class. Understand it as much as you can on the first run&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;fit shallow tree&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Address what you did not understand from the first run. Try to understand those things which are still not clear&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;fit another shallow tree on the residuals&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Continue the refinement of the knowledge&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;fit many more shallow trees, every time on residuals of previous models&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In this case, every new iteration never (almost) makes understanding (model) learned (obtained) on previous iterations wrong, and mostly fine tunes those.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Just a funny thought: education in humanities follows bagging trees, education in natural sciences follows boosting. Here is why..&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -77,30 +35,7 @@
       <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/advanced-classes-for-stress-reduction/</guid>
-      <description>&lt;p&gt;Usually, perception is that the more advanced is the school and curriculum, the more stressed students are. Is this really the case?&lt;/p&gt;
-
-&lt;p&gt;First, let me define advanced: advance means a more complex, having more inter-connections, and thus triggering interest (given a sufficient skillset).&lt;/p&gt;
-
-&lt;p&gt;And let us concentrate on the situation when we have generally strong students.&lt;/p&gt;
-
-&lt;p&gt;Often, when schools are attempting to accommodate demand (from parents and bored students?) for higher standards of education, they introduce into programs more AP classes oriented for test taking. Classes, which will tell a kid who s/he is: A-grade student, B-grade student, etc. Classes that make students &amp;ldquo;run over material&amp;rdquo; instead of enjoying it. This creates a lot of stress. One can find research papers addressing stress level in schools, for example &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/S1877042811019033&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Compare this with advanced classes:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Classes are taught by teachers who have in-depth professional knowledge and &lt;em&gt;active interest&lt;/em&gt; in their area&lt;/li&gt;
-&lt;li&gt;Students are presented with an opportunity to go as deep as they can into complicated topics&lt;/li&gt;
-&lt;li&gt;Not every student will go equally deep, which is expected and normal&lt;/li&gt;
-&lt;li&gt;There is a certain expectation to get an A, but material covers much more than that so that every student can find a challenge for him/her self&lt;/li&gt;
-&lt;li&gt;I call this approach &amp;ldquo;No student left bored&amp;rdquo; (in contrast with famous &amp;ldquo;no student left behind&amp;rdquo;)&lt;/li&gt;
-&lt;li&gt;There is no clear way to compare yourself with others - because in any complicated area there are many ways to get better in something: while one student is improving one skill, another is improving another. There is no need to compare in this case: every student knows that his/her classmates know something better than s/he, but this is true for this student as well&lt;/li&gt;
-&lt;li&gt;Open-ended assignments without &amp;lsquo;one correct answer&amp;rsquo; allow students to grow and get better relative to themselves a day before&lt;/li&gt;
-&lt;li&gt;Self-assessment becomes very important in this case. And in fact, is one of the goals of this approach.  In contrast, the traditional approach forces students to look for external validation of their knowledge and skills&lt;/li&gt;
-&lt;li&gt;There is generally almost no way to fail&lt;/li&gt;
-&lt;li&gt;It is an interesting and challenging task to help students to develop their internal motivation. Use of a grade, in this case, has a fairly limited power&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And there is also authentic research, which opens even more opportunities for advancing curriculum in every high school, aiming to help students learn about the world around them.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Usually, perception is that the more advanced is the school and curriculum, the more stressed students are. Is this really the case?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -109,81 +44,7 @@
       <pubDate>Thu, 21 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/comparison-of-education-with-machine-learning/</guid>
-      <description>&lt;p&gt;Let me speculate a little, and compare what does an educator (teacher/professor/instructor) with what does a machine learning specialist.&lt;/p&gt;
-
-&lt;h2 id=&#34;what-is-common&#34;&gt;What is common?&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Provide information
-
-&lt;ul&gt;
-&lt;li&gt;Educator gives lectures, provides a textbook, or other resources.&lt;/li&gt;
-&lt;li&gt;ML specialist have to find and present data&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Adjusts information
-
-&lt;ul&gt;
-&lt;li&gt;Educator have to choose a suitable form and complexity level of information for a particular group of students&lt;/li&gt;
-&lt;li&gt;ML specialist have to clean and reshape data to a form an algorithm can understand&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Give feedback
-
-&lt;ul&gt;
-&lt;li&gt;Educator have to correct and redirect efforts of a student when it is needed. Educators use example problems (when a solution is given) and practice problems (on which students test patterns learned from examples).&lt;/li&gt;
-&lt;li&gt;ML specialist observes how algorithm learns. If this process is inefficient, learning strategy shall be corrected. Training and validation (cross-validation) sets are used.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Perform assessment
-
-&lt;ul&gt;
-&lt;li&gt;Educator gives tests and makes exams, designed to see how a student performs on problems, which are similar to those covered in class, but at the same time different - such that student did not see before.&lt;/li&gt;
-&lt;li&gt;ML specialist evaluates the performance of the algorithm on a test set.&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Focus on self-learning
-
-&lt;ul&gt;
-&lt;li&gt;Educator creates conditions for self-learning. A student is the only person who can actually learn. As stated by Isaac Asimov: &amp;ldquo;Self-education is the only kind of education there is&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;ML specialist create conditions and then, in essence, wait for a machine to learn on its own&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Work with models of reality
-
-&lt;ul&gt;
-&lt;li&gt;Educator aims to help students to develop a deep internal understanding (meaning, that at the very least they can use it in practice) of models of reality&lt;/li&gt;
-&lt;li&gt;ML specialist makes a computer create a model describing patterns in data&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Use pre-trained models&lt;br /&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ML specialist can use a pre-trained neural network and only moderately retrain it for a particular application&lt;/li&gt;
-&lt;li&gt;Educator provides methods (for problem-solving, research, etc.) which proven to be successful in specific areas. Students work on absorbing those and modifying them for themselves
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;what-is-different&#34;&gt;What is different?&lt;/h2&gt;
-
-&lt;p&gt;Where a machine excels&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ideal information retention&lt;/li&gt;
-&lt;li&gt;fast extraction of unknown patterns, when learning task is clear&lt;/li&gt;
-&lt;li&gt;fast application of learned patterns&lt;/li&gt;
-&lt;li&gt;simple transfer of learned models from computer to computer
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Where a human excels&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;learning from very few examples, efficient generalization&lt;/li&gt;
-&lt;li&gt;generalization to &amp;lsquo;data from new distributions&amp;rsquo;&lt;/li&gt;
-&lt;li&gt;setting up new tasks independently&lt;/li&gt;
-&lt;li&gt;challenging assumptions, and finding limits of applicability of various models&lt;/li&gt;
-&lt;li&gt;learning something as complicated as physics. Look at &lt;a href=&#34;https://goo.gl/images/VDjsbQ&#34;&gt;this&lt;/a&gt; interesting plot describing what infants do in their first year of life&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;final-remark&#34;&gt;Final remark&lt;/h2&gt;
-
-&lt;p&gt;A question: Can we formulate education process using machine learning terminology? What if this will provide us with a more structured way to describe an educational process? Also, maybe we can bring something new to education? For example, what would be an analogy for a regularization technique used in machine learning?&lt;/p&gt;</description>
+      <description>&lt;p&gt;Let me speculate a little, and compare what does an educator (teacher/professor/instructor) with what does a machine learning specialist.&lt;/p&gt;</description>
     </item>
     
   </channel>

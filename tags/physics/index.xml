@@ -1,14 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Physics on H&lt;&gt;M Learning</title>
+    <title>Physics on </title>
     <link>/tags/physics/</link>
-    <description>Recent content in Physics on H&lt;&gt;M Learning</description>
+    <description>Recent content in Physics on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <copyright>Sergey Samsonau</copyright>
     <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -17,44 +17,7 @@
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/exp-labs-with-simulations/</guid>
-      <description>&lt;p&gt;While teaching laboratories for calculus-based Physics I figured out there is no teaching curriculum available which would combine actual experiments with computer (or also called numerical) simulations. So, I developed a sequence of 7 lab modules to implement exactly that.&lt;/p&gt;
-
-&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
-
-&lt;p&gt;Computer simulations are now everywhere. Complexity of many real system does not allow to obtain a model written through analytic equations. In such situations numerical simulations provide a good (if not the only one) way to do address them.&lt;/p&gt;
-
-&lt;p&gt;Computer simulations allow people to perform weather forecasting, understand dynamics of star clusters, enhance particle physics research, allow to perform simulations of chemical interactions, as well as address many other systems.&lt;/p&gt;
-
-&lt;p&gt;So&amp;hellip; why don&amp;rsquo;t we teach students to use simulations?&lt;/p&gt;
-
-&lt;h2 id=&#34;description&#34;&gt;Description&lt;/h2&gt;
-
-&lt;p&gt;The developed curriculum is composed from modules - each module uses both simulations and experiments to address a phenomena under study, and lasts for 3 weeks (21 weeks total for the whole set).&lt;/p&gt;
-
-&lt;p&gt;Wolfram Mathematica was chosen as a language for computer because it provides an easy to understand, follow (and modify) way to perform fairly good numerical simulations without a need of teaching students a full scale programming class.&lt;/p&gt;
-
-&lt;p&gt;Topics are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Motion with a drag&lt;/li&gt;
-&lt;li&gt;Pendulum with an arbitrary amplitude&lt;/li&gt;
-&lt;li&gt;Magnus effect&lt;/li&gt;
-&lt;li&gt;Centripetal force acting on a pendulum&lt;/li&gt;
-&lt;li&gt;A ball rolling from paths of various shapes&lt;/li&gt;
-&lt;li&gt;Doppler shift and Fourier transformation&lt;/li&gt;
-&lt;li&gt;Equipotential lines.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Students generally only have a task setup by a teacher and some &amp;ldquo;starter code&amp;rdquo;. They have to develop an experiment and perform it by themselves. They also have to write the full simulation code and then compare experiment results with simulations.&lt;/p&gt;
-
-&lt;p&gt;This set was taught for two years in a calculus-based Physics Class in the following settings: 40 minutes once a week of class time (plus time allocated by students for work outside of classroom), 3 weeks per module. Most students went through advanced open-ended algebra-based labs the year before and were ready to work with open ended tasks.&lt;/p&gt;
-
-&lt;h2 id=&#34;more-details&#34;&gt;More details&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/1804.09264&#34;&gt;preprint on arxiv.org&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/ssamsonau/NumSim_Exp_PhysLabs&#34;&gt;code on GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;While teaching laboratories for calculus-based Physics I figured out there is no teaching curriculum available which would combine actual experiments with computer (or also called numerical) simulations. So, I developed a sequence of 7 lab modules to implement exactly that.&lt;/p&gt;</description>
     </item>
     
   </channel>
